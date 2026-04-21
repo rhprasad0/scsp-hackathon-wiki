@@ -27,6 +27,7 @@ Avoid generic filler.
 Use the last thread to create a curated note in curated/YYYY-MM-DD-<slug>.md.
 Then use Exa-backed public web research to create a companion supplement in research/YYYY-MM-DD-<slug>-public-research.md.
 Then ingest both files into llmwiki, compile the wiki, and tell me what new patterns were added or reinforced.
+If the synthesis is high value, save it back into the wiki.
 ```
 
 ## 4) Batch synthesis

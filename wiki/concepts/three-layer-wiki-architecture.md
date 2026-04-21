@@ -1,5 +1,21 @@
 ---
 title: Three-Layer Wiki Architecture
+summary: An architecture consisting of immutable raw sources, LLM-maintained wiki pages, and a schema/instruction layer to organize and update knowledge.
+sources:
+  - 2026-04-21-hackathon-knowledge-workflow-decision-public-research.md
+createdAt: "2026-04-21T20:28:53.666Z"
+updatedAt: "2026-04-21T21:12:42.659Z"
+tags:
+  - architecture
+  - knowledge-management
+  - llm
+aliases:
+  - three-layer-wiki-architecture
+  - TWA
+---
+
+---
+title: Three-Layer Wiki Architecture
 summary: The architecture of immutable raw sources, LLM-maintained wiki pages, and a schema/instruction layer for organizing and compounding knowledge.
 sources:
   - 2026-04-21-hackathon-knowledge-workflow-decision-public-research.md
@@ -16,22 +32,22 @@ aliases:
 
 # Three-Layer Wiki Architecture
 
-Three-Layer Wiki Architecture is a wiki pattern described as a persistent, compounding knowledge system organized into three layers: immutable raw sources, LLM-maintained wiki pages, and a schema/instruction layer. In this model, the human curates sources and asks questions, while the LLM handles summarization, cross-linking, filing, and bookkeeping. The approach is intended for moderate-scale, curated corpora rather than heavyweight infrastructure. ^[2026-04-21-hackathon-knowledge-workflow-decision-public-research.md]
+Three-Layer Wiki Architecture is a wiki pattern for building a persistent, compounding knowledge system from three layers: immutable raw sources, LLM-maintained wiki pages, and a schema/instruction layer. The model treats the human as a curator and question-asker, while the LLM handles summarization, cross-linking, filing, and bookkeeping. It is described as a good fit for moderate-scale, curated corpora rather than heavyweight infrastructure. ^[2026-04-21-hackathon-knowledge-workflow-decision-public-research.md]
 
 ## Layers
 
 ### 1. Raw sources
-This layer consists of immutable source material that serves as the factual base of the wiki. The source material is curated rather than continuously rewritten. ^[2026-04-21-hackathon-knowledge-workflow-decision-public-research.md]
+This layer contains immutable source material that serves as the factual base of the wiki. The sources are curated rather than continuously rewritten. ^[2026-04-21-hackathon-knowledge-workflow-decision-public-research.md]
 
 ### 2. LLM-maintained wiki pages
-This layer contains compiled markdown pages that accumulate synthesized knowledge over time. The wiki is designed to compound useful information instead of repeatedly rediscovering it through query-time retrieval. ^[2026-04-21-hackathon-knowledge-workflow-decision-public-research.md]
+This layer consists of compiled markdown pages that accumulate synthesized knowledge over time. The goal is to compound useful information instead of repeatedly rediscovering it through query-time retrieval. ^[2026-04-21-hackathon-knowledge-workflow-decision-public-research.md]
 
 ### 3. Schema/instruction layer
-This layer defines the rules and structure that guide how content is organized and updated. It supports the wiki as a file-first, inspectable, markdown-native workflow. ^[2026-04-21-hackathon-knowledge-workflow-decision-public-research.md]
+This layer defines the rules and structure that guide organization and updates. It supports a file-first, inspectable, markdown-native workflow. ^[2026-04-21-hackathon-knowledge-workflow-decision-public-research.md]
 
 ## Operational roles
 
-The human role is to curate sources and ask questions. The LLM role is to summarize material, create cross-links, file content appropriately, and maintain bookkeeping. This division supports short, iterative research loops with a high-signal corpus. ^[2026-04-21-hackathon-knowledge-workflow-decision-public-research.md]
+In this architecture, the human curates sources and asks questions. The LLM summarizes material, creates cross-links, files content appropriately, and maintains bookkeeping. This division supports short, iterative research loops over a high-signal corpus. ^[2026-04-21-hackathon-knowledge-workflow-decision-public-research.md]
 
 ## Related workflow properties
 
@@ -43,7 +59,7 @@ This architecture is best suited to short-horizon, file-first work where the cor
 
 ## Public-context supplementation
 
-The workflow can be extended with targeted public search and page fetch for each promoted field note. This adds fresh public context—such as policy docs, product docs, or prior reporting—without changing the underlying architecture. The key constraint is to keep the supplementary research focused so it strengthens the note rather than adding low-value background material. ^[2026-04-21-hackathon-knowledge-workflow-decision-public-research.md]
+The workflow can be extended with targeted public search and page fetch for each promoted field note. This adds fresh public context such as policy docs, product docs, or prior reporting without changing the underlying architecture. The key constraint is to keep the supplementary research focused so it strengthens the note rather than adding low-value background material. ^[2026-04-21-hackathon-knowledge-workflow-decision-public-research.md]
 
 ## Related concepts
 

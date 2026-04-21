@@ -88,6 +88,7 @@ npm run wiki:compile
 npm run wiki:lint
 npm run wiki:serve
 npm run wiki:query -- "What repeated bottlenecks are showing up?"
+npm run wiki:query:save -- "What repeated bottlenecks are showing up?"
 ```
 
 ## Design rules

@@ -1,20 +1,20 @@
 ---
-title: Exa-backed research supplements
-summary: Companion notes created from public web search to add relevant external context to each promoted internal note.
+title: Exa-Backed Research Supplements
+summary: Each curated note is paired with a companion research note built from Exa-powered public search to add relevant outside context and sharpen the synthesis.
 sources:
   - 2026-04-21-hackathon-knowledge-workflow-decision.md
 createdAt: "2026-04-21T20:29:05.225Z"
-updatedAt: "2026-04-21T20:29:05.225Z"
+updatedAt: "2026-04-21T21:15:15.538Z"
 tags:
+  - search
   - research
-  - exa
-  - public-sources
+  - public-context
 aliases:
   - exa-backed-research-supplements
   - ERS
 ---
 
-# Exa-backed research supplements
+# Exa-Backed Research Supplements
 
 Exa-backed research supplements are companion public research notes created for each promoted curated note. In the workflow described in the source material, they are used to add relevant public context to a note pair before ingestion into the wiki compiler. The goal is to compound field notes with external evidence while keeping the workflow markdown-native and file-first. ^[2026-04-21-hackathon-knowledge-workflow-decision.md]
 

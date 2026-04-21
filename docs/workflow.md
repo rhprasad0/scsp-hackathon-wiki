@@ -78,6 +78,7 @@ After each few notes, ask:
 - What still needs validation?
 
 Save only the answers that are worth compounding.
+Use `npm run wiki:query:save -- "..."` for durable high-value synthesis.
 
 ## File conventions
 

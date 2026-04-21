@@ -3,11 +3,13 @@
 ## architecture
 
 - [[Decision Rule for Wiki Over Graph Memory]]
+- [[Hackathon-Sized Tooling Tradeoff]]
+- [[Three-Layer Knowledge Architecture]]
 - [[Three-Layer Wiki Architecture]]
 
-## capture
+## automation
 
-- [[Slack-only capture workflow]]
+- [[Incremental Wiki Compilation]]
 
 ## codex
 
@@ -15,11 +17,25 @@
 
 ## compilation
 
-- [[Incremental wiki compilation]]
+- [[Incremental Hash-Based Wiki Compilation]]
+- [[Incremental Wiki Compilation]]
+- [[llm-wiki-compiler]]
+
+## context-enrichment
+
+- [[Exa-Backed Public Supplementary Research]]
+
+## corpus-design
+
+- [[Small High-Signal Corpus Strategy]]
 
 ## curation
 
-- [[Curated note promotion]]
+- [[Curated Note Promotion]]
+
+## data-quality
+
+- [[Raw Chat Ingestion Avoidance]]
 
 ## decision-making
 
@@ -29,53 +45,82 @@
 
 - [[Exa Public Research Supplementation]]
 
-## exa
+## external-context
 
-- [[Exa-backed research supplements]]
+- [[Exa Backed Public Research Supplement]]
 
 ## github
 
-- [[Private GitHub repo as working memory]]
+- [[Private GitHub Repo as Durable Working Memory]]
+- [[Private GitHub Repo as Working Memory]]
 
 ## governance
 
-- [[Trust boundaries in knowledge pipelines]]
+- [[Trust Boundaries in Knowledge Pipelines]]
+- [[Trust Boundary Management for Knowledge Artifacts]]
+
+## hackathon
+
+- [[Hackathon-Sized Tooling Tradeoff]]
+- [[Small High-Signal Corpus Strategy]]
+
+## human-ai-collaboration
+
+- [[LLM Knowledge Curation Roles]]
+
+## human-in-the-loop
+
+- [[Curated Human-LMM Workflow]]
 
 ## incremental-processing
 
 - [[Hash-Based Incremental Ingestion]]
 
-## incremental-update
+## incremental-updates
 
-- [[Incremental wiki compilation]]
+- [[Incremental Hash-Based Wiki Compilation]]
+- [[Incremental Wiki Compilation]]
 
 ## information-extraction
 
 - [[Two-Phase Concept Extraction Pipeline]]
 
+## information-management
+
+- [[Small High-Signal Corpus Strategy]]
+
 ## ingestion
 
 - [[Hash-Based Incremental Ingestion]]
+- [[Raw Chat Ingestion Avoidance]]
+
+## knowledge-base
+
+- [[Three-Layer Knowledge Architecture]]
+
+## knowledge-compounding
+
+- [[Compounding Query-to-Wiki Loop]]
 
 ## knowledge-management
 
 - [[Decision Rule for Wiki Over Graph Memory]]
-- [[LLM Wiki Compiler]]
+- [[LLM Knowledge Curation Roles]]
 - [[LLM Wiki Pattern]]
-- [[Private GitHub repo as working memory]]
+- [[Private GitHub Repo as Durable Working Memory]]
+- [[Private GitHub Repo as Working Memory]]
 - [[Query-and-Save Compounding Workflow]]
+- [[Slack-only Capture Workflow]]
+- [[Slack-only Knowledge Capture Workflow]]
 - [[Three-Layer Wiki Architecture]]
-
-## knowledge-workflow
-
-- [[Curated note promotion]]
-- [[Slack-only capture workflow]]
+- [[llm-wiki-compiler]]
 
 ## llm
 
+- [[Curated Human-LMM Workflow]]
 - [[LLM Wiki Pattern]]
+- [[Three-Layer Knowledge Architecture]]
 - [[Three-Layer Wiki Architecture]]
-- [[Two-Phase Concept Extraction Pipeline]]
 
 ## llm-integration
 
@@ -83,7 +128,11 @@
 
 ## markdown
 
-- [[LLM Wiki Compiler]]
+- [[llm-wiki-compiler]]
+
+## note-taking
+
+- [[Redacted Curated Notes]]
 
 ## pipeline
 
@@ -91,52 +140,81 @@
 
 ## privacy
 
-- [[Trust boundaries in knowledge pipelines]]
+- [[Raw Chat Ingestion Avoidance]]
+- [[Redacted Curated Notes]]
+- [[Trust Boundaries in Knowledge Pipelines]]
+- [[Trust Boundary Management for Knowledge Artifacts]]
 
 ## provider-setup
 
 - [[Codex-bridge provider setup]]
 
-## public-sources
+## public-context
 
-- [[Exa-backed research supplements]]
+- [[Exa-Backed Research Supplements]]
+- [[Exa-backed Research Supplement]]
 
 ## redaction
 
-- [[Curated note promotion]]
+- [[Curated Note Promotion]]
+- [[Redacted Curated Notes]]
 
 ## research
 
+- [[Exa Backed Public Research Supplement]]
 - [[Exa Public Research Supplementation]]
-- [[Exa-backed research supplements]]
+- [[Exa-Backed Public Supplementary Research]]
+- [[Exa-Backed Research Supplements]]
+- [[Exa-backed Research Supplement]]
 
 ## retrieval
 
+- [[Compounding Query-to-Wiki Loop]]
 - [[Query-and-Save Compounding Workflow]]
 
 ## search
 
+- [[Exa Backed Public Research Supplement]]
 - [[Exa Public Research Supplementation]]
+- [[Exa-Backed Public Supplementary Research]]
+- [[Exa-Backed Research Supplements]]
+- [[Exa-backed Research Supplement]]
 
 ## security
 
-- [[Trust boundaries in knowledge pipelines]]
+- [[Trust Boundaries in Knowledge Pipelines]]
+- [[Trust Boundary Management for Knowledge Artifacts]]
 
 ## slack
 
-- [[Slack-only capture workflow]]
+- [[Slack-only Capture Workflow]]
+- [[Slack-only Knowledge Capture Workflow]]
+
+## storage
+
+- [[Private GitHub Repo as Durable Working Memory]]
+- [[Private GitHub Repo as Working Memory]]
 
 ## tooling
 
 - [[Hash-Based Incremental Ingestion]]
-- [[LLM Wiki Compiler]]
+- [[Incremental Hash-Based Wiki Compilation]]
+
+## tradeoffs
+
+- [[Hackathon-Sized Tooling Tradeoff]]
 
 ## wiki
 
-- [[Incremental wiki compilation]]
+- [[Compounding Query-to-Wiki Loop]]
 - [[LLM Wiki Pattern]]
+- [[Two-Phase Concept Extraction Pipeline]]
 
 ## workflow
 
-- [[Private GitHub repo as working memory]]
+- [[Curated Human-LMM Workflow]]
+- [[Curated Note Promotion]]
+- [[LLM Knowledge Curation Roles]]
 - [[Query-and-Save Compounding Workflow]]
+- [[Slack-only Capture Workflow]]
+- [[Slack-only Knowledge Capture Workflow]]

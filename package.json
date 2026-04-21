@@ -12,7 +12,8 @@
     "wiki:lint": "bash ./scripts/lint.sh",
     "wiki:serve": "bash ./scripts/serve.sh",
     "wiki:watch": "bash ./scripts/watch.sh",
-    "wiki:query": "bash ./scripts/query.sh"
+    "wiki:query": "bash ./scripts/query.sh",
+    "wiki:query:save": "bash ./scripts/query.sh --save"
   },
   "devDependencies": {
     "llm-wiki-compiler": "^0.2.0"
