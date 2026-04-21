@@ -1,0 +1,18 @@
+{
+  "name": "scsp-hackathon-wiki",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Private SCSP hackathon research wiki powered by llm-wiki-compiler",
+  "scripts": {
+    "note:new": "bash ./scripts/new-note.sh",
+    "wiki:ingest": "bash ./scripts/ingest-and-compile.sh --ingest-only",
+    "wiki:compile": "bash ./scripts/ingest-and-compile.sh --compile-only",
+    "wiki:lint": "bash ./scripts/lint.sh",
+    "wiki:serve": "bash ./scripts/serve.sh",
+    "wiki:watch": "bash ./scripts/watch.sh",
+    "wiki:query": "bash ./scripts/query.sh"
+  },
+  "devDependencies": {
+    "llm-wiki-compiler": "^0.2.0"
+  }
+}
