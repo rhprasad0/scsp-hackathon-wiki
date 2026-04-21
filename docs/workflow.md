@@ -135,8 +135,9 @@ That generates a local `.env` pointing `llmwiki` at:
 - `OPENAI_API_KEY=<local codex-bridge key>`
 - `LLMWIKI_PROVIDER=openai`
 - `LLMWIKI_MODEL=gpt-5.4-mini`
+- `LLMWIKI_FORCE_NON_STREAMING=1`
 
-The helper scripts also fall back to the local bridge config if `.env` is missing.
+The helper scripts also fall back to the local bridge config if `.env` is missing. The repo additionally applies a postinstall compatibility patch so `llmwiki query` can disable streaming when this flag is set.
 
 ## Suggested cadence
 

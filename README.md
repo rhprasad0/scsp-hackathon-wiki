@@ -44,6 +44,7 @@ That writes a local `.env` with:
 - `OPENAI_BASE_URL=http://127.0.0.1:4000/v1`
 - `OPENAI_API_KEY=<local codex-bridge key>`
 - `LLMWIKI_MODEL=gpt-5.4-mini`
+- `LLMWIKI_FORCE_NON_STREAMING=1` (required because the local codex-bridge does not implement streaming chat completions yet)
 
 Manual alternative:
 
