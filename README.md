@@ -33,6 +33,20 @@ npm install
 
 ### 2) Configure provider env
 
+Preferred on this machine: reuse the local **codex-bridge** that is already backed by Ryan's Codex subscription login.
+
+```bash
+npm run setup:codex-bridge
+```
+
+That writes a local `.env` with:
+- `LLMWIKI_PROVIDER=openai`
+- `OPENAI_BASE_URL=http://127.0.0.1:4000/v1`
+- `OPENAI_API_KEY=<local codex-bridge key>`
+- `LLMWIKI_MODEL=gpt-5.4-mini`
+
+Manual alternative:
+
 ```bash
 cp .env.example .env
 # fill in credentials locally; do not commit .env

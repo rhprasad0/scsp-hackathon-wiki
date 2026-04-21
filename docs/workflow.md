@@ -119,6 +119,25 @@ For every promoted note, Hermes should:
 5. compile the wiki
 6. report the new or reinforced patterns
 
+## Provider configuration on this machine
+
+This repo is configured to prefer the local **codex-bridge** route backed by Ryan's Codex subscription login.
+
+One-time setup:
+
+```bash
+cd /home/ryan/scsp-hackathon-wiki
+npm run setup:codex-bridge
+```
+
+That generates a local `.env` pointing `llmwiki` at:
+- `OPENAI_BASE_URL=http://127.0.0.1:4000/v1`
+- `OPENAI_API_KEY=<local codex-bridge key>`
+- `LLMWIKI_PROVIDER=openai`
+- `LLMWIKI_MODEL=gpt-5.4-mini`
+
+The helper scripts also fall back to the local bridge config if `.env` is missing.
+
 ## Suggested cadence
 
 - after every useful thread: promote a note
