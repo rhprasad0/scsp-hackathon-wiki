@@ -7,6 +7,7 @@
     "postinstall": "bash ./scripts/apply-llmwiki-codex-compat.sh",
     "setup:codex-bridge": "bash ./scripts/setup-codex-bridge-env.sh",
     "note:new": "bash ./scripts/new-note.sh",
+    "note:new:with-research": "bash ./scripts/new-note.sh --with-research",
     "wiki:ingest": "bash ./scripts/ingest-and-compile.sh --ingest-only",
     "wiki:compile": "bash ./scripts/ingest-and-compile.sh --compile-only",
     "wiki:lint": "bash ./scripts/lint.sh",

@@ -8,12 +8,17 @@ This repo is optimized for a **Slack-only** field-discovery workflow.
 Slack thread
   -> Hermes promotion pass
   -> curated note
-  -> Hermes Exa-backed public research
-  -> public research supplement
   -> llmwiki ingest
   -> llmwiki compile
   -> wiki query / saved synthesis
   -> exports / draft spec
+
+Optional branch when clearly useful:
+  curated note
+    -> targeted manual public research
+    -> public research supplement
+    -> llmwiki ingest
+    -> llmwiki compile
 ```
 
 ## Per-note operating procedure
@@ -39,11 +44,29 @@ Requirements:
 - redact names and unnecessary specifics
 - include a public-safe summary at the end
 
-### Step 3 — add Exa-backed public supplement
-For every curated note, Hermes should also run **public web research using the Exa-backed search tools** and create a companion note in `research/`.
+### Step 3 — default to no public supplement
+For most notes, stop after the curated note and move straight to ingest/compile.
 
-The supplement should contain:
-- 3–5 relevant public sources
+The goal is to keep the corpus high-signal and avoid spraying low-value web context into the wiki like a confetti cannon loaded with blandness.
+
+### Step 4 — add manual public research only when it earns its keep
+Create a companion note in `research/` only when there is a **specific** evidence gap that outside sources can close.
+
+Good reasons to add a supplement:
+- the note references a policy, acquisition rule, or compliance constraint that should be grounded in a public document
+- a workflow artifact or system needs external documentation to make the finding legible
+- there is an open contradiction that public reporting or docs might clarify
+- you need a few public citations for a downstream public-safe spec
+- Ryan explicitly asks for outside research
+
+Bad reasons to add a supplement:
+- habit
+- vague curiosity
+- generic background reading
+- "more context might help"
+
+If a supplement is warranted, keep it tight:
+- 1–3 relevant public sources, not a mini literature review
 - what each source adds
 - facts or context that support / contrast with the field note
 - open tensions or contradictions
@@ -57,19 +80,17 @@ Good supplement targets:
 - relevant product / process documentation
 - previous public reporting on similar problems
 
-The supplement is **not** for generic SEO fluff. It should tighten the wedge, not spray trivia everywhere like a broken leaf blower.
+### Step 5 — ingest the source material
+Ingest:
+- the curated note alone by default
+- the curated note plus the optional supplement when one exists
 
-### Step 4 — ingest both notes
-Ingest both files:
-- curated note
-- public research supplement
+### Step 6 — compile after each note or small batch
+Compile after each promoted note or small batch.
 
-### Step 5 — compile after each note pair
-Compile after each note pair or after a small batch.
+For this hackathon, compiling after each useful note is fine because the corpus should stay small.
 
-For this hackathon, compiling after each promoted note pair is fine because the corpus should stay small.
-
-### Step 6 — query for synthesis
+### Step 7 — query for synthesis
 After each few notes, ask:
 - What repeated bottlenecks are emerging?
 - Which trust boundaries keep appearing?
@@ -88,7 +109,7 @@ Path pattern:
 curated/YYYY-MM-DD-topic-slug.md
 ```
 
-### Public research supplement
+### Optional public research supplement
 Path pattern:
 ```text
 research/YYYY-MM-DD-topic-slug-public-research.md
@@ -114,11 +135,10 @@ Stop collecting and pivot to writing when the compiled wiki shows:
 
 For every promoted note, Hermes should:
 1. write/update the curated note
-2. run Exa-backed public search
-3. create/update the public research supplement
-4. ingest both files
-5. compile the wiki
-6. report the new or reinforced patterns
+2. ingest the curated note
+3. compile the wiki
+4. report the new or reinforced patterns
+5. recommend a manual public supplement only when there is a concrete evidence gap worth filling
 
 ## Provider configuration on this machine
 
@@ -133,7 +153,7 @@ npm run setup:codex-bridge
 
 That generates a local `.env` pointing `llmwiki` at:
 - `OPENAI_BASE_URL=http://127.0.0.1:4000/v1`
-- `OPENAI_API_KEY=<local codex-bridge key>`
+- `OPENAI_API_KEY=*** codex-bridge key>`
 - `LLMWIKI_PROVIDER=openai`
 - `LLMWIKI_MODEL=gpt-5.4-mini`
 - `LLMWIKI_FORCE_NON_STREAMING=1`
@@ -143,7 +163,7 @@ The helper scripts also fall back to the local bridge config if `.env` is missin
 ## Suggested cadence
 
 - after every useful thread: promote a note
-- after every promoted note: add Exa supplement
-- after every note pair: ingest + compile
-- every few note pairs: query + save synthesis
+- after every promoted note: ingest + compile
+- every few notes: query + save synthesis
+- only when clearly justified: add a targeted public supplement
 - before spec drafting: lint + export

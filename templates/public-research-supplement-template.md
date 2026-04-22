@@ -1,13 +1,13 @@
 ---
 title: __TITLE__ Public Research Supplement
 date: __DATE__
-source_type: exa-public-research
+source_type: public-research-manual
 status: draft
 curated_note: curated/__DATE__-__SLUG__.md
 ---
 
-# Research question
-- What public context would most usefully supplement the curated note?
+# Why this supplement exists
+- What specific evidence gap, contradiction, policy question, or documentation hole is this supplement trying to close?
 
 # Public sources
 ## Source 1

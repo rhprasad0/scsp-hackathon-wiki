@@ -12,7 +12,7 @@ This repo is the working memory layer for the hackathon:
 
 ```text
 curated/     human/Hermes-authored debrief notes ready to ingest
-research/    Hermes-authored public-source supplements found via Exa-backed web search
+research/    optional manual public-source supplements when outside context is clearly useful
 sources/     llmwiki-managed source copies
 wiki/        compiled wiki output
 exports/     draft outlines, summaries, public-safe spec fragments
@@ -42,7 +42,7 @@ npm run setup:codex-bridge
 That writes a local `.env` with:
 - `LLMWIKI_PROVIDER=openai`
 - `OPENAI_BASE_URL=http://127.0.0.1:4000/v1`
-- `OPENAI_API_KEY=<local codex-bridge key>`
+- `OPENAI_API_KEY=*** codex-bridge key>`
 - `LLMWIKI_MODEL=gpt-5.4-mini`
 - `LLMWIKI_FORCE_NON_STREAMING=1` (required because the local codex-bridge does not implement streaming chat completions yet)
 
@@ -55,7 +55,7 @@ cp .env.example .env
 
 `llmwiki` reads provider configuration from environment variables.
 
-### 3) Create a fresh note pair
+### 3) Create a fresh note
 
 ```bash
 npm run note:new -- maintenance-planner-01
@@ -63,17 +63,26 @@ npm run note:new -- maintenance-planner-01
 
 This creates:
 - `curated/YYYY-MM-DD-maintenance-planner-01.md`
+
+If a note really needs targeted outside context, create the optional companion file too:
+
+```bash
+npm run note:new:with-research -- maintenance-planner-01
+```
+
+That creates:
+- `curated/YYYY-MM-DD-maintenance-planner-01.md`
 - `research/YYYY-MM-DD-maintenance-planner-01-public-research.md`
 
 ## Core workflow
 
 1. Capture notes in Slack
 2. Ask Hermes to promote them into a **curated** note
-3. Ask Hermes to use **Exa-backed public search** to create a **research supplement**
-4. Ingest both files
-5. Compile the wiki
-6. Query for patterns
-7. Save only the useful synthesized answers
+3. Ingest the curated note
+4. Compile the wiki
+5. Query for patterns
+6. Save only the useful synthesized answers
+7. Add a **manual public research supplement** only when a note has a specific gap that outside sources can meaningfully close
 
 Detailed workflow:
 - `docs/workflow.md`
@@ -83,6 +92,8 @@ Detailed workflow:
 
 ```bash
 npm run note:new -- some-slug
+npm run note:new:with-research -- some-slug
+npm run wiki:ingest -- curated/2026-04-21-some-slug.md
 npm run wiki:ingest -- curated/2026-04-21-some-slug.md research/2026-04-21-some-slug-public-research.md
 npm run wiki:compile
 npm run wiki:lint
@@ -96,5 +107,6 @@ npm run wiki:query:save -- "What repeated bottlenecks are showing up?"
 - Do **not** ingest raw chat dumps directly
 - Do **not** put names, secrets, or sensitive operational details into public-facing exports
 - Do ingest short, structured, redacted notes
-- Do create a public research supplement for each promoted note when useful
+- Do **not** auto-run public research for every promoted note
+- Do add a public research supplement only when it sharpens a specific question, fills a clear evidence gap, or the user asks for it
 - Do favor a narrow, evidence-backed spec over broad solutioning
