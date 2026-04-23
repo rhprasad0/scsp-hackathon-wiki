@@ -50,7 +50,38 @@ Query the compiled wiki and tell me:
 Save only the answers worth compounding into the wiki.
 ```
 
-## 6) Draft a public-safe outline
+## 6) Prepare Round-2 follow-up questions from Round-1 STT
+
+```text
+raw stt:
+[paste transcript]
+
+Turn this into a curated hackathon note in curated/YYYY-MM-DD-<slug>.md.
+Extract:
+- workflow
+- pain points
+- artifacts
+- trust boundaries
+- open questions
+- candidate wedge
+Then give me the smallest high-value set of Round-2 follow-up questions.
+```
+
+## 7) Update after Round 2 and score spec readiness
+
+```text
+raw stt:
+[paste follow-up transcript]
+
+Update curated/YYYY-MM-DD-<slug>.md with the clarified findings.
+Then ingest, compile, and tell me:
+- what was confirmed
+- what changed
+- whether we are red / yellow / green for spec readiness
+- the one-sentence wedge we should write
+```
+
+## 8) Draft a public-safe outline
 
 ```text
 Using the compiled wiki only, draft a public-safe spec outline in exports/YYYY-MM-DD-spec-outline.md.
