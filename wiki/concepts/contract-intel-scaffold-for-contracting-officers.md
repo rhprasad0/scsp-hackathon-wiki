@@ -1,14 +1,15 @@
 ---
 title: Contract-intel scaffold for contracting officers
-summary: The note proposes a sourced one-pager built from SAM.gov, USAspending, and eCFR Title 48 to help contracting officers quickly understand a problem landscape.
+summary: An assistant can synthesize SAM.gov, USAspending, and eCFR Title 48 into a sourced one-pager to help contracting officers scope a buy, while avoiding award advice or source-selection decisions.
 sources:
   - 2026-04-25-genai-mil-deep-research-synthesis.md
 createdAt: "2026-04-25T16:14:46.120Z"
-updatedAt: "2026-04-25T16:14:46.120Z"
+updatedAt: "2026-04-25T17:07:36.261Z"
 tags:
   - contracting
-  - government-data
-  - research
+  - sam.gov
+  - usaspending
+  - ecrf
 aliases:
   - contract-intel-scaffold-for-contracting-officers
   - CSFCO
@@ -16,7 +17,7 @@ aliases:
 
 # Contract-intel scaffold for contracting officers
 
-A contract-intel scaffold for contracting officers is a narrowly scoped, end-to-end workflow assistant that helps a contracting officer understand relevant contract information from public sources. In the source material, it is framed as a “contract-intel” wedge for a KO or program-office staff, with the output shaped as a sourced one-pager rather than a broad contracting copilot. ^[2026-04-25-genai-mil-deep-research-synthesis.md]
+A contract-intel scaffold for contracting officers is a narrowly scoped, end-to-end workflow assistant that helps a contracting officer quickly understand a problem landscape using public sources. In the source material, it is framed as a “contract-intel” wedge for a contracting officer or program-office staff, with the output shaped as a sourced one-pager rather than a broad contracting copilot. ^[2026-04-25-genai-mil-deep-research-synthesis.md]
 
 The intended artifact is a compact landscape brief that can surface vendors, prior awards, and applicable FAR / DFARS subparts using public references such as SAM.gov, USAspending.gov, and eCFR Title 48. The design emphasizes paragraph-level sourcing and visible trust boundaries, with each number or claim tied back to a record ID or cited regulation reference. ^[2026-04-25-genai-mil-deep-research-synthesis.md]
 

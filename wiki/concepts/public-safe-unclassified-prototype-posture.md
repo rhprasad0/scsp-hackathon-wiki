@@ -4,11 +4,11 @@ summary: GenAI.mil hackathon submissions must use only public or otherwise share
 sources:
   - 2026-04-25-genai-mil-user-workflows-and-trust-boundaries.md
 createdAt: "2026-04-25T16:15:11.095Z"
-updatedAt: "2026-04-25T16:28:57.375Z"
+updatedAt: "2026-04-25T17:07:57.483Z"
 tags:
   - security
+  - unclassified
   - compliance
-  - public-data
 aliases:
   - public-safe-unclassified-prototype-posture
   - PUPP

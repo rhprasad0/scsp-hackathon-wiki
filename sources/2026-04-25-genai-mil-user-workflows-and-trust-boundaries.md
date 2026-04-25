@@ -1,7 +1,7 @@
 ---
 title: 2026 04 25 genai mil user workflows and trust boundaries
 source: research/2026-04-25-genai-mil-user-workflows-and-trust-boundaries.md
-ingestedAt: "2026-04-25T16:27:10.835Z"
+ingestedAt: "2026-04-25T17:06:27.454Z"
 ---
 
 ---
@@ -41,8 +41,8 @@ status: ready-for-ingest
 - AR 600-8-10 record details: https://armypubs.army.mil/ProductMaps/PubForm/Details.aspx?PUB_ID=1020394
 
 # Workflow 2 — Producing a correct DA Form 31 leave request
-- Current state: A Soldier requests leave by completing DA Form 31 ("Request and Authority for Leave"). The form has multiple parts: requester information, leave information (type, start/end, address, contact), supervisor / approving authority signatures, and departure / return endorsements (Blocks 14, 15, 16). Recent versions (e.g., the OCT 2023 fillable PDF) tie the form to IPPS-A (Integrated Personnel and Pay System – Army) for leave-balance verification.
-- Common rejection modes (from public DA Form 31 walk-throughs):
+- Current state: An Army Soldier requests leave by completing DA Form 31 ("Request and Authority for Leave") or by using the official Army personnel workflow that owns the leave transaction. The form has multiple parts: requester information, leave information (type, start/end, address, contact), supervisor / approving authority signatures, and departure / return endorsements (Blocks 14, 15, 16). Public walkthroughs and source notes reference IPPS-A (Integrated Personnel and Pay System - Army) for leave-balance verification; verify the current official form and IPPS-A workflow before implementation.
+- Likely rejection / rework modes (from public DA Form 31 walk-throughs, not quantified):
   - Wrong leave type selected for the situation (ordinary vs. emergency vs. permissive TDY vs. convalescent vs. terminal).
   - Accrued / chargeable / non-chargeable balances mis-entered against IPPS-A reality.
   - Missing dependent-travel / TDY linkage when a TDY is being layered onto leave.
@@ -52,10 +52,10 @@ status: ready-for-ingest
     - The right form (DA 31), the right leave type (ordinary), the right block-by-block fill, the right address line.
     - An explicit list of fields the user still has to supply (CAC info, command and approving authority signature blocks).
     - An explicit list of policy facts cited from AR 600-8-10 (e.g., "PTDY may not combine with ordinary leave per AR 600-8-10 Chapter 5") and from the JTR if travel is involved.
-  - Save and emit a printable / IPPS-A-ready DA 31 PDF; do **not** submit on the user's behalf.
+  - Save and emit a printable / review-ready DA 31 draft; do **not** submit on the user's behalf or claim direct IPPS-A integration.
 - Trust boundaries:
   - The AI never approves leave; the chain of command does (Block 12/13 supervisor recommendation, Block 17 approving-authority remarks).
-  - The AI never invents a leave-balance number; it either reads from a user-provided LES or marks it as "user must verify."
+  - The AI never invents a leave-balance number. In a public demo, it should use synthetic balances or mark the field as "user must verify" rather than accepting LES uploads or other PII.
   - The AI's output is a draft artifact, not a system action; the human submits via official systems.
 
 ## Sources
@@ -66,11 +66,11 @@ status: ready-for-ingest
 
 # Workflow 3 — Producing a compliant TDY itinerary against the JTR
 - Current state: A traveler (Soldier, civilian, or contractor) builds a Defense Travel System (DTS) authorization for TDY travel. DTS calls the JTR (Joint Travel Regulations, monthly-updated, owned by DTMO under PDTATAC). The traveler must select city-pair flights, lodging within per-diem cap, ground transportation, M&IE, and incidental expenses; on return they file a voucher with receipts and any orders.
-- Pain pattern (well-documented, public-source):
-  - GAO has reported that DOD's average voucher-rejection rate has been roughly 1 in 5; processing time per voucher roughly doubled at one Naval Shipyard after a 2014 flat-rate per diem policy change (10 → 20 minutes for vouchers, 5 → 10 minutes for authorizations).
+- Pain pattern (public-source, but quantitative claims have age and scope caveats):
+  - GAO-05-400T reported that FY2004 Army National Guard travel claims had an 18% rejection rate. GAO-17-353 reported that processing time roughly doubled at one Naval Shipyard after a 2014 flat-rate per diem policy change (10 to 20 minutes for vouchers, 5 to 10 minutes for authorizations). GAO-23-106945 documents continuing travel-program reform challenges. Together these support the existence of travel-process friction, not a current DoD-wide "1 in 5" voucher-rejection rate.
   - DTS is a long-standing source of friction (informally "Don't Travel Service"); GAO has cited functional flaws (visibility of receipts to approving officials), legacy technical debt, and improper-payment patterns.
   - Service-level voucher walkthroughs identify the dominant rejection causes as missing pay orders, missing airline-ticket receipts, lodging entitlement mismatched to lodging receipts, and wrong line of accounting.
-  - "Why Many Service Members Lose Money on TDY" (MyBaseGuide, 2026): structural mismatch between flat per diem rates and real-world local prices; undocumented mission constraints become out-of-pocket.
+  - "Why Many Service Members Lose Money on TDY" (MyBaseGuide, 2026) is useful as secondary anecdotal framing, but should not carry the impact claim by itself.
 - AI-assisted wedge that fits the prompt:
   - Pre-flight checker: given a traveler's draft itinerary (location, dates, lodging, transportation), pull GSA per-diem rates for that ZIP and date and JTR rules for that travel type; flag policy violations and likely voucher kicks; explain in plain English with paragraph-level cites.
   - Voucher pre-submission lint: scan a draft voucher for the top causes of rejection (missing pay orders, mismatched lodging entitlement, mismatched LOA, missing receipts); produce a fix list before the traveler clicks submit.
@@ -120,8 +120,8 @@ status: ready-for-ingest
   - **Governable**: a human always submits / approves / signs; no submission to IPPS-A, DTS, SAM, or another official system is automated by the AI.
 - **Human-in-the-loop, by design**: the AI may draft, retrieve, cite, structure, and pre-flight; the AI may not approve, submit, classify, sign, file, or take a kinetic action.
 - **Hallucination is mission risk**: a wrong AR citation is a real chain-of-command problem. The system should over-refuse when it is not grounded.
-- **PII / PHI**: even on CamoGPT (NIPR IL5), processing PHI / PII is explicitly not authorized; in a hackathon prototype, do not accept LES uploads or other PII without an explicit consent/redact path. Prefer synthetic test data.
-- **EOs and policy directives**: be aware of the Trump White House AI Action Plan (2025) under which the DoW AI Acceleration Strategy and GenAI.mil rollout are being executed; these favor speed but also impose compliance review gates. Submissions that pretend to live inside GenAI.mil itself, or that claim production deployment, will read as overstatement. Submissions that present as a prototype meant for the GenAI.mil environment, with an honest trust posture, will read as legitimate.
+- **PII / PHI**: a public CamoGPT slick sheet says that tool was not authorized to process PHI / PII. This public hackathon prototype should avoid LES uploads and other PII entirely; use synthetic test data.
+- **Policy and deployment claims**: the policy environment is moving quickly. Submissions that pretend to live inside GenAI.mil itself, or that claim production deployment, will read as overstatement. Present the work as a public, unclassified prototype or candidate companion with an honest trust posture.
 
 ## Sources
 - CDAO RAI Toolkit: https://rai.tradewindai.com/
@@ -130,5 +130,5 @@ status: ready-for-ingest
 - CamoGPT slick sheet (notes "tool not authorized to process PHI and PII"): https://www.tradoc.army.mil/wp-content/uploads/2025/02/CamoGPT_Slick_Sheet.pdf
 
 # Public-safe summary
-- The four organizer-listed example workflows trace to public, concrete primary documents (AR 600-8-10 / DA Form 31 for leave; the JTR + DTS + GSA per diem for travel; SAM.gov + USAspending + eCFR Title 48 for contracting; APD / e-Publishing / DTIC for regulation Q&A). Each has well-documented pain (notably the ~18% voucher-rejection rate and roughly doubled processing time after the 2014 flat-rate per diem change). The non-negotiable trust posture for a GenAI.mil-track prototype is paragraph-level citations, explicit refusal when ungrounded, public/unclassified data only, no PII unless consented and redacted, and a human-in-the-loop submission path; the AI drafts, retrieves, cites, and pre-flights, but never approves or files.
+- The four organizer-listed example workflows trace to public, concrete primary documents (AR 600-8-10 / DA Form 31 for leave; the JTR + DTS + GSA per diem for travel; SAM.gov + USAspending + eCFR Title 48 for contracting; APD / e-Publishing / DTIC for regulation Q&A). Travel has strong public evidence of process friction, but the sharpest rejection and processing-time numbers are historical or locally scoped. The non-negotiable trust posture for a GenAI.mil-track prototype is paragraph-level citations, explicit refusal when ungrounded, public/unclassified data only, no PII in the demo corpus, and a human-in-the-loop submission path; the AI drafts, retrieves, cites, and pre-flights, but never approves or files.
 

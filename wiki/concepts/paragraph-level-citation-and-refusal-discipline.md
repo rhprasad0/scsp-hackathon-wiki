@@ -1,15 +1,16 @@
 ---
 title: Paragraph-level citation and refusal discipline
-summary: Every generated claim should be tied to a source paragraph, and the system should refuse or flag unsupported answers instead of guessing.
+summary: Every answer or generated artifact should be tied to specific source paragraphs, and the system should refuse or flag unsupported claims rather than guess.
 sources:
   - 2026-04-25-genai-mil-deep-research-synthesis.md
   - 2026-04-25-genai-mil-user-workflows-and-trust-boundaries.md
 createdAt: "2026-04-25T16:14:51.412Z"
-updatedAt: "2026-04-25T16:28:37.522Z"
+updatedAt: "2026-04-25T17:07:38.486Z"
 tags:
   - citations
-  - safety
-  - rag
+  - grounding
+  - refusal
+  - trust
 aliases:
   - paragraph-level-citation-and-refusal-discipline
   - refusal discipline and Paragraph-level citation

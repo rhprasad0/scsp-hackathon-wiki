@@ -1,7 +1,7 @@
 ---
 title: 2026 04 25 genai mil challenge prompt and rubric
 source: research/2026-04-25-genai-mil-challenge-prompt-and-rubric.md
-ingestedAt: "2026-04-25T16:27:09.120Z"
+ingestedAt: "2026-04-25T17:06:25.997Z"
 ---
 
 ---
@@ -23,7 +23,7 @@ status: ready-for-ingest
 - The track copy on the public hackathon page reframes this as: "Weaponize AI against the 'administrative trenches' by creating software that automates military paperwork, logistics, and tactical knowledge retrieval for the rank-and-file."
 - The starting-point guidance tells teams to: pick **one user persona**, build **end-to-end**, and **set up a RAG pipeline over a small corpus of Army publications or Field Manuals first**, then layer form generation or logistics planning on top.
 - The four example project directions are all narrowly bounded admin/back-office wedges: regulation navigator, form auto-filler, TDY planner, contract intel.
-- The track tagline contains an unusual constraint: "and does it offline." This phrase is most naturally read as a technical posture (works without persistent cloud connectivity), and is reinforced by the "behind desks instead of in the field" framing. See the public-context and trust-boundaries notes for how to interpret this.
+- The track tagline contains an unusual constraint: "and does it offline." A technical reading (works without persistent cloud connectivity) is plausible and valuable, but the public SCSP hackathon page omits the word "offline"; confirm with organizers before making it the core promise.
 
 # Verbatim track prompt (as published in the SCSP Hacker QuickStart)
 - Tagline: "The US military runs on paperwork. Build the AI assistant that makes the rank-and-file faster, smarter, and less buried in bureaucracy, and does it offline."
@@ -42,7 +42,7 @@ status: ready-for-ingest
 - Air Force e-Publishing — AFIs, AFMANs, AF forms.
 - Joint Travel Regulations (JTR) — canonical DoD travel and per diem rulebook.
 - GSA Open APIs — federal procurement catalog and per diem rates.
-- SAM.gov Public API — contract opportunities and entity registrations (no auth required for public data).
+- SAM.gov public APIs — contract opportunities and entity registrations; public data, but key endpoints generally require a public API key.
 - USAspending.gov API — all federal contracts and spending, fully open.
 - Federal Register API — regulations, executive orders, and notices.
 - eCFR Bulk Data — CFR Title 32 (National Defense) and Title 48 (Federal Acquisition Regulations System) as XML/JSON.
@@ -60,7 +60,7 @@ status: ready-for-ingest
 - Public-source check on judges (see public-context note for sources):
   - Stuart Wagner — former Department of the Air Force Chief Digital Transformation Officer; founder of the BRAVO Hackathon series; ex-Senior Advisor to the DoD Chief Data Officer; built and ran development for Advana and started Gamechanger (open-source NLP/search over DoD policy and contracts).
   - Sanjeev Mohindra — leads the AI Technology Group at MIT Lincoln Laboratory (foundation models, scientific discovery, multi-agent systems, safe and resilient AI for national security).
-  - Dr. Ho-Chit Liu — almost certainly Dr. Ho Chit (Hosea) Siu of MIT Lincoln Laboratory's Tactical Systems Division; research focus is human-AI teaming, after-action review, and interpretable ML; "Liu" appears to be a transcription/print variant. (Confidence: medium-high; same lab as Mohindra and same Boston city assignment, exact match on first/middle name and Lincoln Lab affiliation.)
+  - Dr. Ho-Chit Liu — possible public match is Dr. Ho Chit (Hosea) Siu of MIT Lincoln Laboratory's Tactical Systems Division; research focus is human-AI teaming, after-action review, and interpretable ML. Treat this as low-medium confidence until event signage confirms it because the QuickStart surname and public-profile surname do not match.
   - Neeraj Chandra — former Federation of American Scientists (FAS) Impact Fellow; former Special Advisor to the U.S. Air Force Chief Scientist; ex-Pinterest software engineering manager; FAS author of "Revolutionary Advances in AI Won't Wait" (2023) on DoD AI adoption pace.
   - David Vernal — retired U.S. Air Force Colonel (~27 years); former Director of Intelligence, 16th Air Force; former Chief of Strategic Analysis and Production at U.S. Strategic Command; former NSC team member; Stanford GSB MSx alum.
   - Kevin McQueary — public-source identification incomplete at the time of this note; record his affiliation if confirmed during the event.
@@ -83,8 +83,8 @@ status: ready-for-ingest
 # Implications worth flagging up front
 - The example project directions all live in the **back-office tail**, not the tactical edge. A submission that tries to do tactical / kinetic / weapons-relevant AI is off-track for this challenge and may also collide with ITAR / EAR rules and the unclassified-only constraint.
 - The four examples bias the design space toward **RAG over public DoD text** and **structured form/itinerary generation**. Being merely "a chat over Field Manuals" will not differentiate.
-- Judges combine deep research expertise (Mohindra, Liu/Siu) with operational and acquisition pragmatism (Wagner, Vernal, Chandra). A demo that wins both audiences must show technical novelty AND a believable user.
-- The "offline" line, in combination with the "behind desks instead of in the field" framing and the 3M-user scale, opens a clear differentiator: build a system that **complements GenAI.mil** by working when GenAI.mil's cloud cannot reach the user.
+- Judges appear to combine deep research expertise (Mohindra, and Liu/Siu only if confirmed) with operational and acquisition pragmatism (Wagner, Vernal, Chandra). A demo should show technical novelty and a believable user without relying on speculative individual-judge preferences.
+- The "offline" line, in combination with the "behind desks instead of in the field" framing and the 3M-user scale, offers a potential differentiator: build a system that **complements GenAI.mil** by working locally when cloud connectivity or live retrieval is unavailable. Keep this bounded to what the prototype actually demonstrates.
 
 # Public-safe summary
 - The GenAI.mil track of the SCSP 2026 hackathon asks teams to build an AI-enabled application that reduces administrative burden on the 3M-person military workforce, framed by the launch of the DoD's GenAI.mil enterprise platform. Examples favor RAG over public DoD text plus structured form or itinerary generation. The rubric is a balanced 25% across novelty, technical difficulty, national impact, and problem-solution fit, judged by a panel mixing senior DoD digital transformation alumni and Lincoln-Laboratory-grade AI researchers. Submissions must be public, unclassified, and demoable in five minutes.

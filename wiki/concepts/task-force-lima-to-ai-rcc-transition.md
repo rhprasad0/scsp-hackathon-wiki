@@ -1,14 +1,14 @@
 ---
 title: Task Force Lima to AI RCC transition
-summary: The source describes Task Force Lima as an earlier generative AI assessment effort whose use-case mapping and lessons were carried forward into the AI Rapid Capabilities Cell.
+summary: Task Force Lima's generative AI use-case mapping and lessons were carried forward into the AI Rapid Capabilities Cell, which inherited its enterprise AI agenda.
 sources:
   - 2026-04-25-genai-mil-public-context-and-links.md
 createdAt: "2026-04-25T16:28:41.985Z"
-updatedAt: "2026-04-25T16:28:41.985Z"
+updatedAt: "2026-04-25T17:07:43.463Z"
 tags:
-  - dod-ai
-  - program-history
-  - transition
+  - dod
+  - history
+  - ai-program
 aliases:
   - task-force-lima-to-ai-rcc-transition
   - TFLTART

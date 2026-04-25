@@ -19,7 +19,7 @@ aliases:
 
 Public DoD and federal data sources are the recommended starting point for prototypes that need authoritative reference material without using classified or restricted content. In the GenAI.mil challenge materials, teams are encouraged to set up a small retrieval pipeline over Army publications or Field Manuals first, then expand into form generation or logistics planning. The organizer also points teams toward specific public datasets and APIs that support regulation navigation, travel planning, procurement research, and related back-office workflows. ^[2026-04-25-genai-mil-challenge-prompt-and-rubric.md]
 
-A practical prototype data stack can begin with the Army Publishing Directorate for Army Regulations, Army Doctrine Publications, Field Manuals, and DA forms; Joint Travel Regulations for travel and per diem rules; and DTIC Public STINET for full-text searchable DoD technical reports and tactics, techniques, and procedures. For procurement and spending workflows, the source material points to GSA Open APIs, SAM.gov Public API, and USAspending.gov API. For policy and rule change monitoring, it also lists the Federal Register API and eCFR bulk data. ^[2026-04-25-genai-mil-challenge-prompt-and-rubric.md]
+A practical prototype data stack can begin with the Army Publishing Directorate for Army Regulations, Army Doctrine Publications, Field Manuals, and DA forms; Joint Travel Regulations for travel and per diem rules; and DTIC Public STINET for full-text searchable DoD technical reports and tactics, techniques, and procedures. For procurement and spending workflows, the source material points to GSA Open APIs, SAM.gov public APIs, and USAspending.gov API, with the caveat that key SAM.gov endpoints generally require a public API key. For policy and rule change monitoring, it also lists the Federal Register API and eCFR bulk data. ^[2026-04-25-genai-mil-challenge-prompt-and-rubric.md]
 
 The challenge prompt’s example projects show how these sources map to concrete prototype wedges: a regulation navigator can ingest Army Regulations and Field Manuals; a form auto-filler can populate a DA 31; a TDY planner can combine Joint Travel Regulations with GSA rates; and a contract intelligence tool can use USAspending or SAM.gov to surface relevant awards. These examples are designed to be narrow, public-safe, and operationally legible. Related concepts include [[Back-office military workflow use cases]], [[Army regulation Q&A with paragraph-level citations]], and [[Controlled Reference Retrieval]]. ^[2026-04-25-genai-mil-challenge-prompt-and-rubric.md]
 
@@ -32,7 +32,7 @@ The source material also emphasizes working from approved public text first, wit
 - Air Force e-Publishing — AFIs, AFMANs, and AF forms.
 - Joint Travel Regulations (JTR) — canonical DoD travel and per diem rulebook.
 - GSA Open APIs — federal procurement catalog and per diem rates.
-- SAM.gov Public API — contract opportunities and entity registrations, with no auth required for public data.
+- SAM.gov public APIs — contract opportunities and entity registrations; key endpoints generally require a public API key.
 - USAspending.gov API — all federal contracts and spending, fully open.
 - Federal Register API — regulations, executive orders, and notices.
 - eCFR Bulk Data — CFR Title 32 and Title 48 as XML/JSON. ^[2026-04-25-genai-mil-challenge-prompt-and-rubric.md]

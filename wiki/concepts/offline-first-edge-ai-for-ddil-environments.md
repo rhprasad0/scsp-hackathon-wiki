@@ -16,7 +16,7 @@ aliases:
 
 # Offline-first edge AI for DDIL environments
 
-Offline-first edge AI for DDIL environments refers to AI systems designed to run without persistent cloud connectivity in denied, degraded, intermittent, or limited conditions. In the GenAI.mil context, the “do it offline” prompt is best read literally: the assistant should operate on-device or at the edge, with a baked-in public DoD corpus and no internet round-trip. This makes the pattern a deployment-posture wedge that complements a cloud-based enterprise platform rather than duplicating it. ^[2026-04-25-genai-mil-public-context-and-links.md]
+Offline-first edge AI for DDIL environments refers to AI systems designed to run without persistent cloud connectivity in denied, degraded, intermittent, or limited conditions. In the GenAI.mil context, the "do it offline" prompt can be read literally as on-device or edge operation with a baked-in public DoD corpus and no internet round-trip. That is a promising deployment-posture wedge, but the interpretation needs organizer confirmation or a working local demo. ^[2026-04-25-genai-mil-public-context-and-links.md]
 
 The source material frames DDIL-oriented edge AI as a strong fit for military administrative and back-office tasks, especially where users need dependable access to policy text, structured drafting, and reviewable outputs even when connectivity is poor or absent. The same material notes that judges with edge-AI and DDIL backgrounds are likely to reward systems that are on-device, offline, and grounded in public DoD doctrine. Related concepts include [[Administrative trenches as the GenAI.mil problem frame]] and [[Back-office military workflow use cases]]. ^[2026-04-25-genai-mil-public-context-and-links.md]
 

@@ -1,15 +1,15 @@
 ---
 title: Human-in-the-loop approval boundary
-summary: The AI may draft, retrieve, cite, and pre-flight artifacts, but humans must retain authority to approve, sign, submit, or file official military documents.
+summary: The AI may draft, retrieve, cite, and preflight artifacts, but humans must retain authority to approve, sign, submit, or file official military documents.
 sources:
   - 2026-04-25-genai-mil-deep-research-synthesis.md
-  - 2026-04-25-genai-mil-user-workflows-and-trust-boundaries.md
 createdAt: "2026-04-25T16:14:50.863Z"
-updatedAt: "2026-04-25T16:28:38.774Z"
+updatedAt: "2026-04-25T17:07:39.774Z"
 tags:
   - human-in-the-loop
   - governance
-  - military-ai
+  - approval
+  - safety
 aliases:
   - human-in-the-loop-approval-boundary
   - HAB

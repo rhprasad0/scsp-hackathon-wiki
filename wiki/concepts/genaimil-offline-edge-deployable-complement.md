@@ -1,6 +1,6 @@
 ---
 title: GenAI.mil offline edge-deployable complement
-summary: The hackathon prompt's 'and does it offline' requirement is interpreted as a literal edge or disconnected deployment posture that complements the existing cloud GenAI.mil platform.
+summary: Literal offline operation is a promising but unconfirmed interpretation of the hackathon prompt's 'and does it offline' language.
 sources:
   - 2026-04-25-genai-mil-deep-research-synthesis.md
 createdAt: "2026-04-25T16:28:31.768Z"
@@ -16,7 +16,7 @@ aliases:
 
 # GenAI.mil offline edge-deployable complement
 
-A **GenAI.mil offline edge-deployable complement** is a prototype or workflow layer that is designed to work without persistent cloud connectivity and can serve as a companion to the broader GenAI.mil cloud platform. In the source material, the “and does it offline” line is read literally as an edge-deployable posture, making this a practical differentiator for users who need assistance in disconnected or degraded-network environments. ^[2026-04-25-genai-mil-deep-research-synthesis.md]
+A **GenAI.mil offline edge-deployable complement** is a prototype or workflow layer designed to work without persistent cloud connectivity and serve as a companion to the broader GenAI.mil cloud platform. In the source material, the "and does it offline" line is treated as a strong but unconfirmed literal edge-deployable hypothesis; the public SCSP page does not include that word, so the offline claim should be validated with organizers or proven in the demo. ^[2026-04-25-genai-mil-deep-research-synthesis.md]
 
 This concept fits the GenAI.mil track’s narrow administrative focus: it is intended for public-safe, back-office military workflows rather than tactical or kinetic use. The source material frames the opportunity around rank-and-file administrative burden, with examples such as regulation navigation, form drafting, TDY planning, and contract intelligence, all built from public DoD text and other approved sources. ^[2026-04-25-genai-mil-deep-research-synthesis.md]
 

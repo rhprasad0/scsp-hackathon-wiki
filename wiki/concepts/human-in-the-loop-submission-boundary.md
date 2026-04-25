@@ -1,14 +1,14 @@
 ---
 title: Human-in-the-loop submission boundary
-summary: The system may draft, retrieve, cite, and pre-flight artifacts, but humans retain all authority to approve, sign, submit, or file them in official systems.
+summary: The AI may draft, retrieve, cite, and pre-flight artifacts, but humans retain authority to approve, sign, submit, or file official military documents.
 sources:
   - 2026-04-25-genai-mil-user-workflows-and-trust-boundaries.md
 createdAt: "2026-04-25T16:15:08.266Z"
-updatedAt: "2026-04-25T16:15:08.266Z"
+updatedAt: "2026-04-25T17:07:53.016Z"
 tags:
-  - human-oversight
-  - workflow
+  - human-in-the-loop
   - governance
+  - workflow
 aliases:
   - human-in-the-loop-submission-boundary
   - HSB

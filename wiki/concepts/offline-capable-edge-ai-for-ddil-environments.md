@@ -1,6 +1,6 @@
 ---
 title: Offline-capable edge AI for DDIL environments
-summary: The source treats 'and does it offline' as a literal edge-deployable posture, making disconnected or low-connectivity operation a key differentiator for military use cases.
+summary: The source treats literal offline operation as a promising but unconfirmed wedge for disconnected or low-connectivity military use cases.
 sources:
   - 2026-04-25-genai-mil-deep-research-synthesis.md
 createdAt: "2026-04-25T16:14:41.250Z"
@@ -16,7 +16,7 @@ aliases:
 
 # Offline-capable edge AI for DDIL environments
 
-Offline-capable edge AI for DDIL environments refers to AI systems that can run at the edge and continue operating when persistent cloud connectivity is unavailable, especially in disconnected, degraded, intermittent, or limited (DDIL) conditions. In the GenAI.mil context, the “and does it offline” requirement is read as a literal edge-deployable posture and as one of the clearest ways to differentiate a prototype from the cloud-hosted platform already available on DoD desktops. ^[2026-04-25-genai-mil-deep-research-synthesis.md]
+Offline-capable edge AI for DDIL environments refers to AI systems that can run at the edge and continue operating when persistent cloud connectivity is unavailable, especially in disconnected, degraded, intermittent, or limited (DDIL) conditions. In the GenAI.mil context, the "and does it offline" line is a plausible literal edge-deployable posture, but it needs organizer confirmation and should be claimed only to the extent the prototype actually works without network calls. ^[2026-04-25-genai-mil-deep-research-synthesis.md]
 
 This design direction is especially relevant for forward-deployed personnel without reliable connectivity. The source material frames offline capability as useful for a laptop-deployable assistant that can still answer questions, retrieve from a packaged corpus, and produce reviewable outputs even when the user is away from the network. ^[2026-04-25-genai-mil-deep-research-synthesis.md]
 

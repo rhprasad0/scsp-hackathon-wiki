@@ -1,6 +1,6 @@
 ---
 title: Offline-first DDIL AI for DoD
-summary: The note interprets the hackathon's 'offline' requirement as a demand for edge, disconnected, or denied/degraded/intermittent/limited connectivity AI that runs without persistent cloud access.
+summary: Literal offline operation is a plausible hackathon wedge, not yet a confirmed requirement, for edge or disconnected military AI.
 sources:
   - 2026-04-25-genai-mil-public-context-and-links.md
 createdAt: "2026-04-25T16:14:56.894Z"
@@ -16,9 +16,9 @@ aliases:
 
 # Offline-first DDIL AI for DoD
 
-Offline-first DDIL AI for DoD refers to a Department of Defense AI assistant designed to work without persistent cloud connectivity in denied, degraded, intermittent, or limited (DDIL) environments. In the GenAI.mil track context, the “offline” requirement is best read literally: the assistant should operate on-device or at the edge, with a public DoD doctrine corpus baked in, rather than depending on a live round-trip to GenAI.mil. ^[2026-04-25-genai-mil-public-context-and-links.md]
+Offline-first DDIL AI for DoD refers to a Department of Defense AI assistant designed to work without persistent cloud connectivity in denied, degraded, intermittent, or limited (DDIL) environments. In the GenAI.mil track context, literal offline operation is a plausible interpretation of the organizer QuickStart, but the public SCSP page omits the word "offline." Treat on-device or edge operation as a wedge hypothesis until organizers confirm it or the team demonstrates it. ^[2026-04-25-genai-mil-public-context-and-links.md]
 
-This framing matters because GenAI.mil itself is a large enterprise platform already available to DoD personnel, so a hackathon entry cannot simply replicate a generic chat interface over public doctrine. The differentiator is the deployment posture and workflow wedge: a narrow assistant that works where connectivity is constrained, and that adds retrieval grounding, structured output, evaluation, or reviewability beyond what a desktop cloud platform already provides. ^[2026-04-25-genai-mil-public-context-and-links.md]
+This framing matters because GenAI.mil itself is a large enterprise platform, so a hackathon entry should not simply replicate a generic chat interface over public doctrine. The differentiator is the workflow wedge and the demonstrable deployment posture: a narrow assistant that works where connectivity is constrained, and that adds retrieval grounding, structured output, evaluation, or reviewability beyond generic model access. ^[2026-04-25-genai-mil-public-context-and-links.md]
 
 The public-source context points to several relevant precedents for DDIL and edge AI in DoD settings. Examples include Google Distributed Cloud air-gapped appliance demonstrations, EdgeRunner AI’s on-device and air-gapped agents, and Legion Intelligence’s Centurion platform for DDIL environments. These examples reinforce that offline-first operation is a credible and current design direction for DoD AI. ^[2026-04-25-genai-mil-public-context-and-links.md]
 

@@ -1,30 +1,14 @@
 ---
 title: DoD Responsible AI guidance stack
-summary: A layered policy backdrop of DoD AI Ethical Principles, the RAI Strategy, the CDAO RAI Toolkit, the GenAI Toolkit, and the AI Cybersecurity RMF Tailoring Guide that prototypes should align with.
+summary: A layered policy backdrop including DoD AI Ethical Principles, the RAI Strategy, CDAO RAI Toolkit, GenAI Toolkit, and AI Cybersecurity RMF Tailoring Guide that prototypes should align with.
 sources:
   - 2026-04-25-genai-mil-public-context-and-links.md
 createdAt: "2026-04-25T16:14:59.814Z"
-updatedAt: "2026-04-25T16:28:50.099Z"
+updatedAt: "2026-04-25T17:07:45.491Z"
 tags:
   - responsible-ai
   - policy
-  - governance
-aliases:
-  - dod-responsible-ai-guidance-stack
-  - DRAGS
----
-
----
-title: DoD Responsible AI guidance stack
-summary: The relevant policy backdrop includes DoD AI Ethical Principles, the RAI Strategy, the CDAO RAI Toolkit, the GenAI Toolkit, and the AI Cybersecurity RMF Tailoring Guide.
-sources:
-  - 2026-04-25-genai-mil-public-context-and-links.md
-createdAt: "2026-04-25T16:14:59.814Z"
-updatedAt: "2026-04-25T16:14:59.814Z"
-tags:
-  - responsible-ai
-  - policy
-  - governance
+  - dod
 aliases:
   - dod-responsible-ai-guidance-stack
   - DRAGS
@@ -32,7 +16,7 @@ aliases:
 
 # DoD Responsible AI guidance stack
 
-The DoD Responsible AI guidance stack is the layered policy and guidance backdrop used to shape Department of Defense AI development and use. In the provided source material, it includes the DoD AI Ethical Principles, the RAI Strategy and Implementation Pathway, the CDAO RAI Toolkit, the CDAO GenAI Toolkit, and the AI Cybersecurity Risk Management Framework Tailoring Guide. These artifacts collectively establish the trust posture, governance expectations, and security constraints that AI projects are expected to follow. ^[2026-04-25-genai-mil-public-context-and-links.md]
+The DoD Responsible AI guidance stack is the layered policy and guidance backdrop used to shape Department of Defense AI development and use. In the source material, it includes the DoD AI Ethical Principles, the RAI Strategy and Implementation Pathway, the CDAO RAI Toolkit, the CDAO GenAI Toolkit, and the AI Cybersecurity Risk Management Framework Tailoring Guide. Together, these artifacts establish the trust posture, governance expectations, and security constraints that AI projects are expected to follow. ^[2026-04-25-genai-mil-public-context-and-links.md]
 
 At the foundation are the DoD AI Ethical Principles, issued in February 2020: Responsible, Equitable, Traceable, Reliable, and Governable. The next layer is the RAI Strategy and Implementation Pathway, signed in June 2022, which defines 64 lines of effort to operationalize those principles. ^[2026-04-25-genai-mil-public-context-and-links.md]
 

@@ -27,7 +27,7 @@ A practical pattern for these prototypes is [[Controlled Reference Retrieval]] o
 - **Air Force e-Publishing** — Air Force instructions, manuals, and forms.
 - **Joint Travel Regulations (JTR)** — the canonical DoD travel and per diem rulebook.
 - **GSA Open APIs** — federal procurement catalog and per diem rates.
-- **SAM.gov Public API** — public contract opportunities and entity registrations, with no auth required for public data.
+- **SAM.gov public APIs** — public contract opportunities and entity registrations; key endpoints generally require a public API key.
 - **USAspending.gov API** — open federal contracts and spending data.
 - **Federal Register API** — regulations, executive orders, and notices.
 - **eCFR Bulk Data** — CFR Title 32 and Title 48 in XML/JSON.

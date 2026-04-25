@@ -1,14 +1,14 @@
 ---
 title: Single-persona end-to-end wedge selection
-summary: Teams are advised to choose one user persona and build a complete end-to-end solution for that specific workflow instead of a broad multi-user platform.
+summary: Teams are encouraged to choose one user persona and build a complete end-to-end solution for that specific workflow instead of a broad multi-user platform.
 sources:
   - 2026-04-25-genai-mil-challenge-prompt-and-rubric.md
 createdAt: "2026-04-25T16:28:22.302Z"
-updatedAt: "2026-04-25T16:28:22.302Z"
+updatedAt: "2026-04-25T17:07:24.080Z"
 tags:
-  - product-strategy
+  - product-design
   - hackathon
-  - ux
+  - workflow
 aliases:
   - single-persona-end-to-end-wedge-selection
   - SEWS
@@ -16,7 +16,7 @@ aliases:
 
 # Single-persona end-to-end wedge selection
 
-Single-persona end-to-end wedge selection is a project design approach in which a team chooses one clearly defined user persona and builds one complete workflow for that persona from input to output. In the GenAI.mil context, this means focusing on a narrow administrative or back-office need rather than trying to solve a broad platform problem or a tactical use case. ^[2026-04-25-genai-mil-challenge-prompt-and-rubric.md, 2026-04-25-genai-mil-challenge-prompt-and-rubric.md]
+Single-persona end-to-end wedge selection is a project design approach in which a team chooses one clearly defined user persona and builds one complete workflow for that persona from input to output. In the GenAI.mil context, this means focusing on a narrow administrative or back-office need rather than trying to solve a broad platform problem or a tactical use case. ^[2026-04-25-genai-mil-challenge-prompt-and-rubric.md]
 
 The challenge materials explicitly recommend this pattern: “Pick one user persona … and build an end-to-end solution for them.” The suggested starting point is a small retrieval-augmented generation pipeline over Army publications or Field Manuals, with accurate retrieval working before adding form generation or logistics planning. ^[2026-04-25-genai-mil-challenge-prompt-and-rubric.md]
 
