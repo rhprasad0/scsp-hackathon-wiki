@@ -3,6 +3,7 @@
 ## ai-assistant
 
 - [[AO triage assistant / 'AO radar' for risk-scored vouchers]]
+- [[Pre-approval evidence packaging for travel vouchers]]
 
 ## ai-assurance
 
@@ -68,6 +69,7 @@
 ## audit
 
 - [[Invalid and missing receipts as the dominant DTS error mode]]
+- [[Receipt validity and amount reconciliation]]
 - [[TPCT post-approval blind spot]]
 
 ## automation
@@ -84,11 +86,14 @@
 
 ## certifying-officer
 
+- [[Approving Official as Certifying Officer]]
 - [[DTS Approving Official (AO) as Certifying Officer]]
 
 ## checklists
 
 - [[AO checklist mandate and recurring service-level return reasons]]
+- [[AO checklist-driven voucher review]]
+- [[AO checklist-shaped voucher review]]
 
 ## citation
 
@@ -118,12 +123,14 @@
 
 ## compliance
 
+- [[AO checklist-driven voucher review]]
 - [[AO voucher review checklist and cognitive workload]]
 - [[Controlled Reference Retrieval]]
 - [[DTS pre-flight and voucher linting]]
 - [[DTS travel pre-flight and voucher linting]]
 - [[DTS voucher pre-flight checking]]
 - [[Paragraph-level citation discipline]]
+- [[Pre-decision triage versus post-approval compliance]]
 - [[Public submission and export-control constraints]]
 - [[Public, unclassified source corpus for prototypes]]
 - [[Public, unclassified, ITAR/EAR-aware submission constraints]]
@@ -132,10 +139,15 @@
 - [[Public-safe unclassified source corpus]]
 - [[Public-safe unclassified submission constraints]]
 - [[Public-source dependency hygiene]]
+- [[Receipt validity and amount reconciliation]]
 - [[Receipt validity and reconciliation checking]]
 - [[TDY pre-flight linting for vouchers and itineraries]]
 - [[TDY voucher pre-flight checker]]
 - [[Travel Policy Compliance Tool (TPCT) limitations]]
+
+## compliance-tool
+
+- [[TPCT as a post-approval compliance control]]
 
 ## contracting
 
@@ -143,6 +155,10 @@
 - [[Contract-intel scaffold for contracting officers]]
 - [[Contract-intel scaffolding for a contracting officer]]
 - [[Contracting officer contract-intel scaffold]]
+
+## controls
+
+- [[TPCT as a post-approval compliance control]]
 
 ## critical-infrastructure
 
@@ -161,6 +177,7 @@
 ## data-safety
 
 - [[Synthetic voucher demo and no-live-integration constraint]]
+- [[Synthetic voucher demo constraint]]
 
 ## data-sources
 
@@ -186,6 +203,10 @@
 
 - [[Spec Readiness Score]]
 - [[Spec readiness scoring]]
+
+## decision-support
+
+- [[DTS AO Radar pre-decision triage]]
 
 ## defense
 
@@ -260,18 +281,35 @@
 - [[Public DoD data sources for GenAI.mil prototypes]]
 - [[Public, unclassified source corpus for prototypes]]
 
+## dod-it
+
+- [[MyTravel cancellation and incremental DTS modernization]]
+
 ## dts
 
 - [[AO Radar pre-approval triage queue]]
+- [[AO checklist-driven voucher review]]
+- [[AO checklist-shaped voucher review]]
+- [[AO radar pre-decision triage queue]]
 - [[AO triage assistant / 'AO radar' for risk-scored vouchers]]
 - [[AO voucher review checklist and cognitive workload]]
+- [[Approving Official as Certifying Officer]]
+- [[Approving Official as Certifying Officer with pecuniary liability]]
+- [[DTS AO Radar pre-decision triage]]
 - [[DTS Approving Official (AO) as Certifying Officer]]
 - [[DTS Approving Official as Certifying Officer]]
 - [[DTS modernization on hold]]
 - [[DTS policy linting for travel vouchers]]
+- [[Human approval boundary for DTS AI]]
 - [[Invalid and missing receipts as the dominant DTS error mode]]
+- [[MyTravel cancellation and incremental DTS modernization]]
+- [[Pre-decision triage versus post-approval compliance]]
+- [[Receipt validity as the dominant DTS error mode]]
+- [[Synthetic voucher demo constraint]]
+- [[Synthetic-data-only prototype posture]]
 - [[TDY pre-flight voucher and authorization linting]]
 - [[TDY voucher pre-flight checker]]
+- [[TPCT as a post-approval compliance control]]
 - [[TPCT post-approval blind spot]]
 
 ## ecrf
@@ -380,9 +418,11 @@
 
 ## governance
 
+- [[Approving Official as Certifying Officer with pecuniary liability]]
 - [[DTS Approving Official as Certifying Officer]]
 - [[Human Oversight as a Winning Pattern]]
 - [[Human approval boundary and trust limits for military travel AI]]
+- [[Human approval boundary for DTS AI]]
 - [[Human approval boundary for military drafts]]
 - [[Human-in-the-Loop Review and Approval]]
 - [[Human-in-the-loop approval boundary]]
@@ -455,11 +495,14 @@
 - [[Form-honest DA Form 31 leave assistant]]
 - [[Human Oversight as a Winning Pattern]]
 - [[Human approval boundary and trust limits for military travel AI]]
+- [[Human approval boundary for DTS AI]]
 - [[Human approval boundary for military drafts]]
+- [[Human approval boundary for military travel AI]]
 - [[Human-in-the-Loop Review and Approval]]
 - [[Human-in-the-loop approval boundary]]
 - [[Human-in-the-loop submission boundary]]
 - [[Operational relevance plus human oversight]]
+- [[Pre-approval evidence packaging for travel vouchers]]
 - [[Trust-boundary visibility]]
 - [[Uncertainty, assumption, and missing-field flagging]]
 
@@ -514,6 +557,7 @@
 
 ## liability
 
+- [[Approving Official as Certifying Officer with pecuniary liability]]
 - [[DTS Approving Official (AO) as Certifying Officer]]
 
 ## linting
@@ -550,6 +594,7 @@
 - [[GenAI.mil administrative-trenches framing]]
 - [[Human approval boundary and trust limits for military travel AI]]
 - [[Human approval boundary for military drafts]]
+- [[Human approval boundary for military travel AI]]
 - [[Low-side AI-assisted workflow drafting]]
 - [[Offline-capable edge AI as a differentiator]]
 - [[Offline-first military AI]]
@@ -565,6 +610,7 @@
 
 ## military-finance
 
+- [[Approving Official as Certifying Officer]]
 - [[DTS Approving Official as Certifying Officer]]
 
 ## military-operations
@@ -582,6 +628,7 @@
 ## modernization
 
 - [[DTS modernization on hold]]
+- [[MyTravel cancellation and incremental DTS modernization]]
 
 ## national-security
 
@@ -610,6 +657,10 @@
 
 - [[SME Discovery via Informal On-Site Sourcing]]
 
+## payment-integrity
+
+- [[Receipt validity as the dominant DTS error mode]]
+
 ## pipeline
 
 - [[Workflow classification and draft assembly pipeline]]
@@ -619,10 +670,15 @@
 - [[Army regulation Q&A with paragraph-level citations]]
 - [[Controlled retrieval of approved low-side references]]
 - [[DoD Responsible AI guidance stack]]
+- [[Human approval boundary for military travel AI]]
 
 ## policy-compliance
 
 - [[DTS policy linting for travel vouchers]]
+
+## preflight
+
+- [[Pre-approval evidence packaging for travel vouchers]]
 
 ## prioritization
 
@@ -631,6 +687,7 @@
 ## privacy
 
 - [[Public-safe export boundary]]
+- [[Synthetic-data-only prototype posture]]
 
 ## problem-framing
 
@@ -682,6 +739,7 @@
 ## prototype
 
 - [[Scoped Prototype Wedge]]
+- [[Synthetic voucher demo constraint]]
 
 ## prototype-pattern
 
@@ -696,6 +754,7 @@
 
 - [[Evidence-backed synthesis over prototype sprawl]]
 - [[Synthetic voucher demo and no-live-integration constraint]]
+- [[Synthetic-data-only prototype posture]]
 
 ## provenance
 
@@ -737,7 +796,9 @@
 ## receipts
 
 - [[Invalid and missing receipts as the dominant DTS error mode]]
+- [[Receipt validity and amount reconciliation]]
 - [[Receipt validity and reconciliation checking]]
+- [[Receipt validity as the dominant DTS error mode]]
 
 ## red-teaming
 
@@ -787,6 +848,7 @@
 ## risk-scoring
 
 - [[AO Radar pre-approval triage queue]]
+- [[AO radar pre-decision triage queue]]
 - [[AO triage assistant / 'AO radar' for risk-scored vouchers]]
 
 ## rubric
@@ -906,6 +968,10 @@
 
 - [[DTS Approving Official (AO) as Certifying Officer]]
 
+## travel-policy
+
+- [[DTS AO Radar pre-decision triage]]
+
 ## triage
 
 - [[AO triage assistant / 'AO radar' for risk-scored vouchers]]
@@ -972,11 +1038,13 @@
 
 ## voucher-review
 
+- [[AO checklist-shaped voucher review]]
 - [[AO voucher review checklist and cognitive workload]]
 
 ## workflow
 
 - [[AO Radar pre-approval triage queue]]
+- [[AO radar pre-decision triage queue]]
 - [[AO voucher review checklist and cognitive workload]]
 - [[Evidence-gated public research]]
 - [[GenAI.mil admin-trenches hackathon framing]]
@@ -985,6 +1053,7 @@
 - [[Human-in-the-loop submission boundary]]
 - [[Interview-driven validation loop]]
 - [[Judge-Legible Prototype Storytelling]]
+- [[Pre-decision triage versus post-approval compliance]]
 - [[Single-persona end-to-end wedge selection]]
 
 ## workflow-analysis

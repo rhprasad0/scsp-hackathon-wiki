@@ -6,10 +6,15 @@
 - **[[AI Rapid Capabilities Cell (AI RCC)]]** — The DoD organization that succeeded Task Force Lima and now operates the enterprise AI consolidation and frontier AI pilot efforts behind GenAI.mil.
 - **[[AI-assisted spec with human review]]** — An operating rule that AI-generated specs should not invent operational facts and must preserve human review.
 - **[[AO checklist mandate and recurring service-level return reasons]]** — Navy, Quantico, and Army National Guard guidance reinforce that AOs need standardized checklists and written justifications, because common return reasons repeatedly include missing documentation, duplicate expenses, and vague pre-audit explanations.
+- **[[AO checklist-driven voucher review]]** — DTMO and service guidance require AOs to use standardized checklists that inspect trip dates, locations, receipts, pre-audit flags, supporting records, and mission appropriateness on every voucher.
+- **[[AO checklist-shaped voucher review]]** — Public DTMO and service guidance show that AO review follows a detailed checklist covering receipts, dates, locations, justifications, lines of accounting, and entitlement rules.
 - **[[AO helper as quality assurance manager]]** — The recommended trust posture is to support the Approving Official as a quality-assurance reviewer rather than replacing them as the primary receipt reader or decision-maker.
 - **[[AO Radar pre-approval triage queue]]** — A risk-scored queue of DTS vouchers awaiting action, designed to help AOs prioritize the most error-prone submissions before approval.
+- **[[AO radar pre-decision triage queue]]** — A proposed assistant that ranks submitted DTS vouchers by likely error risk so Approving Officials can review the highest-risk packets first before making approval decisions.
 - **[[AO triage assistant / 'AO radar' for risk-scored vouchers]]** — A proposed AI wedge is a pre-decision queue-ranker that scores DTS vouchers by likely error risk so AOs can focus attention on the most problematic submissions first.
 - **[[AO voucher review checklist and cognitive workload]]** — Public DTMO and service guidance define a detailed voucher-review checklist covering trip dates, locations, expenses, receipts, pre-audit flags, and supporting records, showing the AO’s substantial per-voucher workload.
+- **[[Approving Official as Certifying Officer]]** — The DTS Approving Official is a Certifying Officer with personal pecuniary liability, making voucher approval a high-stakes additional duty rather than a routine clerical task.
+- **[[Approving Official as Certifying Officer with pecuniary liability]]** — In DTS, the Approving Official who stamps a voucher for payment also acts as a Certifying Officer and carries personal pecuniary liability under federal law.
 - **[[Army regulation Q&A with paragraph-level citations]]** — A retrieval-grounded assistant for Army regulations and field manuals that answers only when supported by specific cited paragraphs and refuses unsupported claims.
 - **[[Back-office military workflow examples]]** — The example project directions focus on narrowly scoped administrative wedges such as regulation navigation, form auto-filling, TDY planning, and contract intelligence.
 - **[[Back-office military workflow use cases]]** — The example project directions emphasize narrowly scoped administrative and support workflows such as regulation navigation, form auto-filling, TDY planning, and contract intelligence.
@@ -41,6 +46,7 @@
 - **[[DoD AI Rapid Capabilities Cell (AI RCC)]]** — The operating organization behind GenAI.mil and the successor to Task Force Lima, responsible for enterprise AI consolidation and frontier AI pilots.
 - **[[DoD public-source data endpoints for grounded workflows]]** — The note highlights public APIs and document sources such as DTIC, Army Publishing Directorate, JTR, GSA APIs, SAM.gov, USAspending, Federal Register, and eCFR as the grounding corpus for compliant prototypes.
 - **[[DoD Responsible AI guidance stack]]** — A layered policy backdrop including DoD AI Ethical Principles, the RAI Strategy, CDAO RAI Toolkit, GenAI Toolkit, and AI Cybersecurity RMF Tailoring Guide that prototypes should align with.
+- **[[DTS AO Radar pre-decision triage]]** — A pre-approval assistant that prioritizes DTS vouchers by composite risk, packages evidence, and helps the Approving Official decide what to review first before any official action.
 - **[[DTS Approving Official (AO) as Certifying Officer]]** — In DTS, the Approving Official who stamps a voucher for payment also acts as a Certifying Officer with personal pecuniary liability and must be formally appointed and trained.
 - **[[DTS Approving Official as Certifying Officer]]** — The DTS Approving Official functions as a Certifying Officer with personal pecuniary liability for approving vouchers, making the role a high-stakes additional duty rather than a dedicated finance billet.
 - **[[DTS modernization on hold]]** — DoD is continuing with current DTS and only incrementally modernizing it, so AI assistants should be built as companions to DTS rather than as bridges to a replacement system.
@@ -66,7 +72,9 @@
 - **[[Hackathon rubric balanced across four equal criteria]]** — Projects are judged 25% each on novelty of approach, technical difficulty, potential national impact, and problem-solution fit.
 - **[[Hackathon working-memory wiki]]** — A private llm-wiki repository serves as the working-memory layer for a short hackathon sprint, compiling curated notes into searchable context.
 - **[[Human approval boundary and trust limits for military travel AI]]** — Any AI assistant in this space must stop at drafting, flagging, and citing; humans must retain authority to approve, certify, sign, submit, or accuse fraud.
+- **[[Human approval boundary for DTS AI]]** — The AI may draft, flag, cite, and prioritize, but humans must retain authority to approve, certify, sign, submit, return, cancel, or amend official DTS documents.
 - **[[Human approval boundary for military drafts]]** — The assistant may draft and cite, but humans must retain review, acceptance, and approval authority before any export or submission.
+- **[[Human approval boundary for military travel AI]]** — Any AI assistant in this space must stop at drafting, flagging, citing, and triage; humans must retain authority to approve, certify, sign, submit, or accuse fraud.
 - **[[Human Oversight as a Winning Pattern]]** — Successful national-security AI projects emphasize operational relevance while preserving human-in-the-loop review and accountability.
 - **[[Human-in-the-loop approval boundary]]** — The AI may draft, retrieve, cite, and preflight artifacts, but humans must retain authority to approve, sign, submit, or file official military documents.
 - **[[Human-in-the-Loop Review and Approval]]** — A workflow pattern where the AI can draft and flag issues, but a human reviewer and supervisor retain edit, acceptance, rejection, and approval authority.
@@ -81,6 +89,7 @@
 - **[[Low-side AI-assisted workflow drafting]]** — An unclassified assistant that turns messy workflow inputs into structured, reviewable drafts for routine administrative or logistics artifacts.
 - **[[Low-side and CUI-only deployment boundary]]** — The platform and associated hackathon context are explicitly limited to unclassified and CUI data, with higher-classification deployment framed only as a future ambition.
 - **[[Multi-model gateway architecture]]** — GenAI.mil is described as a model-agnostic gateway hosting multiple AI models in an isolated government environment rather than a single vendor chatbot.
+- **[[MyTravel cancellation and incremental DTS modernization]]** — MyTravel was discontinued and DoD is modernizing DTS incrementally, so assistants in this space should be framed as companions to current DTS rather than replacements.
 - **[[Narrow, demoable hackathon wedges]]** — Winning projects tend to focus on a single, concrete workflow or threat that can be demonstrated in one sentence rather than broad platform sprawl.
 - **[[Offline / edge AI as a hackathon wedge]]** — The prompt's 'does it offline' language is interpreted as a literal disconnected, edge-deployable, or DDIL-capable deployment posture that could differentiate a submission from the cloud GenAI.mil portal.
 - **[[Offline-capable edge AI as a differentiator]]** — The source treats the hackathon's 'and does it offline' wording as a potential literal edge or disconnected deployment posture, making offline operation a key distinguishing feature for military use cases.
@@ -97,6 +106,8 @@
 - **[[Over-refusal when grounding is missing]]** — If the corpus does not support an answer, the system should refuse rather than generate a plausible-sounding response without evidence, because hallucinations can create real operational risk.
 - **[[Paragraph-level citation and refusal discipline]]** — Every answer or generated artifact should be tied to specific source paragraphs, and the system should refuse or flag unsupported claims rather than guess.
 - **[[Paragraph-level citation discipline]]** — A governance pattern requiring every answer, form field, or numeric claim to be tied to a source paragraph or authoritative record ID so reviewers can verify the basis for the output.
+- **[[Pre-approval evidence packaging for travel vouchers]]** — The recommended wedge is not approval automation but a pre-decision assistant that packages evidence, highlights missing documentation, and explains policy basis for the AO’s review.
+- **[[Pre-decision triage versus post-approval compliance]]** — The recommended wedge is to help AOs before they approve a voucher, complementing tools like TPCT that operate after approval in the compliance loop.
 - **[[Predecessor military GenAI systems]]** — Earlier DoD pilots such as NIPRGPT, CamoGPT, and related service tools provide evidence of demand, deployment patterns, and trust-boundary lessons for GenAI.mil-style applications.
 - **[[Private-to-public export boundary]]** — Working notes and synthesis remain private by default, while any downstream exports must be sanitized and safe for public release.
 - **[[Provocative but bounded framing]]** — Successful projects are memorable and slightly edgy, but still constrained enough that evaluators can quickly understand the story.
@@ -117,7 +128,9 @@
 - **[[Public, unclassified, ITAR/EAR-aware submission constraints]]** — Submissions must remain public and unclassified, avoid controlled or restricted content, and account for export-control constraints such as ITAR and EAR.
 - **[[RAG over a small Army corpus as the starter architecture]]** — The recommended technical baseline is retrieval-augmented generation over a limited set of Army publications or field manuals before adding form generation or logistics planning.
 - **[[RAG over small DoD corpus as a starting architecture]]** — The recommended technical starting point is a retrieval-augmented generation pipeline over a limited set of Army publications or field manuals before adding downstream generation features.
+- **[[Receipt validity and amount reconciliation]]** — A major DTS pain point is checking whether receipts are valid and whether claimed amounts match receipt evidence, since receipt problems dominate improper payments.
 - **[[Receipt validity and reconciliation checking]]** — A core pain point is verifying that receipts are valid and that claimed amounts match receipt evidence, since invalid or missing receipts are a dominant source of improper payments.
+- **[[Receipt validity as the dominant DTS error mode]]** — Public DTMO and DFAS evidence says inadequate or invalid receipts account for the majority of improper DTS payments, making receipt checking the primary triage target.
 - **[[Regulation / policy Q&A grounded in Army regulations and field manuals]]** — A retrieval-grounded assistant answers Soldier policy questions using ARs and FMs with paragraph-level citations and refusal when unsupported.
 - **[[Research-to-spec pivot criteria]]** — A decision rule to end discovery and shift to specification writing once new interviews reinforce the same story instead of revealing new information.
 - **[[Scoped Prototype Wedge]]** — The recommended implementation strategy is a narrowly scoped single workflow rather than a general-purpose military copilot, to reduce complexity and improve deliverability.
@@ -135,6 +148,8 @@
 - **[[Structured eval and refusal panel for prototypes]]** — A visible evaluation layer using a small held-out test set to demonstrate retrieval accuracy, refusal behavior, missing-field detection, and form-field mapping correctness.
 - **[[Structured evaluation with held-out test set]]** — The prototype should include a visible eval set with pass/fail results to prove retrieval accuracy, refusal behavior, and readiness for the demo.
 - **[[Synthetic voucher demo and no-live-integration constraint]]** — Prototype demonstrations should use synthetic voucher data and explicitly avoid live DTS integration, since real DTS access is gated and operational data cannot be used in the demo.
+- **[[Synthetic voucher demo constraint]]** — Any prototype should use fully synthetic voucher data and avoid live DTS integration, real PII, or official-system actions.
+- **[[Synthetic-data-only prototype posture]]** — Because real DTS vouchers contain sensitive data, the hackathon concept should be demonstrated only with synthetic data and no live DTS integration.
 - **[[Task Force Lima to AI RCC transition]]** — Task Force Lima's generative AI use-case mapping and lessons were carried forward into the AI Rapid Capabilities Cell, which inherited its enterprise AI agenda.
 - **[[TDY itinerary pre-flight and voucher linting]]** — A travel assistant checks draft TDY itineraries and vouchers against the JTR, per-diem rules, and common rejection causes before submission.
 - **[[TDY pre-flight linting for vouchers and itineraries]]** — A fallback workflow assistant that checks travel authorizations and vouchers against JTR and per-diem guidance to catch common errors before submission, without integrating into official systems.
@@ -143,6 +158,7 @@
 - **[[Technical challenge as a visible demo feature]]** — The technically sophisticated part of a project should be easy for judges to recognize in the presentation, not hidden in implementation details.
 - **[[Technically challenging demo hook]]** — A visible technical mechanism in the demo that signals sophistication without relying on hidden implementation complexity.
 - **[[Toolbox drift in hackathon projects]]** — Adding dashboards, agents, maps, chat, and uploads can turn a focused idea into a feature-heavy toolbox that obscures the core value.
+- **[[TPCT as a post-approval compliance control]]** — The Travel Policy Compliance Tool is mandatory and near-real-time, but it operates post-approval with email-based remediation, so it does not fully replace an AO-facing pre-decision assistant.
 - **[[TPCT post-approval blind spot]]** — The existing Travel Policy Compliance Tool runs after approval and is documented as missing certain receipt-related errors, creating an opportunity for pre-approval triage.
 - **[[Travel Policy Compliance Tool (TPCT) limitations]]** — DTMO’s mandatory TPCT catches some duplicate and arithmetic issues, but oversight reports say it cannot detect missing documentation or amount-vs-receipt mismatches, leaving major blind spots in voucher review.
 - **[[Trust Boundaries for Military AI]]** — Operational limits for the assistant include no inventing policy, no autonomous submission, no approval automation, no classified data, and no live integration with official DoD systems.
@@ -159,4 +175,4 @@
 
 - **[[Based on the initial hackathon notes, what are the strongest candidate wedge, key trust boundaries, and highest-priority SME validation questions?]]** — Based on the initial hackathon notes, the strongest candidate wedge is a **scoped prototype wedge** focused on a **low-s
 
-_153 pages | Generated 2026-04-25T18:38:51.709Z_
+_169 pages | Generated 2026-04-25T18:58:49.131Z_
