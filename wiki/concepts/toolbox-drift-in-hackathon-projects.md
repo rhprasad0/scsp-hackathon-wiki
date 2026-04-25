@@ -1,22 +1,22 @@
 ---
-title: Toolbox Drift in Hackathon Projects
-summary: Hackathon teams often add dashboards, agents, maps, chat, and uploads until the project becomes a feature-rich toolbox instead of a focused wedge.
+title: Toolbox drift in hackathon projects
+summary: Adding dashboards, agents, maps, chat, and uploads can turn a focused idea into a feature-heavy toolbox that obscures the core value.
 sources:
   - 2026-04-24-prior-scsp-winning-project-observations.md
 createdAt: "2026-04-24T21:24:03.399Z"
-updatedAt: "2026-04-24T21:24:03.399Z"
+updatedAt: "2026-04-25T16:28:11.166Z"
 tags:
-  - hackathon
-  - anti-pattern
+  - hackathons
   - product-design
+  - anti-pattern
 aliases:
   - toolbox-drift-in-hackathon-projects
   - TDIHP
 ---
 
-# Toolbox Drift in Hackathon Projects
+# Toolbox drift in hackathon projects
 
-Toolbox drift in hackathon projects is the tendency for a prototype to accumulate broad, disconnected features—such as dashboards, agents, maps, chat, uploads, or search—until the project reads more like a general-purpose toolkit than a focused wedge. The source material frames this as a common hackathon gravitational pull: effort is real, but the project can become a “toolbox instead of a wedge,” making the core operational value harder to see. ^[2026-04-24-prior-scsp-winning-project-observations.md]
+Toolbox drift in hackathon projects is the tendency for a prototype to accumulate broad, disconnected features—such as dashboards, agents, maps, chat, uploads, or search—until it reads more like a general-purpose toolkit than a focused wedge. The source material frames this as a common hackathon gravitational pull: effort is real, but the project can become a “toolbox instead of a wedge,” making the core operational value harder to see. ^[2026-04-24-prior-scsp-winning-project-observations.md]
 
 This drift is especially risky when teams start from available AI primitives rather than from a specific workflow pain. Broad “AI assistant for military admin” framing can obscure the who, what artifact, trusted references, missing fields, and approval path that make a project legible and reviewable. In contrast, stronger hackathon projects are described as narrower, sharper, and more demoable, with a concrete threat, workflow, or infrastructure class that can be explained quickly. ^[2026-04-24-prior-scsp-winning-project-observations.md]
 

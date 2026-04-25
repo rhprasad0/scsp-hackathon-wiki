@@ -1,7 +1,7 @@
 ---
 title: 2026 04 24 genai mil concept seed
 source: curated/2026-04-24-genai-mil-concept-seed.md
-ingestedAt: "2026-04-24T21:22:26.708Z"
+ingestedAt: "2026-04-25T16:27:03.911Z"
 ---
 
 ---

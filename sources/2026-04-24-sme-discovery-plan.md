@@ -1,7 +1,7 @@
 ---
 title: 2026 04 24 sme discovery plan
 source: curated/2026-04-24-sme-discovery-plan.md
-ingestedAt: "2026-04-24T21:22:27.441Z"
+ingestedAt: "2026-04-25T16:27:06.520Z"
 ---
 
 ---

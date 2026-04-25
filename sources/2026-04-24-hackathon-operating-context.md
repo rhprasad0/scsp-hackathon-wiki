@@ -1,7 +1,7 @@
 ---
 title: 2026 04 24 hackathon operating context
 source: curated/2026-04-24-hackathon-operating-context.md
-ingestedAt: "2026-04-24T21:22:25.972Z"
+ingestedAt: "2026-04-25T16:27:04.790Z"
 ---
 
 ---

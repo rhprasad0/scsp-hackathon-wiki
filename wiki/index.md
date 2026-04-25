@@ -2,38 +2,122 @@
 
 ## Concepts
 
+- **[[Administrative trenches as the GenAI.mil problem frame]]** — The challenge frames military AI opportunities around the rank-and-file administrative burden—paperwork, logistics, and bureaucracy—rather than combat or tactical operations.
+- **[[AI Rapid Capabilities Cell (AI RCC)]]** — The DoD organization that succeeded Task Force Lima and now operates the enterprise AI consolidation and frontier AI pilot efforts behind GenAI.mil.
 - **[[AI-assisted spec with human review]]** — An operating rule that AI-generated specs should not invent operational facts and must preserve human review.
+- **[[Army regulation Q&A with paragraph-level citations]]** — A retrieval-grounded assistant for Army regulations and field manuals that answers only when supported by specific cited paragraphs and refuses unsupported claims.
+- **[[Back-office military workflow use cases]]** — The example project directions emphasize narrowly scoped administrative and support workflows such as regulation navigation, form auto-filling, TDY planning, and contract intelligence.
+- **[[Back-office workflow exemplars]]** — The prompt's example project directions concentrate on narrowly scoped administrative tasks such as regulation navigation, form auto-filling, TDY planning, and contract intelligence.
+- **[[Boring workflow, spicy mechanism]]** — A framing pattern where the underlying use case stays grounded and practical, while the technical implementation adds a memorable and impressive demo hook.
+- **[[Citations and missing-field visibility]]** — The system should expose its sources and clearly flag missing information so reviewers can assess the draft before approval.
+- **[[Contract opportunity and vendor intelligence scaffolding]]** — An assistant that summarizes prior awards, vendor registrations, and applicable FAR/DFARS references to help contracting officers scope a buy without advising on source selection or award decisions.
+- **[[Contract-intel scaffold for contracting officers]]** — The note proposes a sourced one-pager built from SAM.gov, USAspending, and eCFR Title 48 to help contracting officers quickly understand a problem landscape.
+- **[[Contracting officer contract-intel scaffold]]** — A sourcing assistant that summarizes prior awards, vendor registrations, and applicable FAR/DFARS references to help scope a buy without advising on source selection.
 - **[[Controlled Reference Retrieval]]** — The system retrieves approved templates, SOPs, policies, and prior examples from a restricted document set to ground generated drafts in authorized sources.
+- **[[Controlled retrieval of approved low-side references]]** — The system should retrieve only approved templates, SOPs, policies, and prior examples from a controlled document set to ground draft generation.
+- **[[Creative but bounded framing]]** — Projects should feel novel and engaging without expanding into an overly broad or reckless concept, balancing originality with scope control.
+- **[[Critical infrastructure defense as a bounded theme]]** — Anchoring a project in one specific infrastructure class, such as water treatment systems, makes the problem legible and compelling to judges.
 - **[[Critical Infrastructure Defense as a Prototype Theme]]** — Public winner artifacts show that anchoring a project in a specific infrastructure class, like water treatment systems, can make the problem legible and compelling.
 - **[[Curated markdown as durable source material]]** — Structured curated markdown notes serve as the durable input for ingesting observations into the wiki.
-- **[[Current-State Workflow Interviewing]]** — An interview approach that focuses on recent, concrete workflows and step-by-step process tracing rather than abstract opinions.
+- **[[Curated notes promotion pipeline]]** — A process for immediately converting raw notes or speech-to-text output into redacted curated notes so observations can be reused and searched later.
+- **[[Current-state workflow interviewing]]** — Interview method that prioritizes recent, concrete workflow walkthroughs over abstract opinions to understand how a process actually works today.
+- **[[DA Form 31 leave assistant]]** — A top wedge is an assistant that converts plain-English leave requests into a populated DA 31 draft with citations and missing-field flags, while leaving approval to humans.
+- **[[DA Form 31 leave drafting assistant]]** — An assistant that converts plain-English leave requests into a block-by-block DA Form 31 draft while flagging missing fields and leaving approval to humans.
+- **[[DA Form 31 leave request drafting]]** — An AI-assisted workflow that turns a natural-language leave request into a block-by-block draft of DA Form 31, while leaving approval and submission to the human chain of command.
+- **[[Diagnostic capability as a winning prototype pattern]]** — A strong hackathon project can succeed as a red-team, assurance, or other diagnostic tool instead of an end-user productivity app.
 - **[[Diagnostic Security Prototypes]]** — Strong projects can succeed as diagnostic or adversarial tools, such as red-teaming or assurance capabilities, rather than end-user productivity apps.
+- **[[Doctrine-at-the-edge RAG]]** — A laptop-deployable retrieval system over packaged Army doctrine PDFs that answers with paragraph-level citations and refuses when the corpus does not support an answer.
+- **[[DoD AI Rapid Capabilities Cell]]** — The AI RCC is the successor to Task Force Lima and the operating organization behind DoD's enterprise AI consolidation and frontier AI pilots.
+- **[[DoD public-source data endpoints for grounded workflows]]** — The note highlights public APIs and document sources such as DTIC, Army Publishing Directorate, JTR, GSA APIs, SAM.gov, USAspending, Federal Register, and eCFR as the grounding corpus for compliant prototypes.
+- **[[DoD Responsible AI guidance stack]]** — A layered policy backdrop of DoD AI Ethical Principles, the RAI Strategy, the CDAO RAI Toolkit, the GenAI Toolkit, and the AI Cybersecurity RMF Tailoring Guide that prototypes should align with.
+- **[[DTS pre-flight and voucher linting]]** — A travel assistant that checks itineraries and vouchers against the Joint Travel Regulations and per-diem rules to catch common rejection causes before submission.
+- **[[DTS travel pre-flight and voucher linting]]** — A travel-support workflow that checks itineraries and draft vouchers against JTR and per-diem rules to catch missing receipts, mismatched entitlements, and other common rejection causes before submission.
+- **[[DTS voucher pre-flight checking]]** — Another strong wedge is a JTR-grounded checker that flags common TDY authorization and voucher issues before submission to reduce rejection and rework.
+- **[[Edge AI precedent in DoD operations]]** — Public examples like Google Distributed Cloud at Mobility Guardian, EdgeRunner, and Legion Centurion show that disconnected or edge-deployed generative AI is already a viable DoD pattern.
 - **[[Evidence-backed synthesis over prototype sprawl]]** — A planning principle that favors narrowing to a reusable spec and avoiding broad weekend prototype sprawl.
-- **[[Hackathon working-memory wiki]]** — A private llm-wiki repository used as the working-memory layer for a short hackathon sprint, compiling curated notes into searchable context.
+- **[[Evidence-first spec synthesis]]** — The project should narrow into a reusable spec based on repeated observations and avoid broad prototype sprawl.
+- **[[Evidence-gated public research]]** — Outside/public research should be used only when a specific evidence gap justifies it, rather than as an automatic default.
+- **[[Form-honest leave assistant for DA 31]]** — A narrowly scoped assistant that converts plain-English leave requests into a populated DA Form 31 draft with paragraph-level citations, missing-field flags, and human approval retained for submission.
+- **[[GenAI.mil administrative-trenches framing]]** — The GenAI.mil track frames military AI around reducing bureaucratic burden in the 'administrative trenches' of rank-and-file service members rather than on combat or tactical use cases.
+- **[[GenAI.mil as a multi-model gateway]]** — GenAI.mil is presented as a model-agnostic gateway hosted in authorized government cloud, with isolated models and a no-retraining policy on prompts and outputs.
+- **[[GenAI.mil enterprise AI platform]]** — A Department of War generative AI platform launched in December 2025 to provide commercial frontier models to military, civilian, and contractor users on an authorized government cloud.
+- **[[GenAI.mil offline edge-deployable complement]]** — The hackathon prompt's 'and does it offline' requirement is interpreted as a literal edge or disconnected deployment posture that complements the existing cloud GenAI.mil platform.
+- **[[GenAI.mil track wedge selection]]** — The track rewards a narrowly scoped end-to-end workflow assistant rather than a generic military copilot, so teams should choose a concrete admin or knowledge task to demo.
+- **[[Hackathon differentiation beyond raw chatbots]]** — Because GenAI.mil already provides desktop-accessible model chat, a successful hackathon submission must add retrieval grounding, structured output, evaluation, or a unique deployment posture rather than just wrapping a model chat interface.
+- **[[Hackathon judging rubric with four equal criteria]]** — Projects are scored 25% each on novelty of approach, technical difficulty, potential national impact, and problem-solution fit.
+- **[[Hackathon judging signal]]** — Informal organizer guidance that shapes what kinds of projects are likely to score well in a hackathon setting.
+- **[[Hackathon rubric balanced across four equal criteria]]** — Projects are judged 25% each on novelty of approach, technical difficulty, potential national impact, and problem-solution fit.
+- **[[Hackathon working-memory wiki]]** — A private llm-wiki repository serves as the working-memory layer for a short hackathon sprint, compiling curated notes into searchable context.
+- **[[Human approval boundary for military drafts]]** — The assistant may draft and cite, but humans must retain review, acceptance, and approval authority before any export or submission.
 - **[[Human Oversight as a Winning Pattern]]** — Successful national-security AI projects emphasize operational relevance while preserving human-in-the-loop review and accountability.
+- **[[Human-in-the-loop approval boundary]]** — The AI may draft, retrieve, cite, and pre-flight artifacts, but humans must retain authority to approve, sign, submit, or file official military documents.
 - **[[Human-in-the-Loop Review and Approval]]** — A workflow pattern where the AI can draft and flag issues, but a human reviewer and supervisor retain edit, acceptance, rejection, and approval authority.
+- **[[Human-in-the-loop submission boundary]]** — The system may draft, retrieve, cite, and pre-flight artifacts, but humans retain all authority to approve, sign, submit, or file them in official systems.
+- **[[Interview-driven validation loop]]** — The workflow repeatedly captures, ingests, queries, and refines notes to identify repeated pain points, artifacts, trust boundaries, and candidate wedges.
+- **[[Judge-legible prototype story]]** — A winning prototype should quickly communicate who uses it, what artifact it produces, what references constrain it, and what approvals remain human-owned.
 - **[[Judge-Legible Prototype Storytelling]]** — A strong prototype should immediately communicate who uses it, what artifact it produces, what references constrain it, and what approvals remain human-owned.
-- **[[Low-Side AI-Assisted Workflow Drafting]]** — An AI assistant on an unclassified/low-side environment that turns messy user inputs into structured, reviewable drafts for routine administrative or logistics workflows.
-- **[[Narrow, Demoable Hackathon Wedges]]** — Winning hackathon projects tend to be tightly scoped, easy to demonstrate in one sentence, and centered on a single concrete workflow or threat.
-- **[[Opportunistic SME discovery]]** — An interview strategy for hackathons where access to DoD-experienced participants may be uneven, so discovery must be efficient and opportunistic.
-- **[[Provocative-but-Bounded Framing]]** — Winning concepts benefit from being memorable and slightly edgy, but still constrained enough that evaluators can quickly understand the story.
+- **[[Judge-legible technical storytelling]]** — The project must communicate its creativity and technical sophistication quickly enough for judges to grasp during evaluation.
+- **[[Low-side AI-assisted workflow drafting]]** — An unclassified assistant that turns messy workflow inputs into structured, reviewable drafts for routine administrative or logistics artifacts.
+- **[[Low-side and CUI-only deployment boundary]]** — The platform and associated hackathon context are explicitly limited to unclassified and CUI data, with higher-classification deployment framed only as a future ambition.
+- **[[Narrow, demoable hackathon wedges]]** — Winning projects tend to focus on a single, concrete workflow or threat that can be demonstrated in one sentence rather than broad platform sprawl.
+- **[[Offline-capable edge AI for DDIL environments]]** — The source treats 'and does it offline' as a literal edge-deployable posture, making disconnected or low-connectivity operation a key differentiator for military use cases.
+- **[[Offline-capable military AI posture]]** — The challenge's 'does it offline' requirement suggests AI solutions should function without persistent cloud connectivity, making edge or disconnected operation a key design constraint.
+- **[[Offline-first DDIL AI for DoD]]** — The note interprets the hackathon's 'offline' requirement as a demand for edge, disconnected, or denied/degraded/intermittent/limited connectivity AI that runs without persistent cloud access.
+- **[[Offline-first edge AI for DDIL environments]]** — The prompt’s 'offline' requirement is interpreted as a literal disconnected or denied/degraded/intermittent/limited connectivity posture, favoring on-device or edge-deployable assistants.
+- **[[Offline-first military AI]]** — The prompt explicitly calls for solutions that work offline, suggesting a technical posture that functions without persistent cloud connectivity and complements the GenAI.mil portal.
+- **[[On-site SME discovery for hackathon validation]]** — A lightweight, opportunistic strategy for finding relevant DoD or government workflow experts through organizers, mentors, and nearby teams when formal routing is unreliable.
+- **[[Operational relevance plus human oversight]]** — Winning concepts pair national-security relevance with explicit human-in-the-loop review rather than autonomous replacement of accountable people.
+- **[[Opportunistic SME discovery]]** — Because access to DoD-experienced participants may be uneven at a hackathon, discovery should be efficient, flexible, and opportunistic.
+- **[[Organizer judging signal for hackathon submissions]]** — Informal organizer guidance that winning projects should be creative, interesting, and technically challenging, shaping how submissions are judged even when the organizer is not domain-versed.
+- **[[Over-refusal when grounding is missing]]** — If the corpus does not support an answer, the system should refuse rather than generate a plausible-sounding response without evidence, because hallucinations can create real operational risk.
+- **[[Paragraph-level citation and refusal discipline]]** — Every generated claim should be tied to a source paragraph, and the system should refuse or flag unsupported answers instead of guessing.
+- **[[Paragraph-level citation discipline]]** — A governance pattern requiring every answer, form field, or numeric claim to be tied to a source paragraph or authoritative record ID so reviewers can verify the basis for the output.
+- **[[Private-to-public export boundary]]** — Working notes and synthesis remain private by default, while any downstream exports must be sanitized and safe for public release.
+- **[[Provocative but bounded framing]]** — Successful projects are memorable and slightly edgy, but still constrained enough that evaluators can quickly understand the story.
+- **[[Public DoD and federal data sources for prototypes]]** — The organizer points teams to public, unclassified sources like DTIC, APD, JTR, GSA APIs, SAM.gov, USAspending, Federal Register, and eCFR for building grounded prototypes.
+- **[[Public DoD data sources for GenAI.mil prototypes]]** — The prompt points teams toward public, unclassified datasets and APIs such as APD, DTIC, JTR, GSA APIs, SAM.gov, USAspending, Federal Register, and eCFR for building compliant prototypes.
+- **[[Public DoD data sources for grounded workflows]]** — A set of authoritative public endpoints—such as DTIC, Army Publishing Directorate, Air Force e-Publishing, JTR, GSA APIs, SAM.gov, USAspending, Federal Register, and eCFR—can ground admin and policy workflows with live public data.
+- **[[Public winner pattern for military AI workflows]]** — The likely winning shape for GenAI.mil is a low-side assistant that turns messy administrative or logistics requests into cited, reviewable drafts with missing-field flags and preserved human approval.
 - **[[Public-safe export boundary]]** — A trust boundary requiring that raw notes and working synthesis remain private by default while any public-facing summaries or spec fragments must be sanitized.
-- **[[Research-to-Spec Pivot Criteria]]** — A decision rule to stop discovery and pivot to spec writing when new interviews reinforce the same story instead of revealing new information.
+- **[[Public-safe GenAI.mil workflow wedge selection]]** — Choose a narrowly scoped, public-safe military admin workflow that maps to a real user need and can be demonstrated end-to-end in a hackathon.
+- **[[Public-safe unclassified hackathon posture]]** — GenAI.mil hackathon submissions must remain public, unclassified, CUI-free, and shareable, with attention to export-control and controlled-information restrictions.
+- **[[Public-safe unclassified prototype posture]]** — GenAI.mil hackathon submissions must use only public or otherwise shareable unclassified sources and avoid classified data, controlled information, and PII.
+- **[[Public-safe unclassified source corpus]]** — Prototypes must rely only on public or otherwise shareable unclassified DoD and federal sources, avoiding classified, controlled, or sensitive data.
+- **[[Public-safe unclassified submission constraints]]** — Submissions must be public, unclassified, and shareable, with no classified material and attention to ITAR/EAR and export-classification restrictions.
+- **[[Public, unclassified, ITAR/EAR-aware submission constraints]]** — Submissions must remain public and unclassified, avoid controlled or restricted content, and account for export-control constraints such as ITAR and EAR.
+- **[[RAG over a small Army corpus as the starter architecture]]** — The recommended technical baseline is retrieval-augmented generation over a limited set of Army publications or field manuals before adding form generation or other features.
+- **[[RAG over small DoD corpus as a starting architecture]]** — The recommended technical starting point is a retrieval-augmented generation pipeline over a limited set of Army publications or field manuals before adding downstream generation features.
+- **[[Research-to-spec pivot criteria]]** — A decision rule to end discovery and shift to specification writing once new interviews reinforce the same story instead of revealing new information.
 - **[[Scoped Prototype Wedge]]** — The recommended implementation strategy is a narrowly scoped single workflow rather than a general-purpose military copilot, to reduce complexity and improve deliverability.
-- **[[Slack-to-curated-notes workflow]]** — A process where raw observations are captured in Slack or local inboxes, then promoted into short structured redacted markdown notes before ingestion.
+- **[[Self-critique and evaluation layer]]** — A project can add technical depth by having the system stress-test its own output for missing authority, assumptions, hallucinations, and approval gaps.
+- **[[Single-persona end-to-end hackathon wedge]]** — Teams are advised to pick one user persona and build an end-to-end solution for that specific workflow rather than a broad, multi-user platform.
+- **[[Single-persona end-to-end wedge selection]]** — Teams are advised to choose one user persona and build a complete end-to-end solution for that specific workflow instead of a broad multi-user platform.
+- **[[Single-workflow prototype wedge]]** — The recommended prototype shape is one narrowly scoped workflow rather than an all-purpose military copilot.
+- **[[Slack-to-curated-notes workflow]]** — Raw observations, screenshots, and interview notes are captured in Slack or local inboxes, then promoted into short structured redacted markdown notes before ingest.
 - **[[SME Discovery for Hackathon Validation]]** — A structured process for finding subject matter experts to validate or reject an initial product wedge before writing a final spec.
 - **[[SME Discovery via Informal On-Site Sourcing]]** — A lightweight outreach tactic that asks organizers, mentors, and nearby teams directly for people with relevant DoD or government workflow experience.
 - **[[Spec Readiness Score]]** — A red-yellow-green rubric used to judge when enough repeated evidence has been gathered to stop interviewing and start writing.
+- **[[Spec readiness scoring]]** — A red-yellow-green judgment for deciding when enough repeated evidence has been gathered to stop interviewing and start writing the spec.
 - **[[Structured Draft Generation for Military Artifacts]]** — The assistant produces first-draft versions of routine military administrative artifacts such as memos, requests, logistics summaries, and after-action reports in expected formats.
-- **[[Toolbox Drift in Hackathon Projects]]** — Hackathon teams often add dashboards, agents, maps, chat, and uploads until the project becomes a feature-rich toolbox instead of a focused wedge.
+- **[[Structured draft generation for routine military artifacts]]** — The assistant should produce first-draft versions of common administrative outputs such as memos, logistics request summaries, after-action reports, and policy Q&A drafts.
+- **[[Structured evaluation with held-out test set]]** — The prototype should include a visible eval set with pass/fail results to prove retrieval accuracy, refusal behavior, and readiness for the demo.
+- **[[Task Force Lima to AI RCC transition]]** — The source describes Task Force Lima as an earlier generative AI assessment effort whose use-case mapping and lessons were carried forward into the AI Rapid Capabilities Cell.
+- **[[TDY voucher pre-flight checker]]** — A JTR-grounded assistant that lint-checks travel authorizations and vouchers before submission to catch common rejection causes such as missing receipts, entitlement mismatches, and bad line-of-accounting entries.
+- **[[Technical challenge as a visible demo feature]]** — The technically sophisticated part of a project should be easy for judges to recognize in the presentation, not hidden in implementation details.
+- **[[Technically challenging demo hook]]** — A visible technical mechanism in the demo that signals sophistication without relying on hidden implementation complexity.
+- **[[Toolbox drift in hackathon projects]]** — Adding dashboards, agents, maps, chat, and uploads can turn a focused idea into a feature-heavy toolbox that obscures the core value.
 - **[[Trust Boundaries for Military AI]]** — Operational limits for the assistant include no inventing policy, no autonomous submission, no approval automation, no classified data, and no live integration with official DoD systems.
-- **[[Trust Boundaries in Sensitive Workflow Research]]** — Guidelines for handling sensitive or restricted information, including redacting details, avoiding unnecessary name retention, and distinguishing AI-appropriate tasks from human or official responsibilities.
-- **[[Two-Round SME Interview Process]]** — A staged interviewing method where Round 1 maps current reality and Round 2 only fills gaps that could change the spec.
+- **[[Trust boundaries in sensitive workflow research]]** — Rules for handling sensitive interview material by redacting details, avoiding unnecessary name retention, and separating AI-appropriate tasks from human or official responsibilities.
+- **[[Trust-boundary visibility]]** — Human review, uncertainty, citations, missing information, and approval boundaries should be made explicit so the creative element does not appear reckless.
+- **[[Two-round SME interview process]]** — A staged interview approach where the first round maps the current workflow and the second round only fills gaps that could materially change the spec.
 - **[[Uncertainty and Assumption Flagging]]** — The AI marks missing fields, inferred content, low-confidence claims, and assumptions so reviewers can see what needs validation before submission.
-- **[[Workflow Artifact and Bottleneck Capture]]** — A note-taking framework for recording role, trigger, process steps, artifacts, bottlenecks, trust boundaries, and open questions during interviews.
+- **[[Uncertainty, assumption, and missing-field flagging]]** — The system should explicitly mark assumptions, inferred content, low-confidence claims, and unresolved fields so reviewers can validate drafts before submission.
+- **[[Workflow artifact and bottleneck capture]]** — A structured note-taking template that records role, trigger, step-by-step flow, artifacts, bottlenecks, trust boundaries, and open questions during discovery interviews.
+- **[[Workflow classification and draft assembly pipeline]]** — The described process includes classifying the user request, retrieving relevant references, collecting missing fields, generating the draft, and routing it to human review.
+- **[[Workflow credibility plus hackathon appeal]]** — A strong submission must combine operationally credible workflow grounding with enough creativity and technical interest to perform well in a hackathon setting.
 
 ## Saved Queries
 
 - **[[Based on the initial hackathon notes, what are the strongest candidate wedge, key trust boundaries, and highest-priority SME validation questions?]]** — Based on the initial hackathon notes, the strongest candidate wedge is a **scoped prototype wedge** focused on a **low-s
 
-_30 pages | Generated 2026-04-24T21:24:03.480Z_
+_114 pages | Generated 2026-04-25T16:29:02.936Z_

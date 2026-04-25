@@ -1,7 +1,7 @@
 ---
 title: 2026 04 24 prior scsp winning project observations
 source: curated/2026-04-24-prior-scsp-winning-project-observations.md
-ingestedAt: "2026-04-24T21:22:45.246Z"
+ingestedAt: "2026-04-25T16:27:05.660Z"
 ---
 
 ---

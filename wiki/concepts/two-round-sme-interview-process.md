@@ -1,5 +1,21 @@
 ---
-title: Two-Round SME Interview Process
+title: Two-round SME interview process
+summary: A staged interview approach where the first round maps the current workflow and the second round only fills gaps that could materially change the spec.
+sources:
+  - 2026-04-24-sme-discovery-plan.md
+createdAt: "2026-04-24T21:23:02.628Z"
+updatedAt: "2026-04-25T16:28:17.712Z"
+tags:
+  - interviewing
+  - requirements
+  - validation
+aliases:
+  - two-round-sme-interview-process
+  - TSIP
+---
+
+---
+title: Two-round SME interview process
 summary: A staged interviewing method where Round 1 maps current reality and Round 2 only fills gaps that could change the spec.
 sources:
   - 2026-04-24-sme-discovery-plan.md
@@ -15,9 +31,9 @@ aliases:
   - TSIP
 ---
 
-# Two-Round SME Interview Process
+# Two-round SME interview process
 
-The Two-Round SME Interview Process is a discovery workflow for validating or rejecting an initial spec wedge by interviewing people with relevant DoD, defense, logistics, admin, procurement, planning, or government workflow experience. It is designed to find enough high-signal people during a short hackathon, especially when organizers may not reliably route participants to the right SMEs. The process prioritizes recent concrete workflows over abstract opinions and uses interview evidence to decide when to stop exploring and start writing. ^[2026-04-24-sme-discovery-plan.md]
+The Two-round SME interview process is a discovery workflow for validating or rejecting an initial spec wedge by interviewing people with relevant DoD, defense, logistics, admin, procurement, planning, or government workflow experience. It is designed to find enough high-signal people during a short hackathon, especially when organizers may not reliably route participants to the right SMEs. The process prioritizes recent concrete workflows over abstract opinions and uses interview evidence to decide when to stop exploring and start writing. ^[2026-04-24-sme-discovery-plan.md]
 
 Round 1 maps current-state reality. Interviewers use a short opener focused on a recent workflow and capture the role or perspective, workflow trigger, step-by-step flow, artifacts, bottlenecks, trust boundaries, and open questions. Raw notes or speech-to-text are then promoted immediately into a curated note, and the wiki is queried after a few notes to identify repeated bottlenecks and candidate wedges. ^[2026-04-24-sme-discovery-plan.md]
 
