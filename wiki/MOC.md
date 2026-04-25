@@ -1,5 +1,9 @@
 # Map of Content
 
+## ai-assistant
+
+- [[AO triage assistant / 'AO radar' for risk-scored vouchers]]
+
 ## ai-assurance
 
 - [[Diagnostic Security Prototypes]]
@@ -61,9 +65,30 @@
 
 - [[Regulation / policy Q&A grounded in Army regulations and field manuals]]
 
+## audit
+
+- [[Invalid and missing receipts as the dominant DTS error mode]]
+- [[TPCT post-approval blind spot]]
+
+## automation
+
+- [[Travel Policy Compliance Tool (TPCT) limitations]]
+
 ## back-office
 
 - [[Back-office military workflow examples]]
+
+## blind-spots
+
+- [[Travel Policy Compliance Tool (TPCT) limitations]]
+
+## certifying-officer
+
+- [[DTS Approving Official (AO) as Certifying Officer]]
+
+## checklists
+
+- [[AO checklist mandate and recurring service-level return reasons]]
 
 ## citation
 
@@ -93,6 +118,7 @@
 
 ## compliance
 
+- [[AO voucher review checklist and cognitive workload]]
 - [[Controlled Reference Retrieval]]
 - [[DTS pre-flight and voucher linting]]
 - [[DTS travel pre-flight and voucher linting]]
@@ -106,8 +132,10 @@
 - [[Public-safe unclassified source corpus]]
 - [[Public-safe unclassified submission constraints]]
 - [[Public-source dependency hygiene]]
+- [[Receipt validity and reconciliation checking]]
 - [[TDY pre-flight linting for vouchers and itineraries]]
 - [[TDY voucher pre-flight checker]]
+- [[Travel Policy Compliance Tool (TPCT) limitations]]
 
 ## contracting
 
@@ -129,6 +157,10 @@
 ## data-pipeline
 
 - [[Slack-to-curated-notes workflow]]
+
+## data-safety
+
+- [[Synthetic voucher demo and no-live-integration constraint]]
 
 ## data-sources
 
@@ -163,6 +195,10 @@
 ## defense-ai
 
 - [[DoD AI Rapid Capabilities Cell]]
+
+## defense-it
+
+- [[DTS modernization on hold]]
 
 ## demo
 
@@ -199,6 +235,10 @@
 
 - [[Controlled retrieval of approved low-side references]]
 
+## document-processing
+
+- [[Receipt validity and reconciliation checking]]
+
 ## documentation
 
 - [[Curated markdown as durable source material]]
@@ -222,8 +262,17 @@
 
 ## dts
 
+- [[AO Radar pre-approval triage queue]]
+- [[AO triage assistant / 'AO radar' for risk-scored vouchers]]
+- [[AO voucher review checklist and cognitive workload]]
+- [[DTS Approving Official (AO) as Certifying Officer]]
+- [[DTS Approving Official as Certifying Officer]]
+- [[DTS modernization on hold]]
+- [[DTS policy linting for travel vouchers]]
+- [[Invalid and missing receipts as the dominant DTS error mode]]
 - [[TDY pre-flight voucher and authorization linting]]
 - [[TDY voucher pre-flight checker]]
+- [[TPCT post-approval blind spot]]
 
 ## ecrf
 
@@ -331,7 +380,9 @@
 
 ## governance
 
+- [[DTS Approving Official as Certifying Officer]]
 - [[Human Oversight as a Winning Pattern]]
+- [[Human approval boundary and trust limits for military travel AI]]
 - [[Human approval boundary for military drafts]]
 - [[Human-in-the-Loop Review and Approval]]
 - [[Human-in-the-loop approval boundary]]
@@ -399,9 +450,11 @@
 
 ## human-in-the-loop
 
+- [[AO helper as quality assurance manager]]
 - [[DA Form 31 leave request drafting assistant]]
 - [[Form-honest DA Form 31 leave assistant]]
 - [[Human Oversight as a Winning Pattern]]
+- [[Human approval boundary and trust limits for military travel AI]]
 - [[Human approval boundary for military drafts]]
 - [[Human-in-the-Loop Review and Approval]]
 - [[Human-in-the-loop approval boundary]]
@@ -410,9 +463,17 @@
 - [[Trust-boundary visibility]]
 - [[Uncertainty, assumption, and missing-field flagging]]
 
+## improper-payments
+
+- [[Invalid and missing receipts as the dominant DTS error mode]]
+
 ## ingestion
 
 - [[Curated markdown as durable source material]]
+
+## integration
+
+- [[Synthetic voucher demo and no-live-integration constraint]]
 
 ## interviewing
 
@@ -436,6 +497,10 @@
 - [[Judge-legible prototype story]]
 - [[Organizer judging signal for hackathon submissions]]
 
+## justification
+
+- [[AO checklist mandate and recurring service-level return reasons]]
+
 ## knowledge-management
 
 - [[Controlled Reference Retrieval]]
@@ -446,6 +511,10 @@
 
 - [[Form-honest DA Form 31 leave assistant]]
 - [[Form-honest leave assistant for DA 31]]
+
+## liability
+
+- [[DTS Approving Official (AO) as Certifying Officer]]
 
 ## linting
 
@@ -479,6 +548,7 @@
 - [[Conservative DA 31 leave draft assistant]]
 - [[GenAI.mil admin-trenches hackathon framing]]
 - [[GenAI.mil administrative-trenches framing]]
+- [[Human approval boundary and trust limits for military travel AI]]
 - [[Human approval boundary for military drafts]]
 - [[Low-side AI-assisted workflow drafting]]
 - [[Offline-capable edge AI as a differentiator]]
@@ -493,6 +563,10 @@
 - [[RAG over a small Army corpus as the starter architecture]]
 - [[RAG over small DoD corpus as a starting architecture]]
 
+## military-finance
+
+- [[DTS Approving Official as Certifying Officer]]
+
 ## military-operations
 
 - [[Offline-capable edge AI for DDIL environments]]
@@ -504,6 +578,10 @@
 ## model-routing
 
 - [[Multi-model gateway architecture]]
+
+## modernization
+
+- [[DTS modernization on hold]]
 
 ## national-security
 
@@ -541,6 +619,10 @@
 - [[Army regulation Q&A with paragraph-level citations]]
 - [[Controlled retrieval of approved low-side references]]
 - [[DoD Responsible AI guidance stack]]
+
+## policy-compliance
+
+- [[DTS policy linting for travel vouchers]]
 
 ## prioritization
 
@@ -613,6 +695,7 @@
 ## prototyping
 
 - [[Evidence-backed synthesis over prototype sprawl]]
+- [[Synthetic voucher demo and no-live-integration constraint]]
 
 ## provenance
 
@@ -650,6 +733,11 @@
 ## readiness
 
 - [[Spec Readiness Score]]
+
+## receipts
+
+- [[Invalid and missing receipts as the dominant DTS error mode]]
+- [[Receipt validity and reconciliation checking]]
 
 ## red-teaming
 
@@ -696,6 +784,11 @@
 
 - [[AI-assisted spec with human review]]
 
+## risk-scoring
+
+- [[AO Radar pre-approval triage queue]]
+- [[AO triage assistant / 'AO radar' for risk-scored vouchers]]
+
 ## rubric
 
 - [[Hackathon judging rubric with four equal criteria]]
@@ -732,6 +825,10 @@
 - [[Public-safe unclassified submission constraints]]
 - [[Trust Boundaries for Military AI]]
 - [[Trust boundaries in sensitive workflow research]]
+
+## service-policy
+
+- [[AO checklist mandate and recurring service-level return reasons]]
 
 ## sme-discovery
 
@@ -783,18 +880,35 @@
 
 - [[Structured evaluation with held-out test set]]
 
+## tooling-gap
+
+- [[TPCT post-approval blind spot]]
+
+## tpct
+
+- [[Travel Policy Compliance Tool (TPCT) limitations]]
+
 ## traceability
 
 - [[Paragraph-level citation discipline]]
 
 ## travel
 
+- [[DTS policy linting for travel vouchers]]
 - [[DTS pre-flight and voucher linting]]
 - [[DTS travel pre-flight and voucher linting]]
 - [[DTS voucher pre-flight checking]]
 - [[TDY itinerary pre-flight and voucher linting]]
 - [[TDY pre-flight linting for vouchers and itineraries]]
 - [[TDY voucher pre-flight checker]]
+
+## travel-pay
+
+- [[DTS Approving Official (AO) as Certifying Officer]]
+
+## triage
+
+- [[AO triage assistant / 'AO radar' for risk-scored vouchers]]
 
 ## trust
 
@@ -803,7 +917,9 @@
 
 ## trust-boundaries
 
+- [[AO helper as quality assurance manager]]
 - [[Citations and missing-field visibility]]
+- [[Human approval boundary and trust limits for military travel AI]]
 - [[Trust boundaries in sensitive workflow research]]
 - [[Trust-boundary visibility]]
 
@@ -837,6 +953,10 @@
 
 - [[Single-persona end-to-end hackathon wedge]]
 
+## ux-pattern
+
+- [[AO helper as quality assurance manager]]
+
 ## validation
 
 - [[Interview-driven validation loop]]
@@ -846,8 +966,18 @@
 - [[TDY itinerary pre-flight and voucher linting]]
 - [[Two-round SME interview process]]
 
+## voucher-errors
+
+- [[AO checklist mandate and recurring service-level return reasons]]
+
+## voucher-review
+
+- [[AO voucher review checklist and cognitive workload]]
+
 ## workflow
 
+- [[AO Radar pre-approval triage queue]]
+- [[AO voucher review checklist and cognitive workload]]
 - [[Evidence-gated public research]]
 - [[GenAI.mil admin-trenches hackathon framing]]
 - [[GenAI.mil administrative-trenches framing]]
