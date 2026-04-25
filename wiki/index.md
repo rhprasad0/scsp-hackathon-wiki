@@ -5,10 +5,12 @@
 - **[[Administrative trenches as the GenAI.mil problem frame]]** — The challenge frames military AI opportunities around the rank-and-file administrative burden—paperwork, logistics, and bureaucracy—rather than combat or tactical operations.
 - **[[AI Rapid Capabilities Cell (AI RCC)]]** — The DoD organization that succeeded Task Force Lima and now operates the enterprise AI consolidation and frontier AI pilot efforts behind GenAI.mil.
 - **[[AI-assisted spec with human review]]** — An operating rule that AI-generated specs should not invent operational facts and must preserve human review.
+- **[[Amount reconciliation against receipts and exchange-rate math]]** — A major review task is verifying that claimed amounts match receipts, card charges, local paperwork, and currency-conversion calculations.
 - **[[AO checklist mandate and recurring service-level return reasons]]** — Navy, Quantico, and Army National Guard guidance reinforce that AOs need standardized checklists and written justifications, because common return reasons repeatedly include missing documentation, duplicate expenses, and vague pre-audit explanations.
 - **[[AO checklist-driven voucher review]]** — DTMO and service guidance require AOs to use standardized checklists that inspect trip dates, locations, receipts, pre-audit flags, supporting records, and mission appropriateness on every voucher.
 - **[[AO checklist-shaped voucher review]]** — Public DTMO and service guidance show that AO review follows a detailed checklist covering receipts, dates, locations, justifications, lines of accounting, and entitlement rules.
 - **[[AO helper as quality assurance manager]]** — The recommended trust posture is to support the Approving Official as a quality-assurance reviewer rather than replacing them as the primary receipt reader or decision-maker.
+- **[[AO Radar as pre-decision voucher risk triage]]** — The practitioner feedback supports a voucher assistant that ranks risky packets, highlights missing evidence, and drafts reviewer return comments before the AO makes a decision.
 - **[[AO Radar pre-approval triage queue]]** — A risk-scored queue of DTS vouchers awaiting action, designed to help AOs prioritize the most error-prone submissions before approval.
 - **[[AO radar pre-decision triage queue]]** — A proposed assistant that ranks submitted DTS vouchers by likely error risk so Approving Officials can review the highest-risk packets first before making approval decisions.
 - **[[AO triage assistant / 'AO radar' for risk-scored vouchers]]** — A proposed AI wedge is a pre-decision queue-ranker that scores DTS vouchers by likely error risk so AOs can focus attention on the most problematic submissions first.
@@ -20,6 +22,7 @@
 - **[[Back-office military workflow use cases]]** — The example project directions emphasize narrowly scoped administrative and support workflows such as regulation navigation, form auto-filling, TDY planning, and contract intelligence.
 - **[[Back-office workflow exemplars]]** — The prompt's example project directions concentrate on narrowly scoped administrative tasks such as regulation navigation, form auto-filling, TDY planning, and contract intelligence.
 - **[[Boring workflow, spicy mechanism]]** — A framing pattern where the underlying use case stays grounded and practical, while the technical implementation adds a memorable and impressive demo hook.
+- **[[Cash, ATM, and OCONUS documentation edge cases]]** — Cash payments, ATM withdrawals, exchange rates, and third-country vendor receipts create special reconstruction and evidence-matching challenges.
 - **[[Citations and missing-field visibility]]** — The system should expose its sources and clearly flag missing information so reviewers can assess the draft before approval.
 - **[[Conservative DA 31 leave draft assistant]]** — A narrow GenAI.mil wedge that converts plain-English leave requests into a review-ready DA Form 31 draft with cited rationale, unresolved-field flags, and no authority to submit or approve.
 - **[[Contract opportunity and vendor intelligence scaffolding]]** — An assistant that summarizes prior awards, vendor registrations, and applicable FAR/DFARS references to help contracting officers scope a buy without advising on source selection or award decisions.
@@ -39,6 +42,7 @@
 - **[[DA Form 31 leave drafting assistant]]** — An assistant that converts plain-English leave requests into a block-by-block DA Form 31 draft while flagging missing fields and leaving approval to humans.
 - **[[DA Form 31 leave request drafting]]** — An AI-assisted workflow that turns a natural-language leave request into a block-by-block draft of DA Form 31, while leaving approval and submission to the human chain of command.
 - **[[DA Form 31 leave request drafting assistant]]** — An AI-assisted workflow turns plain-English leave requests into a block-by-block DA Form 31 draft while flagging missing fields and keeping human approval in the chain of command.
+- **[[Date and trip-coherence checking for vouchers]]** — Reviewers look for missing, overlapping, or travel-misaligned dates as a key indicator that a DTS packet may need correction or return.
 - **[[Diagnostic capability as a winning prototype pattern]]** — A strong hackathon project can succeed as a red-team, assurance, or other diagnostic tool instead of an end-user productivity app.
 - **[[Diagnostic Security Prototypes]]** — Strong projects can succeed as diagnostic or adversarial tools, such as red-teaming or assurance capabilities, rather than end-user productivity apps.
 - **[[Doctrine-at-the-edge RAG]]** — A disconnected or locally packaged retrieval system over Army doctrine PDFs that answers with paragraph-level citations, refuses unsupported answers, and prioritizes literal offline operation when required.
@@ -52,8 +56,10 @@
 - **[[DTS modernization on hold]]** — DoD is continuing with current DTS and only incrementally modernizing it, so AI assistants should be built as companions to DTS rather than as bridges to a replacement system.
 - **[[DTS policy linting for travel vouchers]]** — An assistant can preflight vouchers against JTR, per-diem, lodging tax, date/location, and entitlement rules to flag likely policy issues before submission.
 - **[[DTS pre-flight and voucher linting]]** — A travel assistant that checks itineraries and vouchers against the Joint Travel Regulations and per-diem rules to catch common rejection causes before submission.
+- **[[DTS review as audit-like financial reconstruction]]** — DTS voucher review is less about simple form filling and more about reconstructing a coherent financial story from transactions, receipts, memory, and policy constraints.
 - **[[DTS travel pre-flight and voucher linting]]** — A travel-support workflow that checks itineraries and draft vouchers against JTR and per-diem rules to catch missing receipts, mismatched entitlements, and other common rejection causes before submission.
 - **[[DTS voucher pre-flight checking]]** — Another strong wedge is a JTR-grounded checker that flags common TDY authorization and voucher issues before submission to reduce rejection and rework.
+- **[[Duplicate and anomalous charge detection]]** — Repeated hotel charges, strange numbers, or other unexpected patterns can signal errors or justified exceptions that require human scrutiny.
 - **[[Edge AI precedent in DoD operations]]** — Public examples like Google Distributed Cloud at Mobility Guardian, EdgeRunner, and Legion Centurion show that disconnected or edge-deployed generative AI is already a viable DoD pattern.
 - **[[Evidence-backed synthesis over prototype sprawl]]** — A planning principle that favors narrowing to a reusable spec and avoiding broad weekend prototype sprawl.
 - **[[Evidence-first spec synthesis]]** — The project should narrow into a reusable spec based on repeated observations and avoid broad prototype sprawl.
@@ -85,6 +91,7 @@
 - **[[Judge-legible prototype story]]** — A winning prototype should quickly communicate who uses it, what artifact it produces, what references constrain it, and what approvals remain human-owned.
 - **[[Judge-Legible Prototype Storytelling]]** — A strong prototype should immediately communicate who uses it, what artifact it produces, what references constrain it, and what approvals remain human-owned.
 - **[[Judge-legible technical storytelling]]** — The project must communicate its creativity and technical sophistication quickly enough for judges to grasp during evaluation.
+- **[[Line of accounting and funding-source ambiguity]]** — Unclear LOA or 'pot of money' assignment is a common DTS failure mode that reviewers must flag before approval.
 - **[[Literal offline as a hypothesis, not a premise]]** — The note warns that 'offline' may mean disconnected operation, not necessarily fully local inference, so teams should validate organizer intent before centering the demo on edge deployment.
 - **[[Low-side AI-assisted workflow drafting]]** — An unclassified assistant that turns messy workflow inputs into structured, reviewable drafts for routine administrative or logistics artifacts.
 - **[[Low-side and CUI-only deployment boundary]]** — The platform and associated hackathon context are explicitly limited to unclassified and CUI data, with higher-classification deployment framed only as a future ambition.
@@ -128,6 +135,7 @@
 - **[[Public, unclassified, ITAR/EAR-aware submission constraints]]** — Submissions must remain public and unclassified, avoid controlled or restricted content, and account for export-control constraints such as ITAR and EAR.
 - **[[RAG over a small Army corpus as the starter architecture]]** — The recommended technical baseline is retrieval-augmented generation over a limited set of Army publications or field manuals before adding form generation or logistics planning.
 - **[[RAG over small DoD corpus as a starting architecture]]** — The recommended technical starting point is a retrieval-augmented generation pipeline over a limited set of Army publications or field manuals before adding downstream generation features.
+- **[[Receipt quality as a core DTS risk signal]]** — Missing, illegible, weak, or poorly tied receipts are a primary indicator of voucher risk and a central pain point in DTS review.
 - **[[Receipt validity and amount reconciliation]]** — A major DTS pain point is checking whether receipts are valid and whether claimed amounts match receipt evidence, since receipt problems dominate improper payments.
 - **[[Receipt validity and reconciliation checking]]** — A core pain point is verifying that receipts are valid and that claimed amounts match receipt evidence, since invalid or missing receipts are a dominant source of improper payments.
 - **[[Receipt validity as the dominant DTS error mode]]** — Public DTMO and DFAS evidence says inadequate or invalid receipts account for the majority of improper DTS payments, making receipt checking the primary triage target.
@@ -175,4 +183,4 @@
 
 - **[[Based on the initial hackathon notes, what are the strongest candidate wedge, key trust boundaries, and highest-priority SME validation questions?]]** — Based on the initial hackathon notes, the strongest candidate wedge is a **scoped prototype wedge** focused on a **low-s
 
-_169 pages | Generated 2026-04-25T18:58:49.131Z_
+_177 pages | Generated 2026-04-25T20:02:08.455Z_

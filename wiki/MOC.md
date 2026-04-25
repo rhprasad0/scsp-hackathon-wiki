@@ -1,7 +1,12 @@
 # Map of Content
 
+## accounting
+
+- [[Line of accounting and funding-source ambiguity]]
+
 ## ai-assistant
 
+- [[AO Radar as pre-decision voucher risk triage]]
 - [[AO triage assistant / 'AO radar' for risk-scored vouchers]]
 - [[Pre-approval evidence packaging for travel vouchers]]
 
@@ -28,6 +33,10 @@
 - [[Human-in-the-Loop Review and Approval]]
 - [[Self-critique and evaluation layer]]
 - [[Structured eval and refusal panel for prototypes]]
+
+## anomaly-detection
+
+- [[Duplicate and anomalous charge detection]]
 
 ## anti-pattern
 
@@ -68,6 +77,7 @@
 
 ## audit
 
+- [[DTS review as audit-like financial reconstruction]]
 - [[Invalid and missing receipts as the dominant DTS error mode]]
 - [[Receipt validity and amount reconciliation]]
 - [[TPCT post-approval blind spot]]
@@ -164,6 +174,10 @@
 
 - [[Critical Infrastructure Defense as a Prototype Theme]]
 - [[Critical infrastructure defense as a bounded theme]]
+
+## currency
+
+- [[Amount reconciliation against receipts and exchange-rate math]]
 
 ## cybersecurity
 
@@ -262,6 +276,7 @@
 
 ## documentation
 
+- [[Cash, ATM, and OCONUS documentation edge cases]]
 - [[Curated markdown as durable source material]]
 
 ## dod
@@ -287,23 +302,31 @@
 
 ## dts
 
+- [[AO Radar as pre-decision voucher risk triage]]
 - [[AO Radar pre-approval triage queue]]
 - [[AO checklist-driven voucher review]]
 - [[AO checklist-shaped voucher review]]
 - [[AO radar pre-decision triage queue]]
 - [[AO triage assistant / 'AO radar' for risk-scored vouchers]]
 - [[AO voucher review checklist and cognitive workload]]
+- [[Amount reconciliation against receipts and exchange-rate math]]
 - [[Approving Official as Certifying Officer]]
 - [[Approving Official as Certifying Officer with pecuniary liability]]
+- [[Cash, ATM, and OCONUS documentation edge cases]]
 - [[DTS AO Radar pre-decision triage]]
 - [[DTS Approving Official (AO) as Certifying Officer]]
 - [[DTS Approving Official as Certifying Officer]]
 - [[DTS modernization on hold]]
 - [[DTS policy linting for travel vouchers]]
+- [[DTS review as audit-like financial reconstruction]]
+- [[Date and trip-coherence checking for vouchers]]
+- [[Duplicate and anomalous charge detection]]
 - [[Human approval boundary for DTS AI]]
 - [[Invalid and missing receipts as the dominant DTS error mode]]
+- [[Line of accounting and funding-source ambiguity]]
 - [[MyTravel cancellation and incremental DTS modernization]]
 - [[Pre-decision triage versus post-approval compliance]]
+- [[Receipt quality as a core DTS risk signal]]
 - [[Receipt validity as the dominant DTS error mode]]
 - [[Synthetic voucher demo constraint]]
 - [[Synthetic-data-only prototype posture]]
@@ -381,6 +404,10 @@
 ## field-research
 
 - [[SME Discovery via Informal On-Site Sourcing]]
+
+## finance
+
+- [[Line of accounting and funding-source ambiguity]]
 
 ## forms
 
@@ -640,6 +667,10 @@
 - [[Slack-to-curated-notes workflow]]
 - [[Workflow artifact and bottleneck capture]]
 
+## oconus
+
+- [[Cash, ATM, and OCONUS documentation edge cases]]
+
 ## offline-first
 
 - [[Offline-first military AI]]
@@ -796,9 +827,14 @@
 ## receipts
 
 - [[Invalid and missing receipts as the dominant DTS error mode]]
+- [[Receipt quality as a core DTS risk signal]]
 - [[Receipt validity and amount reconciliation]]
 - [[Receipt validity and reconciliation checking]]
 - [[Receipt validity as the dominant DTS error mode]]
+
+## reconciliation
+
+- [[Amount reconciliation against receipts and exchange-rate math]]
 
 ## red-teaming
 
@@ -850,6 +886,10 @@
 - [[AO Radar pre-approval triage queue]]
 - [[AO radar pre-decision triage queue]]
 - [[AO triage assistant / 'AO radar' for risk-scored vouchers]]
+
+## risk-triage
+
+- [[Receipt quality as a core DTS risk signal]]
 
 ## rubric
 
@@ -971,9 +1011,15 @@
 ## travel-policy
 
 - [[DTS AO Radar pre-decision triage]]
+- [[Date and trip-coherence checking for vouchers]]
+
+## travel-vouchers
+
+- [[DTS review as audit-like financial reconstruction]]
 
 ## triage
 
+- [[AO Radar as pre-decision voucher risk triage]]
 - [[AO triage assistant / 'AO radar' for risk-scored vouchers]]
 
 ## trust
@@ -1025,6 +1071,7 @@
 
 ## validation
 
+- [[Date and trip-coherence checking for vouchers]]
 - [[Interview-driven validation loop]]
 - [[On-site SME discovery for hackathon validation]]
 - [[SME Discovery for Hackathon Validation]]
@@ -1040,6 +1087,7 @@
 
 - [[AO checklist-shaped voucher review]]
 - [[AO voucher review checklist and cognitive workload]]
+- [[Duplicate and anomalous charge detection]]
 
 ## workflow
 
