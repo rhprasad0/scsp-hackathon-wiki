@@ -19,6 +19,7 @@
 
 - [[AI Rapid Capabilities Cell (AI RCC)]]
 - [[AI-assisted spec with human review]]
+- [[Individualized review requirements for AI-supported claims decisions]]
 - [[Trust-boundary visibility]]
 
 ## ai-program
@@ -33,6 +34,10 @@
 - [[Human-in-the-Loop Review and Approval]]
 - [[Self-critique and evaluation layer]]
 - [[Structured eval and refusal panel for prototypes]]
+
+## ai-systems
+
+- [[Claims adjudication workflow architecture]]
 
 ## anomaly-detection
 
@@ -57,6 +62,7 @@
 
 ## architecture
 
+- [[Claims adjudication workflow architecture]]
 - [[GenAI.mil as a multi-model gateway]]
 - [[Multi-model gateway architecture]]
 - [[RAG over a small Army corpus as the starter architecture]]
@@ -77,6 +83,7 @@
 
 ## audit
 
+- [[Audit trail integrity in claims systems]]
 - [[DTS review as audit-like financial reconstruction]]
 - [[Invalid and missing receipts as the dominant DTS error mode]]
 - [[Receipt validity and amount reconciliation]]
@@ -84,6 +91,7 @@
 
 ## automation
 
+- [[Straight-through claims processing]]
 - [[Travel Policy Compliance Tool (TPCT) limitations]]
 
 ## back-office
@@ -446,6 +454,7 @@
 ## governance
 
 - [[Approving Official as Certifying Officer with pecuniary liability]]
+- [[Audit trail integrity in claims systems]]
 - [[DTS Approving Official as Certifying Officer]]
 - [[Human Oversight as a Winning Pattern]]
 - [[Human approval boundary and trust limits for military travel AI]]
@@ -519,12 +528,14 @@
 
 - [[AO helper as quality assurance manager]]
 - [[DA Form 31 leave request drafting assistant]]
+- [[Decorative human review in claims automation]]
 - [[Form-honest DA Form 31 leave assistant]]
 - [[Human Oversight as a Winning Pattern]]
 - [[Human approval boundary and trust limits for military travel AI]]
 - [[Human approval boundary for DTS AI]]
 - [[Human approval boundary for military drafts]]
 - [[Human approval boundary for military travel AI]]
+- [[Human review modes in claims operations]]
 - [[Human-in-the-Loop Review and Approval]]
 - [[Human-in-the-loop approval boundary]]
 - [[Human-in-the-loop submission boundary]]
@@ -540,6 +551,16 @@
 ## ingestion
 
 - [[Curated markdown as durable source material]]
+
+## insurance
+
+- [[Audit trail integrity in claims systems]]
+- [[Claims adjudication workflow architecture]]
+- [[Closed-loop adjudication failure lab]]
+- [[Decorative human review in claims automation]]
+- [[Human review modes in claims operations]]
+- [[Individualized review requirements for AI-supported claims decisions]]
+- [[Straight-through claims processing]]
 
 ## integration
 
@@ -678,6 +699,10 @@
 ## open-source
 
 - [[Public-safe unclassified submission constraints]]
+
+## operations
+
+- [[Human review modes in claims operations]]
 
 ## organization
 
@@ -844,6 +869,10 @@
 
 - [[Paragraph-level citation and refusal discipline]]
 
+## regulation
+
+- [[Individualized review requirements for AI-supported claims decisions]]
+
 ## reliability
 
 - [[Over-refusal when grounding is missing]]
@@ -880,6 +909,10 @@
 ## review
 
 - [[AI-assisted spec with human review]]
+
+## risk
+
+- [[Decorative human review in claims automation]]
 
 ## risk-scoring
 
@@ -932,6 +965,10 @@
 
 - [[AO checklist mandate and recurring service-level return reasons]]
 
+## simulation
+
+- [[Closed-loop adjudication failure lab]]
+
 ## sme-discovery
 
 - [[On-site SME discovery for hackathon validation]]
@@ -980,6 +1017,7 @@
 
 ## testing
 
+- [[Closed-loop adjudication failure lab]]
 - [[Structured evaluation with held-out test set]]
 
 ## tooling-gap
@@ -1103,6 +1141,7 @@
 - [[Judge-Legible Prototype Storytelling]]
 - [[Pre-decision triage versus post-approval compliance]]
 - [[Single-persona end-to-end wedge selection]]
+- [[Straight-through claims processing]]
 
 ## workflow-analysis
 

@@ -18,12 +18,15 @@
 - **[[Approving Official as Certifying Officer]]** — The DTS Approving Official is a Certifying Officer with personal pecuniary liability, making voucher approval a high-stakes additional duty rather than a routine clerical task.
 - **[[Approving Official as Certifying Officer with pecuniary liability]]** — In DTS, the Approving Official who stamps a voucher for payment also acts as a Certifying Officer and carries personal pecuniary liability under federal law.
 - **[[Army regulation Q&A with paragraph-level citations]]** — A retrieval-grounded assistant for Army regulations and field manuals that answers only when supported by specific cited paragraphs and refuses unsupported claims.
+- **[[Audit trail integrity in claims systems]]** — A claims platform should record enough evidence and rationale to reconstruct a decision, not merely show that a process occurred.
 - **[[Back-office military workflow examples]]** — The example project directions focus on narrowly scoped administrative wedges such as regulation navigation, form auto-filling, TDY planning, and contract intelligence.
 - **[[Back-office military workflow use cases]]** — The example project directions emphasize narrowly scoped administrative and support workflows such as regulation navigation, form auto-filling, TDY planning, and contract intelligence.
 - **[[Back-office workflow exemplars]]** — The prompt's example project directions concentrate on narrowly scoped administrative tasks such as regulation navigation, form auto-filling, TDY planning, and contract intelligence.
 - **[[Boring workflow, spicy mechanism]]** — A framing pattern where the underlying use case stays grounded and practical, while the technical implementation adds a memorable and impressive demo hook.
 - **[[Cash, ATM, and OCONUS documentation edge cases]]** — Cash payments, ATM withdrawals, exchange rates, and third-country vendor receipts create special reconstruction and evidence-matching challenges.
 - **[[Citations and missing-field visibility]]** — The system should expose its sources and clearly flag missing information so reviewers can assess the draft before approval.
+- **[[Claims adjudication workflow architecture]]** — Insurance claims automation is typically a pipeline of intake, extraction, policy/rules evaluation, scoring, decisioning, audit logging, and exception handling rather than a single model.
+- **[[Closed-loop adjudication failure lab]]** — AO Radar is positioned as a synthetic test harness for simulating insurance-style claim adjudication failure modes such as batch signoff, weak evidence, and automated certainty.
 - **[[Conservative DA 31 leave draft assistant]]** — A narrow GenAI.mil wedge that converts plain-English leave requests into a review-ready DA Form 31 draft with cited rationale, unresolved-field flags, and no authority to submit or approve.
 - **[[Contract opportunity and vendor intelligence scaffolding]]** — An assistant that summarizes prior awards, vendor registrations, and applicable FAR/DFARS references to help contracting officers scope a buy without advising on source selection or award decisions.
 - **[[Contract-intel scaffold for contracting officers]]** — An assistant can synthesize SAM.gov, USAspending, and eCFR Title 48 into a sourced one-pager to help contracting officers scope a buy, while avoiding award advice or source-selection decisions.
@@ -43,6 +46,7 @@
 - **[[DA Form 31 leave request drafting]]** — An AI-assisted workflow that turns a natural-language leave request into a block-by-block draft of DA Form 31, while leaving approval and submission to the human chain of command.
 - **[[DA Form 31 leave request drafting assistant]]** — An AI-assisted workflow turns plain-English leave requests into a block-by-block DA Form 31 draft while flagging missing fields and keeping human approval in the chain of command.
 - **[[Date and trip-coherence checking for vouchers]]** — Reviewers look for missing, overlapping, or travel-misaligned dates as a key indicator that a DTS packet may need correction or return.
+- **[[Decorative human review in claims automation]]** — A failure mode where humans are nominally in the loop but mostly rubber-stamp machine defaults, with little authority, time, or context to challenge the outcome.
 - **[[Diagnostic capability as a winning prototype pattern]]** — A strong hackathon project can succeed as a red-team, assurance, or other diagnostic tool instead of an end-user productivity app.
 - **[[Diagnostic Security Prototypes]]** — Strong projects can succeed as diagnostic or adversarial tools, such as red-teaming or assurance capabilities, rather than end-user productivity apps.
 - **[[Doctrine-at-the-edge RAG]]** — A disconnected or locally packaged retrieval system over Army doctrine PDFs that answers with paragraph-level citations, refuses unsupported answers, and prioritizes literal offline operation when required.
@@ -82,9 +86,11 @@
 - **[[Human approval boundary for military drafts]]** — The assistant may draft and cite, but humans must retain review, acceptance, and approval authority before any export or submission.
 - **[[Human approval boundary for military travel AI]]** — Any AI assistant in this space must stop at drafting, flagging, citing, and triage; humans must retain authority to approve, certify, sign, submit, or accuse fraud.
 - **[[Human Oversight as a Winning Pattern]]** — Successful national-security AI projects emphasize operational relevance while preserving human-in-the-loop review and accountability.
+- **[[Human review modes in claims operations]]** — Claims systems commonly shift humans into exception handling, batch review, audit-only, or appeal roles instead of primary adjudication.
 - **[[Human-in-the-loop approval boundary]]** — The AI may draft, retrieve, cite, and preflight artifacts, but humans must retain authority to approve, sign, submit, or file official military documents.
 - **[[Human-in-the-Loop Review and Approval]]** — A workflow pattern where the AI can draft and flag issues, but a human reviewer and supervisor retain edit, acceptance, rejection, and approval authority.
 - **[[Human-in-the-loop submission boundary]]** — The AI may draft, retrieve, cite, and pre-flight artifacts, but humans retain authority to approve, sign, submit, or file official military documents.
+- **[[Individualized review requirements for AI-supported claims decisions]]** — Regulatory guidance emphasizes that AI can assist claims decisions but cannot replace case-specific review, documentation, explainability, and oversight duties.
 - **[[Interview-driven validation loop]]** — The workflow repeatedly captures, ingests, queries, and refines notes to identify repeated pain points, artifacts, trust boundaries, and candidate wedges.
 - **[[Invalid and missing receipts as the dominant DTS error mode]]** — The note identifies inadequate or missing receipts as the largest source of improper DTS payments, with DFAS reporting that more than 70% of improper payments stem from receipt problems.
 - **[[Judge-fit risk and claim calibration]]** — An admonition to soften unsupported claims about judge preferences, current adoption, and operational impact, and to frame the prototype honestly within evidence limits.
@@ -151,6 +157,7 @@
 - **[[SME Discovery via Informal On-Site Sourcing]]** — A lightweight outreach tactic that asks organizers, mentors, and nearby teams directly for people with relevant DoD or government workflow experience.
 - **[[Spec Readiness Score]]** — A red-yellow-green rubric used to judge when enough repeated evidence has been gathered to stop interviewing and start writing.
 - **[[Spec readiness scoring]]** — A red-yellow-green judgment for deciding when enough repeated evidence has been gathered to stop interviewing and start writing the spec.
+- **[[Straight-through claims processing]]** — An insurance operations goal where simple claims are handled end-to-end with minimal or no human touches, while harder cases are routed to humans.
 - **[[Structured Draft Generation for Military Artifacts]]** — The assistant produces first-draft versions of routine military administrative artifacts such as memos, requests, logistics summaries, and after-action reports in expected formats.
 - **[[Structured draft generation for routine military artifacts]]** — The assistant should produce first-draft versions of common administrative outputs such as memos, logistics request summaries, after-action reports, and policy Q&A drafts.
 - **[[Structured eval and refusal panel for prototypes]]** — A visible evaluation layer using a small held-out test set to demonstrate retrieval accuracy, refusal behavior, missing-field detection, and form-field mapping correctness.
@@ -183,4 +190,4 @@
 
 - **[[Based on the initial hackathon notes, what are the strongest candidate wedge, key trust boundaries, and highest-priority SME validation questions?]]** — Based on the initial hackathon notes, the strongest candidate wedge is a **scoped prototype wedge** focused on a **low-s
 
-_177 pages | Generated 2026-04-25T20:02:08.455Z_
+_184 pages | Generated 2026-04-29T18:04:27.078Z | manually deduped 2026-04-29_
