@@ -1,7 +1,7 @@
 ---
 title: 2026 04 29 insurance claims minimal human adjudication
 source: research/2026-04-29-insurance-claims-minimal-human-adjudication.md
-ingestedAt: "2026-04-29T18:03:53.466Z"
+ingestedAt: "2026-04-29T18:29:15.537Z"
 ---
 
 ---
