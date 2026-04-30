@@ -6,10 +6,12 @@
 - [[Audit-log whitewash detection]]
 - [[Explanation faithfulness]]
 - [[Meaningful human review]]
+- [[Traceability without comprehension]]
 
 ## adjudication
 
 - [[AO Radar closed-loop adjudication failure lab]]
+- [[Autonomous finality]]
 - [[Closed-loop adjudication failure mode]]
 - [[Closed-loop adjudication pipeline]]
 - [[Closed-loop adjudication risk]]
@@ -36,6 +38,10 @@
 - [[Confidence scores and calibration]]
 - [[Individualized evidence review requirement]]
 
+## ai-safety
+
+- [[Responsible AI theater]]
+
 ## appeals
 
 - [[Appeal-only correction]]
@@ -56,9 +62,17 @@
 - [[Audit trail analysis and whitewashing detection]]
 - [[Audit-log whitewash detection]]
 
+## audit-logs
+
+- [[Traceability without comprehension]]
+
 ## audit-trails
 
 - [[Audit trail limitations]]
+
+## auditability
+
+- [[Self-certified compliance]]
 
 ## automated-decisioning
 
@@ -66,6 +80,8 @@
 
 ## automation
 
+- [[Authority boundary erasure]]
+- [[Autonomous finality]]
 - [[Claims adjudication workflow stack]]
 - [[Closed-loop adjudication failure mode]]
 - [[Closed-loop adjudication pipeline]]
@@ -104,6 +120,7 @@
 
 - [[Audit trail analysis and whitewashing detection]]
 - [[Individualized review requirement]]
+- [[Self-certified compliance]]
 
 ## confidence
 
@@ -113,6 +130,10 @@
 
 - [[Contestability and remedy]]
 
+## control
+
+- [[Governability claim without stop path]]
+
 ## control-systems
 
 - [[Exception-queue control problem]]
@@ -121,6 +142,10 @@
 
 - [[Cognitive forcing functions]]
 - [[Verification complexity and overreliance]]
+
+## decision-systems
+
+- [[Autonomous finality]]
 
 ## decisioning
 
@@ -143,6 +168,8 @@
 
 - [[AO Radar closed-loop adjudication failure lab]]
 - [[Failure taxonomy for adjudication systems]]
+- [[Governance evaluator]]
+- [[Policy bonfire matrix]]
 - [[Synthetic adjudication evaluation harness]]
 - [[Unsafe system as specimen]]
 
@@ -208,6 +235,7 @@
 ## governance
 
 - [[Audit trail sufficiency]]
+- [[Authority boundary erasure]]
 - [[Closed-loop adjudication risk]]
 - [[Contestability and remedy]]
 - [[Decorative human review]]
@@ -215,12 +243,16 @@
 - [[Escalation queue control]]
 - [[Evidence access for review]]
 - [[Exception-handler human review]]
+- [[Governability claim without stop path]]
+- [[Governance evaluator]]
 - [[Human authority boundary]]
 - [[Human review modes as experimental variables]]
 - [[Human-in-the-loop exception handling]]
 - [[Individualized evidence review requirement]]
 - [[Meaningful human involvement in automated decisions]]
 - [[Meaningful human review]]
+- [[Responsible AI theater]]
+- [[Self-certified compliance]]
 
 ## hci
 
@@ -237,6 +269,7 @@
 
 ## human-in-the-loop
 
+- [[Authority boundary erasure]]
 - [[Batch rubber-stamp review risk]]
 - [[Exception-handler human review]]
 - [[Human authority boundary]]
@@ -282,6 +315,10 @@
 
 - [[Fraud payment authorization holds]]
 
+## policy
+
+- [[Policy bonfire matrix]]
+
 ## queue-management
 
 - [[Escalation queue control]]
@@ -289,6 +326,11 @@
 ## reference-architecture
 
 - [[Insurance claims AI reference architecture]]
+
+## responsible-ai
+
+- [[Policy bonfire matrix]]
+- [[Responsible AI theater]]
 
 ## review
 
@@ -316,6 +358,7 @@
 
 ## safety
 
+- [[Governability claim without stop path]]
 - [[Unsafe system as specimen]]
 
 ## synthetic-data
@@ -334,6 +377,14 @@
 ## test-design
 
 - [[Scenario card design for adjudication testing]]
+
+## testing
+
+- [[Governance evaluator]]
+
+## traceability
+
+- [[Traceability without comprehension]]
 
 ## transparency
 

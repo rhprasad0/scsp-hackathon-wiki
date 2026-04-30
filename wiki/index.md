@@ -9,7 +9,9 @@
 - **[[Audit trail limitations]]** — Audit logs can prove that events, handoffs, and declared review steps occurred, but they cannot by themselves prove correctness, faithful reasoning, or real human judgment.
 - **[[Audit trail sufficiency]]** — The question of whether an automated claims log records enough evidence and reasoning to reconstruct and evaluate the decision, rather than merely showing that a process occurred.
 - **[[Audit-log whitewash detection]]** — The analysis of audit trails to find cases where systems falsely imply review, obscure responsibility, or clean up traces after automated decisions.
+- **[[Authority boundary erasure]]** — The collapse of the line between automated processing and accountable human authority, where no human or institution retains real control over the consequential final action.
 - **[[Automation bias in human review]]** — The tendency for reviewers to over-rely on automated recommendations, treating them as correct even when verification is difficult or the system is wrong.
+- **[[Autonomous finality]]** — A closed-loop adjudication pattern where the system not only recommends but completes the final decision, generates its own rationale, and finalizes the outcome without meaningful human intervention.
 - **[[Batch review and rubber-stamp denials]]** — A controversial operational pattern in which reviewers process claims rapidly, with limited file review or individualized analysis, creating concern about decorative or superficial oversight.
 - **[[Batch rubber-stamp review risk]]** — A failure mode where reviewers approve or deny claims rapidly with little or no file-specific analysis, creating only the appearance of human oversight.
 - **[[Claims adjudication workflow stack]]** — The multi-step architecture for claims handling, including intake, extraction, rules evaluation, scoring, decisioning, rationale generation, audit logging, and routing.
@@ -35,6 +37,8 @@
 - **[[Failure taxonomy for adjudication systems]]** — A structured set of labels such as unsupported denial, invented facts, policy laundering, and decorative human review used to evaluate agent behavior.
 - **[[Failure to escalate]]** — A failure mode where a system classifies an ambiguous or high-stakes case as routine and never routes it to the human authority that should resolve it.
 - **[[Fraud payment authorization holds]]** — Risk-based payment workflows that delay, hold, or reject transactions when fraud suspicion thresholds are met, relying on time-bounded review and customer support to resolve exceptions.
+- **[[Governability claim without stop path]]** — A false assurance condition in which a system is said to be governable, but there is no real pre-finalization disengage, escalation, or stop mechanism.
+- **[[Governance evaluator]]** — A second-layer evaluation component that tests whether a system has actual accountability, stop paths, bounded use, and independent assurance beyond the correctness of the decision itself.
 - **[[Human authority boundary]]** — Human-in-the-loop only counts when the human actually controls the consequential action rather than serving as a decorative reviewer.
 - **[[Human review modes as experimental variables]]** — Different review roles—meaningful, exception, decorative, batch, appeal-only, audit-only, managerial checkbox—are treated as distinct conditions for measurement.
 - **[[Human-in-the-loop exception handling]]** — A review model where humans are shifted from primary decision-makers to handlers of exceptional, high-complexity, or sensitive claims cases.
@@ -44,11 +48,15 @@
 - **[[Manual adjudication as a configured exception state]]** — Vendor workflow pattern where processing pends and requires explicit user action such as accepting, denying, modifying, or rerouting a case.
 - **[[Meaningful human involvement in automated decisions]]** — Human review only counts when the reviewer has real time, information, authority, and incentive to challenge or change the automated outcome.
 - **[[Meaningful human review]]** — Human oversight in automated decisions that includes real authority, discretion, evidence access, and the ability to change or stop the outcome.
+- **[[Policy bonfire matrix]]** — A mapping from DoD Responsible AI principles to corresponding synthetic failure modes, used to operationalize how a specimen can violate policy while appearing compliant.
 - **[[Public benefits eligibility automation]]** — Automated or semi-automated public benefits workflows that extract data, calculate eligibility, and route exceptions, appeals, and overrides for human review.
+- **[[Responsible AI theater]]** — A failure mode where an autonomous system performs the visible artifacts of Responsible AI—traceability, reliability, governance, and auditability—while eliminating the human authority those artifacts are meant to protect.
 - **[[Scenario card design for adjudication testing]]** — Synthetic packet templates that encode cases like missing documentation, duplicates, ambiguity, and weak evidence to exercise adjudication systems.
+- **[[Self-certified compliance]]** — A pattern in which the system generates its own compliance claims or self-assessment, creating the appearance of independent assurance without any external reviewer or accountable authority.
 - **[[Straight-through claims processing]]** — An insurance operations model where simple claims are processed end-to-end with minimal human touch, while only exceptions are routed to manual review.
 - **[[Straight-through processing]]** — An operating model where simple cases move from intake to decision with minimal manual touch, and only exceptions are sent to human review.
 - **[[Synthetic adjudication evaluation harness]]** — A safe, synthetic environment for testing adjudication agents and failure modes without touching real-world systems or decisions.
+- **[[Traceability without comprehension]]** — A situation where logs and audit trails record events and workflow steps but do not demonstrate that any accountable person understood, reviewed, or approved the decision.
 - **[[Trust-and-safety appeals and content moderation review]]** — Content moderation systems that apply automated or human policy actions and then depend on appeals, secondary review, and escalation paths to provide meaningful contestability.
 - **[[Uncertainty disclosure]]** — Systems should expose confidence, missing evidence, contradictory facts, and limitations so reviewers and affected people can judge how reliable the decision is.
 - **[[Unsafe system as specimen]]** — The low-safeguard or unsafe adjudication agent is treated as the object of study, while the surrounding harness remains controlled and safe.
@@ -58,4 +66,4 @@
 
 - **[[AO Radar article evidence map: machine controls exception queue]]** — The wiki supports an evidence map for “machine controls exception queue,” but it does not use that exact phrase as a sta
 
-_52 pages | Generated 2026-04-29T19:55:33.297Z_
+_60 pages | Generated 2026-04-30T00:45:36.022Z_
