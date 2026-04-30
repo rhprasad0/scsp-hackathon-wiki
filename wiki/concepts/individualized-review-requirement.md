@@ -1,15 +1,14 @@
 ---
 title: Individualized review requirement
-summary: The principle that AI-assisted decisions must still consider case-specific evidence, rather than relying solely on generic rules, population-level models, or automated defaults.
+summary: The principle that consequential decisions must consider case-specific evidence rather than relying on generic rules, scores, or predictions.
 sources:
-  - 2026-04-29-insurance-claims-minimal-human-adjudication.md
+  - 2026-04-29-exception-based-adjudication-workflows.md
 createdAt: "2026-04-29T18:29:49.734Z"
-updatedAt: "2026-04-29T18:29:49.734Z"
+updatedAt: "2026-04-29T19:54:30.062Z"
 tags:
-  - governance
-  - ai
   - review
   - compliance
+  - decisioning
 aliases:
   - individualized-review-requirement
   - IRR
@@ -17,19 +16,18 @@ aliases:
 
 # Individualized review requirement
 
-The **individualized review requirement** is the expectation that a decision system must consider the specific facts of each case rather than relying only on generic rules, population-level logic, or an automated default. In AO Radar’s framing, this requirement matters because closed-loop adjudication can become a process where the machine sets the outcome and the human reviewer is left with little authority or context to challenge it. ^[2026-04-29-insurance-claims-minimal-human-adjudication.md]
+The **individualized review requirement** is the expectation that an AI-assisted or automated decision must consider the specific facts of each case, rather than relying only on generic rules, population-level logic, or an automated default. In the source material, this is framed as a boundary on systems that assist coverage or adjudication decisions: the decision-maker must still review patient-specific history, physician recommendations, clinical notes, or other case evidence before finalizing an outcome. ^[2026-04-29-exception-based-adjudication-workflows.md]
 
-This requirement is tied to the boundary between automation and human authority. The source material notes that AI-supported insurance decisions remain subject to oversight and that algorithms may assist coverage decisions, but cannot replace individualized review of patient-specific history, physician recommendations, and clinical notes. More broadly, AO Radar treats meaningful human review as necessary when the human controls the consequential action rather than serving as a decorative checkbox. ^[2026-04-29-insurance-claims-minimal-human-adjudication.md] ^[2026-04-29-ao-radar-product-reset.md]
+This requirement matters because closed-loop adjudication workflows can make the machine set the default outcome while the human reviewer becomes a decorative checkbox. When that happens, the process may look reviewed even though no meaningful individualized consideration occurred. ^[2026-04-29-exception-based-adjudication-workflows.md]
 
-In practice, individualized review is the opposite of batch signoff, straight-through processing without exceptions, or audit logs that merely make a process look reviewed after the fact. The source material associates failures of this kind with decorative human review, audit-log whitewash, unsupported denial, automated certainty, and process claims that review occurred when no meaningful review actually happened. ^[2026-04-29-insurance-claims-minimal-human-adjudication.md] ^[2026-04-29-ao-radar-product-reset.md]
+In practice, individualized review is the opposite of [[Straight-through processing]] for ambiguous cases, batch signoff, or post hoc audit logs that merely document that a workflow happened. The source material emphasizes that review is meaningful only when reviewers have the evidence, authority, time, and discretion to challenge the automated default and escalate unsupported or ambiguous cases. ^[2026-04-29-exception-based-adjudication-workflows.md]
 
-AO Radar’s evaluation design uses scenario cards that force case-specific analysis, including missing or weak documentation, duplicate charges, date or location inconsistencies, ambiguous authorization, stale-memory reconstruction, unsupported fraud framing, incomplete but human-explainable packets, and policy ambiguity that should trigger escalation. These cases are meant to show whether the system responds to the actual packet evidence or instead launders a generic rule or model output into a confident decision. ^[2026-04-29-ao-radar-product-reset.md]
+The requirement appears in multiple domains discussed in the source material, including insurance claims, health coverage and utilization management, public benefits administration, and payment operations. Across these settings, regulators and guidance documents consistently distinguish routine automation from cases that require case-specific review, override authority, or appeal paths. ^[2026-04-29-exception-based-adjudication-workflows.md]
 
-The concept is also reflected in the project’s human review modes, which include meaningful reviewer, exception reviewer, decorative reviewer, batch reviewer, appeal-only reviewer, audit-only reviewer, and managerial checkbox. These modes are used to test whether review is individualized and substantive or merely procedural. ^[2026-04-29-ao-radar-product-reset.md]
+AO Radar uses this idea as an evaluation target: the system under test should be checked for whether it routes weak, incomplete, or ambiguous packets into [[Meaningful human review]] before any consequential action, or instead launders a generic rule, confidence score, or model output into an individualized-looking decision. ^[2026-04-29-exception-based-adjudication-workflows.md]
 
-Related concepts include [[Human review modes as experimental variables]], [[Human authority boundary]], [[Human review modes as experimental variables]], [[Audit trail analysis and whitewashing detection]], [[Closed-loop adjudication pipeline]], and [[Failure taxonomy for adjudication systems]]. ^[2026-04-29-ao-radar-product-reset.md]
+Related concepts include [[Human authority boundary]], [[Human review modes as experimental variables]], [[Appeals as the first meaningful human authority boundary]], [[Audit trail analysis and whitewashing detection]], [[Closed-loop adjudication pipeline]], and [[Failure taxonomy for adjudication systems]]. ^[2026-04-29-exception-based-adjudication-workflows.md]
 
 ## Sources
 
-- [2026-04-29-insurance-claims-minimal-human-adjudication.md]
-- [2026-04-29-ao-radar-product-reset.md]
+- [2026-04-29-exception-based-adjudication-workflows.md]

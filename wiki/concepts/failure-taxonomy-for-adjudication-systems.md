@@ -1,14 +1,14 @@
 ---
 title: Failure taxonomy for adjudication systems
-summary: A labeled set of failure modes such as unsupported denial, invented facts, policy laundering, and decorative human review used to evaluate agent behavior.
+summary: A structured set of labels such as unsupported denial, invented facts, policy laundering, and decorative human review used to evaluate agent behavior.
 sources:
   - 2026-04-29-ao-radar-product-reset.md
 createdAt: "2026-04-29T18:29:41.286Z"
-updatedAt: "2026-04-29T18:29:41.286Z"
+updatedAt: "2026-04-29T19:54:11.508Z"
 tags:
-  - evaluation
-  - failure-analysis
   - taxonomy
+  - evaluation
+  - failure-modes
 aliases:
   - failure-taxonomy-for-adjudication-systems
   - FTFAS
@@ -16,15 +16,15 @@ aliases:
 
 # Failure taxonomy for adjudication systems
 
-A **failure taxonomy for adjudication systems** is a structured set of labels for analyzing how a closed-loop adjudication pipeline fails across decision-making, rationale generation, audit logging, and human review. In AO Radar’s framing, the taxonomy is used to make consequential behaviors legible in a synthetic evaluation harness, not to describe a production system. ^[2026-04-29-ao-radar-product-reset.md]
+A **failure taxonomy for adjudication systems** is a labeled set of failure modes used to evaluate how a [[Closed-loop adjudication pipeline]] breaks down across intake, evidence extraction, scoring, decision-making, rationale generation, audit logging, and optional human review. In AO Radar’s framing, the taxonomy is meant to make consequential behaviors legible in a synthetic evaluation harness, not to describe a production system. ^[2026-04-29-ao-radar-product-reset.md]
 
-The taxonomy is centered on the boundary between automation and human authority. A key concern is whether a human reviewer meaningfully controls the consequential action, or whether review is reduced to a decorative checkbox while the machine sets the default, writes the rationale, and cleans up the audit trail afterward. ^[2026-04-29-ao-radar-product-reset.md]
+The taxonomy focuses on the boundary between automation and human authority. A central question is whether a human reviewer meaningfully controls the consequential action, or whether review is reduced to a decorative checkbox while the machine sets the default, writes the rationale, and cleans up the audit trail afterward. ^[2026-04-29-ao-radar-product-reset.md]
 
 ## Scope
 
-AO Radar treats the failure taxonomy as part of a closed-loop adjudication failure lab: a synthetic eval harness for unsafe adjudication agents as specimens. The harness is intended to remain safe, synthetic, logged, and bounded, and must not touch real vouchers, claimants, payments, official systems, fraud accusations, or production adjudication workflows. ^[2026-04-29-ao-radar-product-reset.md]
+AO Radar treats the taxonomy as part of a closed-loop adjudication failure lab: a synthetic eval harness for unsafe adjudication agents as specimens. The harness is intended to remain safe, synthetic, logged, and bounded, and must not touch real vouchers, claimants, payments, official systems, fraud accusations, or production adjudication workflows. ^[2026-04-29-ao-radar-product-reset.md]
 
-The taxonomy applies to adjudication-like domains such as voucher-like packets, claims, benefits, reimbursements, payment authorization, fraud scoring, and trust-and-safety decisions. It is designed to evaluate the full loop, not just a single model answer, because failures can arise across intake, evidence extraction, scoring, decisioning, rationale generation, audit logging, and optional human review. ^[2026-04-29-ao-radar-product-reset.md]
+The taxonomy applies to adjudication-like domains such as voucher-like packets, claims, benefits, reimbursements, payment authorization, fraud scoring, and trust-and-safety decisions. It is designed to evaluate the full loop, not just a single model answer, because failures can arise across multiple stages of the pipeline. ^[2026-04-29-ao-radar-product-reset.md]
 
 ## Core failure labels
 
@@ -47,7 +47,7 @@ The source material names the following failure labels:
 
 ## Scenario-card contexts
 
-The scenario cards used to exercise the taxonomy may include clean packets, missing or weak documentation, duplicate charges, date or location inconsistencies, ambiguous authorization, stale-memory reconstruction, unsupported fraud framing, incomplete but human-explainable packets, and policy ambiguity that should trigger escalation. These contexts help distinguish unsupported denial or approval from legitimate escalation and review behavior. ^[2026-04-29-ao-radar-product-reset.md]
+Scenario cards used to exercise the taxonomy may include clean packets, missing or weak documentation, duplicate charges, date or location inconsistencies, ambiguous authorization, stale-memory reconstruction, unsupported fraud framing, incomplete but human-explainable packets, and policy ambiguity that should trigger escalation. These contexts help distinguish unsupported denial or approval from legitimate escalation and review behavior. ^[2026-04-29-ao-radar-product-reset.md]
 
 ## Human review as a variable
 
@@ -55,7 +55,11 @@ Human review is treated as a first-class experimental variable rather than a bin
 
 ## Related concepts
 
-Related wiki pages include [[Closed-loop adjudication pipeline]], [[Human review modes as experimental variables]], [[Audit trail analysis and whitewashing detection]], [[Closed-loop adjudication pipeline]], [[AO Radar closed-loop adjudication failure lab]], and [[Human authority boundary]]. ^[2026-04-29-ao-radar-product-reset.md]
+- [[Closed-loop adjudication pipeline]]
+- [[Human review modes as experimental variables]]
+- [[Audit trail analysis and whitewashing detection]]
+- [[AO Radar closed-loop adjudication failure lab]]
+- [[Human authority boundary]]
 
 ## Sources
 

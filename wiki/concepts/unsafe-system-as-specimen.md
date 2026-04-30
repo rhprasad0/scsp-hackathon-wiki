@@ -1,5 +1,21 @@
 ---
 title: Unsafe system as specimen
+summary: The low-safeguard or unsafe adjudication agent is treated as the object of study, while the surrounding harness remains controlled and safe.
+sources:
+  - 2026-04-29-ao-radar-product-reset.md
+createdAt: "2026-04-29T18:29:34.188Z"
+updatedAt: "2026-04-29T19:54:05.870Z"
+tags:
+  - evaluation
+  - safety
+  - agent-testing
+aliases:
+  - unsafe-system-as-specimen
+  - USAS
+---
+
+---
+title: Unsafe system as specimen
 summary: The core design principle that the low-safeguard or unsafe agent is the object being studied, while the surrounding harness remains safe and controlled.
 sources:
   - 2026-04-29-ao-radar-product-reset.md
@@ -16,31 +32,29 @@ aliases:
 
 # Unsafe system as specimen
 
-An **unsafe system as specimen** is a deliberately low-safeguard system placed inside a safe, synthetic evaluation harness so its failures can be studied without exposing real people, real transactions, or production workflows. In this framing, the unsafe system is the thing being examined; the harness is the product. ^[2026-04-29-ao-radar-product-reset.md]
+An **unsafe system as specimen** is a design principle in AO Radar in which the low-safeguard or unsafe agent is the object being studied, while the surrounding harness remains safe, synthetic, logged, and bounded. The unsafe system may be intentionally risky, but only as a controlled evaluation specimen inside the harness. ^[2026-04-29-ao-radar-product-reset.md]
 
-This concept is used in AO Radar’s current product frame, which is described as a closed-loop adjudication failure lab rather than a travel-voucher assistant or deployment concept. The goal is to test unsafe adjudication agents as specimens while keeping the surrounding evaluation environment synthetic, logged, and bounded. ^[2026-04-29-ao-radar-product-reset.md]
+This principle reflects AO Radar’s current product frame as a closed-loop adjudication failure lab rather than a production assistant or deployment concept. The harness is the product: it exists to test how unsafe adjudication agents behave across the full loop while keeping the evaluation environment separate from real-world consequences. ^[2026-04-29-ao-radar-product-reset.md]
 
-A central concern is whether an automated adjudication pipeline preserves human authority or reduces the human to a decorative checkbox. The system under test is evaluated across the full closed loop, including packet intake, evidence extraction, scoring, decision-making, rationale generation, audit-log generation, and optional human review or rubber stamping. ^[2026-04-29-ao-radar-product-reset.md]
+A central implication is that human-in-the-loop is not considered a control unless the human controls the consequential action. The system under test is evaluated across packet intake, evidence extraction, anomaly or policy scoring, decision-making, rationale generation, audit-log generation, and optional human review or rubber stamp, to see whether human authority is preserved or reduced to a decorative checkbox. ^[2026-04-29-ao-radar-product-reset.md]
 
-The product boundary is explicitly synthetic-only. It must not interact with real vouchers, claimants, payments, official systems, fraud accusations, or production adjudication workflows, even if the specimen itself is intentionally unsafe. ^[2026-04-29-ao-radar-product-reset.md]
+The product boundary is explicitly synthetic-only. It must not touch real vouchers, real claimants, real payments, official systems, real fraud accusations, or production adjudication workflows, even when the specimen itself is unsafe or low-safeguard. ^[2026-04-29-ao-radar-product-reset.md]
 
-In this model, the specimen can be a low-safeguard adjudication agent operating in domains such as claims, benefits, reimbursements, payment authorization, fraud scoring, and trust-and-safety decisions. AO Radar’s first-domain stance uses voucher-like packets because they are familiar and document-heavy, but the broader focus is any workflow where a machine can set the default outcome. ^[2026-04-29-ao-radar-product-reset.md]
+In practice, the specimen can be an adjudication agent used in domains such as claims, benefits, reimbursements, payment authorization, fraud scoring, and trust-and-safety decisions. Voucher-like packets are used as a first synthetic domain because they are familiar, document-heavy, and easy to convert into realistic but fake scenario cards. ^[2026-04-29-ao-radar-product-reset.md]
 
-Scenario cards for the specimen should cover cases such as missing or weak documentation, duplicate charges, date or location inconsistencies, ambiguous authorization, stale-memory reconstruction, unsupported fraud framing, incomplete but human-explainable packets, and policy ambiguity requiring escalation. These scenarios support evaluation of failure modes like unsupported denial, unsupported approval, failure to escalate, invented facts, invented citations, policy laundering, decorative human review, and audit-log whitewash. ^[2026-04-29-ao-radar-product-reset.md]
+Evaluation scenario cards should include clean packets, missing documentation, weak documentation with plausible context, duplicate charges, date or location inconsistency, ambiguous authorization, stale-memory reconstruction, unsupported fraud framing, incomplete but human-explainable packets, and policy ambiguity requiring escalation. These scenarios help surface failures such as unsupported denial, unsupported approval, [[Failure to escalate]], bad escalation, invented facts, invented citations, policy laundering, rationale overfitting, automated certainty, [[Decorative human review]], and audit-log whitewash. ^[2026-04-29-ao-radar-product-reset.md]
 
-Human review is treated as an experimental variable rather than a binary safeguard. Review can take multiple forms, including meaningful reviewer, exception reviewer, decorative reviewer, batch reviewer, appeal-only reviewer, audit-only reviewer, and managerial checkbox, making it possible to study when human involvement is substantive versus merely procedural. ^[2026-04-29-ao-radar-product-reset.md]
+Human review is treated as a first-class experimental variable rather than a binary safeguard. Review modes can include meaningful reviewer, exception reviewer, decorative reviewer, batch reviewer, appeal-only reviewer, audit-only reviewer, and managerial checkbox, allowing the lab to distinguish substantive oversight from procedural formality. ^[2026-04-29-ao-radar-product-reset.md]
 
 ## Related concepts
 
 - [[AO Radar closed-loop adjudication failure lab]]
-- [[AO Radar closed-loop adjudication failure lab]]
+- [[Closed-loop adjudication pipeline]]
 - [[Human authority boundary]]
 - [[Human review modes as experimental variables]]
-- [[Failure taxonomy for adjudication systems]]
 - [[Audit trail analysis and whitewashing detection]]
-- unsupported denial
-- automated certainty
+- [[Failure taxonomy for adjudication systems]]
 
 ## Sources
 
-- `2026-04-29-ao-radar-product-reset.md`
+- [2026-04-29-ao-radar-product-reset.md]
