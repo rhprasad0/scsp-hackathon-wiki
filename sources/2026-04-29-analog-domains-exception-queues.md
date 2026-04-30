@@ -6,7 +6,7 @@ ingestedAt: "2026-04-29T19:53:20.982Z"
 
 ---
 title: Analog Domains for Exception Queues and Failure-to-Escalate Patterns
-summary: Evidence lane 4 research on analog domains beyond vouchers and insurance, focused on exception queues, human escalation, appeals, fraud holds, and expense-audit automation.
+summary: Evidence lane 4 research on analog domains beyond vouchers, focused on exception queues, human escalation, appeals, fraud holds, and expense-audit automation.
 sources:
   - https://www.hhs.gov/sites/default/files/public-benefits-and-ai.pdf
   - https://fns-prod.azureedge.us/sites/default/files/resource-files/snap-automation-revised-022425.pdf
@@ -36,7 +36,7 @@ aliases:
 
 ## Why this supplement exists
 
-This public research supplement closes AO Radar evidence lane 4: concrete analog domains beyond vouchers and insurance where automated or semi-automated systems classify routine cases, route exceptions, generate records, and depend on human review or appeal paths. The goal is to broaden the article without citation confetti.
+This public research supplement closes AO Radar evidence lane 4: concrete analog domains beyond vouchers where automated or semi-automated systems classify routine cases, route exceptions, generate records, and depend on human review or appeal paths. The goal is to broaden the article without citation confetti.
 
 Public-safe boundary: these are analogies for a synthetic eval harness. They are not claims that AO Radar targets, audits, integrates with, or evaluates any real benefits, platform-moderation, payment, fraud, or expense-reimbursement system.
 
@@ -86,7 +86,7 @@ The three strongest analogs are:
 
 ### 3. Fraud/payment authorization and APP-fraud holds
 
-- **Workflow shape:** payment initiation -> fraud/risk signals and transaction monitoring -> authorize immediately, delay/hold, reject, or route to investigation -> contact payer or third parties -> execute or refuse -> complaint/reimbursement process if harm occurs.
+- **Workflow shape:** payment initiation -> fraud/risk signals and transaction monitoring -> authorize immediately, delay/hold, reject, or route to investigation -> contact sender or third parties -> execute or refuse -> complaint/reimbursement process if harm occurs.
 - **Consequential action:** payment execution, delayed funds, blocked transfer, consumer support, fraud-loss prevention, and reimbursement or complaint outcomes.
 - **Who/what routes to human:** risk rules, transaction-monitoring alerts, reasonable-grounds threshold, case investigators, customer contact staff, law-enforcement or counterparty-bank inquiries, complaint teams, and exception-support processes.
 - **Failure modes:** `FALSE_POSITIVE_HOLD`, `FAILURE_TO_ESCALATE`, `BAD_ESCALATION`, `INSUFFICIENT_NOTICE`, `PROCESS_SAYS_REVIEWED_BUT_NO_MEANINGFUL_REVIEW`, customer-impact blind spots, and commercial-risk metrics crowding out consumer-impact monitoring.
@@ -148,5 +148,5 @@ The AO Radar article can use these analogs to say: the safety-critical act is of
 
 ## Public framing update
 
-AO Radar is not just about vouchers or insurance. It targets a general failure pattern in closed-loop adjudication: systems that set the default, decide what is routine, route only selected exceptions to humans, and then write the rationale and audit trail. Benefits eligibility, content-moderation appeals, payment fraud holds, and expense audit tools all show versions of the same control problem. The synthetic harness should therefore test the upstream authority boundary: did the system recognize ambiguity and escalate before a consequential action, or did it turn a missed exception into a clean-looking record?
+AO Radar is not just about vouchers. It targets a general failure pattern in closed-loop adjudication: systems that set the default, decide what is routine, route only selected exceptions to humans, and then write the rationale and audit trail. Benefits eligibility, content-moderation appeals, payment fraud holds, and expense audit tools all show versions of the same control problem. The synthetic harness should therefore test the upstream authority boundary: did the system recognize ambiguity and escalate before a consequential action, or did it turn a missed exception into a clean-looking record?
 

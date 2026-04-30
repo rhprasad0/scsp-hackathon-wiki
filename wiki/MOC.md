@@ -2,424 +2,309 @@
 
 ## accountability
 
-- [[Audit trail limitations]]
-- [[Audit-log whitewash detection]]
-- [[Explanation faithfulness]]
-- [[Meaningful human review]]
-- [[Traceability without comprehension]]
+- [[Audit Trail Limits]]
+- [[Contestability and Remedy in AI Decisions]]
+- [[Explanation Faithfulness]]
+- [[Policy Laundering]]
+- [[Policy Laundering and Audit-Log Whitewash]]
 
 ## adjudication
 
-- [[AO Radar closed-loop adjudication failure lab]]
-- [[Autonomous finality]]
-- [[Closed-loop adjudication failure mode]]
-- [[Closed-loop adjudication pipeline]]
-- [[Closed-loop adjudication risk]]
-- [[Decorative or meaningless human review]]
-- [[Exception-based adjudication workflows]]
-- [[Exception-queue control problem]]
-- [[Failure to escalate]]
-- [[Human authority boundary]]
-- [[Individualized evidence review requirement]]
-- [[Synthetic adjudication evaluation harness]]
+- [[Closed-Loop Adjudication Pipeline]]
+- [[Exception-Queue Control Problem]]
+- [[Public Benefits Eligibility Automation]]
+- [[Scenario Card Design]]
 
-## agent-testing
+## adjudication-systems
 
-- [[Unsafe system as specimen]]
-
-## ai
-
-- [[Claims AI reference architecture]]
-- [[Closed-loop adjudication risk]]
-- [[Insurance claims AI reference architecture]]
+- [[Closed-Loop Adjudication Failure Lab]]
 
 ## ai-governance
 
-- [[Confidence scores and calibration]]
-- [[Individualized evidence review requirement]]
+- [[Automation Bias in Human Review]]
+- [[Contestability and Remedy in AI Decisions]]
+- [[Responsible Military Use of AI and Autonomy Declaration]]
 
 ## ai-safety
 
-- [[Responsible AI theater]]
+- [[Responsible AI Theater]]
+
+## ai-systems
+
+- [[AI Test and Evaluation Frameworks]]
+
+## ao-radar
+
+- [[AO Radar Rubric Checks]]
 
 ## appeals
 
-- [[Appeal-only correction]]
-- [[Appeals as the first meaningful human authority boundary]]
-- [[Trust-and-safety appeals and content moderation review]]
-
-## architecture
-
-- [[Claims AI reference architecture]]
+- [[Contestability and Appeal Paths]]
+- [[Trust-and-Safety Appeals and Content Moderation]]
 
 ## audit
 
-- [[Audit trail sufficiency]]
-- [[Batch review and rubber-stamp denials]]
-
-## audit-logging
-
-- [[Audit trail analysis and whitewashing detection]]
-- [[Audit-log whitewash detection]]
-
-## audit-logs
-
-- [[Traceability without comprehension]]
+- [[Policy Laundering and Audit-Log Whitewash]]
 
 ## audit-trails
 
-- [[Audit trail limitations]]
-
-## auditability
-
-- [[Self-certified compliance]]
-
-## automated-decisioning
-
-- [[Meaningful human involvement in automated decisions]]
+- [[AO Radar Rubric Checks]]
+- [[Audit Trail Limits]]
 
 ## automation
 
-- [[Authority boundary erasure]]
-- [[Autonomous finality]]
-- [[Claims adjudication workflow stack]]
-- [[Closed-loop adjudication failure mode]]
-- [[Closed-loop adjudication pipeline]]
-- [[Public benefits eligibility automation]]
-- [[Straight-through claims processing]]
-- [[Straight-through processing]]
+- [[Automation Bias]]
+- [[Autonomous Adjudication]]
+- [[Public Benefits Eligibility Automation]]
 
 ## automation-bias
 
-- [[Automation bias in human review]]
-- [[Decorative human review]]
-- [[Explanations as a source of overtrust]]
+- [[Failure to Escalate]]
+- [[Verification Complexity]]
+
+## autonomy
+
+- [[Autonomy in Weapon Systems Directive]]
 
 ## benefits
 
-- [[Public benefits eligibility automation]]
+- [[Public Benefits Eligibility Automation]]
+
+## bias
+
+- [[Automation Bias in Human Review]]
 
 ## calibration
 
-- [[Confidence scores and calibration]]
+- [[Confidence Calibration in AI]]
 
-## case-generation
+## cdao
 
-- [[Scenario card design for adjudication testing]]
+- [[Responsible AI Toolkit]]
 
-## claims
+## cognitive-load
 
-- [[Batch rubber-stamp review risk]]
-- [[Claims AI reference architecture]]
-- [[Claims adjudication workflow stack]]
-- [[Exception-handler human review]]
-- [[Manual adjudication as a configured exception state]]
-- [[Straight-through claims processing]]
+- [[Verification Complexity]]
 
 ## compliance
 
-- [[Audit trail analysis and whitewashing detection]]
-- [[Individualized review requirement]]
-- [[Self-certified compliance]]
+- [[Human Oversight Authority Boundary]]
+- [[Meaningful Human Review]]
+- [[Policy Laundering]]
 
-## confidence
+## content-moderation
 
-- [[Confidence scores and calibration]]
+- [[Trust-and-Safety Appeals and Content Moderation]]
 
 ## contestability
 
-- [[Contestability and remedy]]
+- [[Contestability and Appeal Paths]]
+- [[Decorative Human Review]]
 
-## control
+## data-generation
 
-- [[Governability claim without stop path]]
+- [[Scenario Card Design]]
 
-## control-systems
+## decision-making
 
-- [[Exception-queue control problem]]
+- [[Automation Bias]]
 
 ## decision-support
 
-- [[Cognitive forcing functions]]
-- [[Verification complexity and overreliance]]
+- [[Cognitive Forcing Functions]]
+- [[Confidence Calibration in AI]]
 
 ## decision-systems
 
-- [[Autonomous finality]]
+- [[Autonomous Adjudication]]
 
-## decisioning
+## dod
 
-- [[Edge-case boundary setting]]
-- [[Individualized review requirement]]
-
-## detection
-
-- [[Audit-log whitewash detection]]
+- [[Autonomy in Weapon Systems Directive]]
+- [[DoD AI Ethical Principles]]
+- [[Responsible AI Implementation Memo]]
+- [[Responsible AI Strategy and Implementation Pathway]]
 
 ## due-process
 
-- [[Appeals as the first meaningful human authority boundary]]
+- [[Contestability and Appeal Paths]]
 
 ## escalation
 
-- [[Failure to escalate]]
+- [[Failure to Escalate]]
 
 ## evaluation
 
-- [[AO Radar closed-loop adjudication failure lab]]
-- [[Failure taxonomy for adjudication systems]]
-- [[Governance evaluator]]
-- [[Policy bonfire matrix]]
-- [[Synthetic adjudication evaluation harness]]
-- [[Unsafe system as specimen]]
-
-## evidence
-
-- [[Evidence access for review]]
-
-## exception-handling
-
-- [[Escalation queue control]]
-- [[Exception-based adjudication workflows]]
+- [[AI Test and Evaluation Frameworks]]
+- [[AO Radar Rubric Checks]]
+- [[Closed-Loop Adjudication Failure Lab]]
+- [[Closed-Loop Adjudication Pipeline]]
+- [[Explanation Faithfulness]]
+- [[Failure Taxonomy for Adjudication Systems]]
+- [[Human Review Modes]]
+- [[Synthetic-Only Eval Harness]]
 
 ## exception-queues
 
-- [[Exception-queue control problem]]
-- [[Expense audit automation]]
-- [[Public benefits eligibility automation]]
+- [[Exception-Queue Control Problem]]
 
 ## exceptions
 
-- [[Exception-reviewer behavior]]
+- [[Expense Audit Automation]]
 
 ## expense-audit
 
-- [[Expense audit automation]]
-
-## experiment-design
-
-- [[Human review modes as experimental variables]]
-
-## explainability
-
-- [[Audit trail sufficiency]]
+- [[Expense Audit Automation]]
 
 ## explainable-ai
 
-- [[Explanations as a source of overtrust]]
+- [[Explanation-Induced Overreliance]]
 
 ## explanations
 
-- [[Audit trail limitations]]
-- [[Explanation faithfulness]]
-- [[Uncertainty disclosure]]
-
-## failure-mode
-
-- [[Appeal-only correction]]
-- [[Closed-loop adjudication failure mode]]
+- [[Explanation Faithfulness]]
 
 ## failure-modes
 
-- [[Failure taxonomy for adjudication systems]]
-- [[Failure to escalate]]
-
-## forensics
-
-- [[Audit trail analysis and whitewashing detection]]
+- [[Failure to Escalate]]
 
 ## fraud
 
-- [[Fraud payment authorization holds]]
+- [[Fraud Holds and Payment Authorization Review]]
 
 ## governance
 
-- [[Audit trail sufficiency]]
-- [[Authority boundary erasure]]
-- [[Closed-loop adjudication risk]]
-- [[Contestability and remedy]]
-- [[Decorative human review]]
-- [[Decorative or meaningless human review]]
-- [[Escalation queue control]]
-- [[Evidence access for review]]
-- [[Exception-handler human review]]
-- [[Governability claim without stop path]]
-- [[Governance evaluator]]
-- [[Human authority boundary]]
-- [[Human review modes as experimental variables]]
-- [[Human-in-the-loop exception handling]]
-- [[Individualized evidence review requirement]]
-- [[Meaningful human involvement in automated decisions]]
-- [[Meaningful human review]]
-- [[Responsible AI theater]]
-- [[Self-certified compliance]]
+- [[Audit Trail Limits]]
+- [[Autonomous Adjudication]]
+- [[Decorative Human Review]]
+- [[Failure Taxonomy for Adjudication Systems]]
+- [[Human Authority Boundary]]
+- [[Human Oversight Authority Boundary]]
+- [[Human Review Modes]]
+- [[Meaningful Human Review]]
+- [[Policy Laundering]]
+- [[Responsible AI Theater]]
 
-## hci
+## human-ai-interaction
 
-- [[Cognitive forcing functions]]
-
-## human-authority
-
-- [[Appeals as the first meaningful human authority boundary]]
+- [[Cognitive Forcing Functions]]
 
 ## human-factors
 
-- [[Automation bias in human review]]
-- [[Verification complexity and overreliance]]
+- [[Automation Bias]]
 
 ## human-in-the-loop
 
-- [[Authority boundary erasure]]
-- [[Batch rubber-stamp review risk]]
-- [[Exception-handler human review]]
-- [[Human authority boundary]]
-- [[Human-in-the-loop exception handling]]
-- [[Meaningful human review]]
+- [[Automation Bias in Human Review]]
+- [[Contestability and Remedy in AI Decisions]]
+- [[Exception-Queue Control Problem]]
+- [[Human Authority Boundary]]
+- [[Human Oversight Authority Boundary]]
+- [[Human Review Modes]]
 
 ## human-review
 
-- [[Automation bias in human review]]
-- [[Decorative human review]]
-- [[Decorative or meaningless human review]]
-- [[Exception-reviewer behavior]]
-- [[Human review modes as experimental variables]]
-- [[Meaningful human involvement in automated decisions]]
-- [[Trust-and-safety appeals and content moderation review]]
+- [[Decorative Human Review]]
+- [[Exception-Only Review]]
+- [[Meaningful Human Review]]
 
-## insurance
+## implementation
 
-- [[Batch review and rubber-stamp denials]]
-- [[Claims AI reference architecture]]
-- [[Human-in-the-loop exception handling]]
-- [[Insurance claims AI reference architecture]]
-- [[Straight-through claims processing]]
+- [[Responsible AI Implementation Memo]]
 
-## llm-safety
+## military-ai
 
-- [[Explanation faithfulness]]
+- [[Responsible Military Use of AI and Autonomy Declaration]]
 
-## manual-review
+## overreliance
 
-- [[Manual adjudication as a configured exception state]]
-
-## mitigation
-
-- [[Cognitive forcing functions]]
-
-## operations
-
-- [[Human-in-the-loop exception handling]]
-- [[Straight-through processing]]
+- [[Explanation-Induced Overreliance]]
 
 ## payments
 
-- [[Fraud payment authorization holds]]
+- [[Fraud Holds and Payment Authorization Review]]
 
 ## policy
 
-- [[Policy bonfire matrix]]
-
-## queue-management
-
-- [[Escalation queue control]]
-
-## reference-architecture
-
-- [[Insurance claims AI reference architecture]]
+- [[DoD AI Ethical Principles]]
+- [[Responsible AI Implementation Memo]]
 
 ## responsible-ai
 
-- [[Policy bonfire matrix]]
-- [[Responsible AI theater]]
+- [[DoD AI Ethical Principles]]
+- [[Responsible AI Strategy and Implementation Pathway]]
+- [[Responsible AI Theater]]
+- [[Responsible AI Toolkit]]
 
 ## review
 
-- [[Batch review and rubber-stamp denials]]
-- [[Individualized review requirement]]
-
-## review-process
-
-- [[Evidence access for review]]
+- [[Verification Complexity]]
 
 ## risk
 
-- [[Batch review and rubber-stamp denials]]
-- [[Batch rubber-stamp review risk]]
-- [[Closed-loop adjudication risk]]
-
-## risk-controls
-
-- [[Fraud payment authorization holds]]
+- [[Exception-Only Review]]
 
 ## risk-management
 
-- [[Contestability and remedy]]
-- [[Edge-case boundary setting]]
+- [[Fraud Holds and Payment Authorization Review]]
 
 ## safety
 
-- [[Governability claim without stop path]]
-- [[Unsafe system as specimen]]
+- [[Closed-Loop Adjudication Failure Lab]]
+- [[Human Authority Boundary]]
+- [[Policy Laundering and Audit-Log Whitewash]]
+- [[Synthetic-Only Eval Harness]]
+
+## state-department
+
+- [[Responsible Military Use of AI and Autonomy Declaration]]
+
+## strategy
+
+- [[Responsible AI Strategy and Implementation Pathway]]
 
 ## synthetic-data
 
-- [[Scenario card design for adjudication testing]]
-- [[Synthetic adjudication evaluation harness]]
-
-## synthetic-systems
-
-- [[AO Radar closed-loop adjudication failure lab]]
+- [[Synthetic-Only Eval Harness]]
 
 ## taxonomy
 
-- [[Failure taxonomy for adjudication systems]]
-
-## test-design
-
-- [[Scenario card design for adjudication testing]]
+- [[Failure Taxonomy for Adjudication Systems]]
 
 ## testing
 
-- [[Governance evaluator]]
+- [[AI Test and Evaluation Frameworks]]
+- [[Scenario Card Design]]
 
-## traceability
+## tooling
 
-- [[Traceability without comprehension]]
-
-## transparency
-
-- [[Uncertainty disclosure]]
+- [[Responsible AI Toolkit]]
 
 ## trust
 
-- [[Explanations as a source of overtrust]]
+- [[Confidence Calibration in AI]]
+- [[Explanation-Induced Overreliance]]
 
 ## trust-and-safety
 
-- [[Trust-and-safety appeals and content moderation review]]
+- [[Trust-and-Safety Appeals and Content Moderation]]
 
-## uncertainty
+## ux
 
-- [[Uncertainty disclosure]]
+- [[Cognitive Forcing Functions]]
 
-## verification
+## weapons-policy
 
-- [[Verification complexity and overreliance]]
+- [[Autonomy in Weapon Systems Directive]]
 
 ## workflow
 
-- [[Appeal-only correction]]
-- [[Claims adjudication workflow stack]]
-- [[Closed-loop adjudication pipeline]]
-- [[Edge-case boundary setting]]
-- [[Exception-based adjudication workflows]]
-- [[Manual adjudication as a configured exception state]]
-- [[Straight-through processing]]
+- [[Closed-Loop Adjudication Pipeline]]
 
 ## workflow-automation
 
-- [[Expense audit automation]]
+- [[Expense Audit Automation]]
 
-## workflow-design
+## workflows
 
-- [[Exception-reviewer behavior]]
+- [[Exception-Only Review]]

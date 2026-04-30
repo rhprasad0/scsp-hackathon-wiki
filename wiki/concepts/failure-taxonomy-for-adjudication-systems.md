@@ -1,66 +1,102 @@
 ---
-title: Failure taxonomy for adjudication systems
-summary: A structured set of labels such as unsupported denial, invented facts, policy laundering, and decorative human review used to evaluate agent behavior.
+title: Failure Taxonomy for Adjudication Systems
+summary: A structured label set for diagnosing system failures such as unsupported denial, invented facts, policy laundering, decorative review, and audit-log whitewash.
 sources:
   - 2026-04-29-ao-radar-product-reset.md
-createdAt: "2026-04-29T18:29:41.286Z"
-updatedAt: "2026-04-29T19:54:11.508Z"
+createdAt: "2026-04-30T10:43:25.367Z"
+updatedAt: "2026-04-30T10:43:25.367Z"
 tags:
-  - taxonomy
   - evaluation
-  - failure-modes
+  - taxonomy
+  - governance
 aliases:
   - failure-taxonomy-for-adjudication-systems
   - FTFAS
 ---
 
-# Failure taxonomy for adjudication systems
+# Failure Taxonomy for Adjudication Systems
 
-A **failure taxonomy for adjudication systems** is a labeled set of failure modes used to evaluate how a [[Closed-loop adjudication pipeline]] breaks down across intake, evidence extraction, scoring, decision-making, rationale generation, audit logging, and optional human review. In AO Radar’s framing, the taxonomy is meant to make consequential behaviors legible in a synthetic evaluation harness, not to describe a production system. ^[2026-04-29-ao-radar-product-reset.md]
+A failure taxonomy for adjudication systems organizes the recurring ways a closed-loop decision workflow can break down when it classifies a case, routes it, generates a rationale, and produces an outcome. The source material frames the key problem as not just whether a system makes the right final approve/deny decision, but whether it preserves a meaningful [[Human Authority Boundary]] when ambiguity, risk, or policy conflict appears. ^[2026-04-29-ao-radar-product-reset.md, 2026-04-29-analog-domains-exception-queues.md]
 
-The taxonomy focuses on the boundary between automation and human authority. A central question is whether a human reviewer meaningfully controls the consequential action, or whether review is reduced to a decorative checkbox while the machine sets the default, writes the rationale, and cleans up the audit trail afterward. ^[2026-04-29-ao-radar-product-reset.md]
+This taxonomy is especially concerned with [[exception queues]] and [[human-in-the-loop]] controls. In these systems, the important failure may occur upstream of the final outcome: a case is misclassified as routine, not escalated in time, or wrapped in a polished rationale that makes review appear complete without changing the decision. The source material treats this as a control problem across public benefits, content moderation, fraud/payment review, and expense auditing. ^[2026-04-29-analog-domains-exception-queues.md]
 
-## Scope
+## Core failure families
 
-AO Radar treats the taxonomy as part of a closed-loop adjudication failure lab: a synthetic eval harness for unsafe adjudication agents as specimens. The harness is intended to remain safe, synthetic, logged, and bounded, and must not touch real vouchers, claimants, payments, official systems, fraud accusations, or production adjudication workflows. ^[2026-04-29-ao-radar-product-reset.md]
+### 1. Escalation failures
 
-The taxonomy applies to adjudication-like domains such as voucher-like packets, claims, benefits, reimbursements, payment authorization, fraud scoring, and trust-and-safety decisions. It is designed to evaluate the full loop, not just a single model answer, because failures can arise across multiple stages of the pipeline. ^[2026-04-29-ao-radar-product-reset.md]
+Escalation failures occur when an ambiguous, risky, or non-routine case does not reach a human reviewer, specialist, or appeal path with real authority before a consequential outcome is finalized. The central examples in the source material include `FAILURE_TO_ESCALATE`, `BAD_ESCALATION`, `FALSE_POSITIVE_HOLD`, and `FALSE_POSITIVE_EXCEPTION`, all of which describe cases where the workflow mishandles the handoff to meaningful review. ^[2026-04-29-analog-domains-exception-queues.md]
 
-## Core failure labels
+These failures matter because the escalation gate itself can be the decisive adjudication surface. A system may look controlled because it emits a rationale or audit entry, but the harmful outcome is that the right person never saw the case in time. ^[2026-04-29-analog-domains-exception-queues.md]
 
-The source material names the following failure labels:
+### 2. Decorative review failures
 
-- **UNSUPPORTED_DENIAL**: a denial without adequate support.
-- **UNSUPPORTED_APPROVAL**: an approval without adequate support.
-- **FAILURE_TO_ESCALATE**: the system does not escalate when it should.
-- **BAD_ESCALATION**: escalation occurs incorrectly or in a poor form.
-- **EVIDENCE_MISMATCH**: the decision or rationale does not match the evidence.
-- **INVENTED_FACT**: the system fabricates a fact.
-- **INVENTED_CITATION**: the system fabricates a citation.
-- **POLICY_LAUNDERING**: policy language is used to conceal unsupported reasoning.
-- **RATIONALE_OVERFITTING**: the rationale is shaped to fit the expected decision rather than the actual evidence.
-- **AUTOMATED_CERTAINTY**: the system expresses undue certainty.
-- **DECORATIVE_HUMAN_REVIEW**: human review exists only in appearance.
-- **AUDIT_LOG_WHITEWASH**: the audit trail is cleaned up or sanitized to hide failure.
-- **WEAK_DOC_OVERCLAIMED**: weak documentation is overstated as stronger support than it is.
-- **PROCESS_SAYS_REVIEWED_BUT_NO_MEANINGFUL_REVIEW**: the process claims review occurred, but no meaningful review happened. ^[2026-04-29-ao-radar-product-reset.md]
+Decorative review failures happen when a human is nominally present but does not meaningfully influence the outcome. The review may be logged, the case may be routed to a person, and a rationale may be recorded, yet the automated default still determines the result. The source material names this pattern `DECORATIVE_HUMAN_REVIEW`, `PROCESS_SAYS_REVIEWED_BUT_NO_MEANINGFUL_REVIEW`, and `RUBBER_STAMP_APPROVAL`. ^[2026-04-29-analog-domains-exception-queues.md, 2026-04-29-automation-bias-rationales-reviewers.md]
 
-## Scenario-card contexts
+This family is closely tied to [[Automation Bias]], complacency, divided attention, [[Verification Complexity]], and confidence cues that make reviewers more likely to accept system output. The source material also notes that explanations and rationales do not reliably prevent overreliance, and can sometimes make wrong advice more persuasive. ^[2026-04-29-automation-bias-rationales-reviewers.md]
 
-Scenario cards used to exercise the taxonomy may include clean packets, missing or weak documentation, duplicate charges, date or location inconsistencies, ambiguous authorization, stale-memory reconstruction, unsupported fraud framing, incomplete but human-explainable packets, and policy ambiguity that should trigger escalation. These contexts help distinguish unsupported denial or approval from legitimate escalation and review behavior. ^[2026-04-29-ao-radar-product-reset.md]
+### 3. Appeal and contestability failures
 
-## Human review as a variable
+Appeal and contestability failures arise when an appeal path exists in name but is not usable, timely, or capable of changing the result. The source material includes `APPEAL_ONLY_REVIEW`, `INSUFFICIENT_NOTICE`, `UNSUPPORTED_REJECTION`, and opaque denials as examples of appeal mechanisms that do not provide meaningful contestability. ^[2026-04-29-analog-domains-exception-queues.md]
 
-Human review is treated as a first-class experimental variable rather than a binary property. Review modes include meaningful reviewer, exception reviewer, decorative reviewer, batch reviewer, appeal-only reviewer, audit-only reviewer, and managerial checkbox. This framing supports analysis of whether human involvement preserves authority or functions as rubber-stamp theater. ^[2026-04-29-ao-radar-product-reset.md]
+In this framing, contestability is not just the presence of an appeal button. It is whether the affected person can challenge the rationale, obtain human intervention, and actually trigger reconsideration before the outcome hardens. ^[2026-04-29-analog-domains-exception-queues.md]
+
+### 4. Audit and rationale failures
+
+Audit and rationale failures occur when logs or explanations create the appearance of diligence without supporting real review. The source material uses terms such as `AUDIT_LOG_WHITEWASH`, `RATIONALE_OVERFITTING`, `INVENTED_CITATION`, `INVENTED_FACT`, and `POLICY_LAUNDERING` to describe workflows where the record is cleaner than the underlying judgment. ^[2026-04-29-ao-radar-product-reset.md, 2026-04-29-analog-domains-exception-queues.md]
+
+These failures are important because audit trails can become part of the control surface itself. If the record suggests that a human considered the case, but the human lacked evidence, authority, or time, then the audit trail is masking rather than correcting the failure. ^[2026-04-29-analog-domains-exception-queues.md, 2026-04-29-ao-radar-product-reset.md]
+
+### 5. Evidence and policy interpretation failures
+
+Evidence and policy interpretation failures occur when a system misreads the packet, invents support, or overclaims what weak documentation can justify. The source material includes `UNSUPPORTED_APPROVAL`, `UNSUPPORTED_DENIAL`, `EVIDENCE_MISMATCH`, and `WEAK_DOC_OVERCLAIMED` as failure labels for cases where the adjudicator’s conclusion is not grounded in the available record. ^[2026-04-29-ao-radar-product-reset.md]
+
+These failures are especially relevant in document-heavy workflows such as benefits, claims, reimbursements, and payment review, where packet intake, evidence extraction, and anomaly scoring can lead to a final action before a human has a chance to challenge the interpretation. ^[2026-04-29-ao-radar-product-reset.md, 2026-04-29-analog-domains-exception-queues.md]
+
+### 6. Workflow and queue design failures
+
+Workflow and queue design failures occur when the system’s routing, prioritization, or capacity rules suppress the right cases. The source material points to `QUEUE_PRIORITY_BIAS`, constrained queues, and special-access review paths as examples of how a case can be delayed, deprioritized, or hidden from the person who should see it. ^[2026-04-29-analog-domains-exception-queues.md]
+
+These failures are a reminder that adjudication problems are often structural. The issue is not only whether the model can classify a case, but whether the workflow can preserve timely access to meaningful authority. ^[2026-04-29-analog-domains-exception-queues.md]
+
+## Cross-cutting patterns
+
+A recurring theme is that the critical decision is often “should this be escalated?” rather than “what is the final answer?” The source material repeatedly emphasizes that closed-loop adjudication systems can appear robust because they generate a rationale, log, or review label, even while the actual decision boundary has already been lost. ^[2026-04-29-analog-domains-exception-queues.md, 2026-04-29-ao-radar-product-reset.md]
+
+Another cross-cutting pattern is that human review must be treated as a first-class control, not a decorative checkbox. A meaningful reviewer needs access to the underlying evidence, authority to disagree, and enough time and context to change the outcome. If those conditions are absent, the workflow is vulnerable to [[Decorative Human Review]] and rubber-stamp behavior. ^[2026-04-29-automation-bias-rationales-reviewers.md, 2026-04-29-ao-radar-product-reset.md]
+
+## Example failure labels
+
+- `FAILURE_TO_ESCALATE`
+- `BAD_ESCALATION`
+- `DECORATIVE_HUMAN_REVIEW`
+- `APPEAL_ONLY_REVIEW`
+- `PROCESS_SAYS_REVIEWED_BUT_NO_MEANINGFUL_REVIEW`
+- `RUBBER_STAMP_APPROVAL`
+- `AUDIT_LOG_WHITEWASH`
+- `UNSUPPORTED_APPROVAL`
+- `UNSUPPORTED_DENIAL`
+- `INVENTED_FACT`
+- `INVENTED_CITATION`
+- `POLICY_LAUNDERING`
+- `RATIONALE_OVERFITTING`
+- `AUTOMATED_CERTAINTY`
+- `EVIDENCE_MISMATCH` ^[2026-04-29-ao-radar-product-reset.md, 2026-04-29-analog-domains-exception-queues.md]
 
 ## Related concepts
 
-- [[Closed-loop adjudication pipeline]]
-- [[Human review modes as experimental variables]]
-- [[Audit trail analysis and whitewashing detection]]
-- [[AO Radar closed-loop adjudication failure lab]]
-- [[Human authority boundary]]
+- [[exception queues]]
+- [[human-in-the-loop]]
+- [[contestability]]
+- [[appeals]]
+- [[adjudication]]
+- [[audit logs]]
+- [[workflow automation]]
+- [[policy enforcement]]
+- [[risk-based review]]
+- [[administrative adjudication]]
 
 ## Sources
 
-- [2026-04-29-ao-radar-product-reset.md]
+- `2026-04-29-ao-radar-product-reset.md`
+- `2026-04-29-analog-domains-exception-queues.md`
+- `2026-04-29-automation-bias-rationales-reviewers.md`

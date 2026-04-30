@@ -1,44 +1,45 @@
 ---
-title: Automation bias in human review
-summary: The tendency for reviewers to over-rely on automated recommendations, treating them as correct even when verification is difficult or the system is wrong.
+title: Automation Bias in Human Review
+summary: Human review can become rubber-stamping when reviewers over-trust automated outputs, especially without interpretability, time, or independence to challenge them.
 sources:
-  - 2026-04-29-automation-bias-rationales-reviewers.md
   - 2026-04-29-meaningful-human-review-audit-trails.md
-createdAt: "2026-04-29T19:54:12.271Z"
-updatedAt: "2026-04-29T19:54:12.271Z"
+createdAt: "2026-04-30T10:43:21.750Z"
+updatedAt: "2026-04-30T10:43:21.750Z"
 tags:
-  - human-factors
-  - automation-bias
-  - human-review
+  - human-in-the-loop
+  - bias
+  - ai-governance
 aliases:
   - automation-bias-in-human-review
   - ABIHR
 ---
 
-# Automation bias in human review
+# [[Automation Bias]] in Human Review
 
-**Automation bias in human review** is the tendency for reviewers to over-rely on automated recommendations, confidence cues, explanations, or generated rationales instead of independently checking the underlying evidence. In closed-loop adjudication settings, this can make human review nominal while the automated system sets the default outcome and the reviewer is left to confirm it. ^[2026-04-29-automation-bias-rationales-reviewers.md, 2026-04-29-meaningful-human-review-audit-trails.md]
+[[Automation Bias]] in human review is the tendency for reviewers to over-rely on an automated recommendation during a review process, even when the system may be wrong. In the source material, this appears as a human-factors failure mode in closed-loop adjudication and other review workflows, where a human is present but may not meaningfully challenge the machine’s default, rationale, or confidence cues. ^[2026-04-29-automation-bias-rationales-reviewers.md, 2026-04-29-ao-radar-product-reset.md]
 
-This bias is most likely when the reviewer faces high verification complexity, divided attention, uncertainty, unfamiliar tasks, or compressed summaries rather than original evidence. Under these conditions, a review step can become acceptance of the machine’s output, especially when the system presents a clear default recommendation and a fluent rationale. ^[2026-04-29-automation-bias-rationales-reviewers.md]
+This bias is especially likely when the reviewer lacks time, authority, information, or independence, or when multiple tasks compete for attention. The source material notes that [[Automation Bias]] can produce both omission errors and commission errors, and that it affects both novice and expert users. ^[2026-04-29-automation-bias-rationales-reviewers.md]
 
-In AO Radar terms, automation bias is one mechanism behind failure modes such as `AUTOMATED_CERTAINTY`, `FAILURE_TO_ESCALATE`, `DECORATIVE_HUMAN_REVIEW`, and `PROCESS_SAYS_REVIEWED_BUT_NO_MEANINGFUL_REVIEW`. The key issue is not whether a human appears in the workflow, but whether that human has the time, information, authority, incentives, and cognitive posture needed to challenge the automated default. ^[2026-04-29-automation-bias-rationales-reviewers.md, 2026-04-29-meaningful-human-review-audit-trails.md]
+A central issue is verification cost: the harder it is to check a recommendation against evidence, policy, chronology, or exceptions, the easier it is for review to become acceptance. In this framing, [[Automation Bias]] is not only about trust in machines, but also about the cost of independent verification. ^[2026-04-29-automation-bias-rationales-reviewers.md]
 
-Research notes tied to AO Radar emphasize that explanations and confidence scores are not sufficient safeguards on their own. In some studies, explanations increased overreliance when AI advice was wrong, and miscalibrated confidence cues made appropriate reliance harder. [[Cognitive forcing functions]] and other designs can reduce overreliance, but they may also increase effort and lower user satisfaction. ^[2026-04-29-automation-bias-rationales-reviewers.md]
+The source material also warns that explanations and rationales do not reliably prevent overreliance. In some studies, explanations made wrong AI advice more persuasive, feature-based rationales increased overreliance, and miscalibrated confidence can still distort reliance even when confidence cues are present. ^[2026-04-29-automation-bias-rationales-reviewers.md]
 
-[[Meaningful human review]] therefore requires more than a checkbox or a logged review event. Reviewers need access to the original evidence, discretion and authority to alter the outcome, visible uncertainty and counterevidence, and a path to escalate ambiguous or unsupported cases. Audit trails should be treated as process traces to verify against underlying evidence, not as proof that review was substantive. ^[2026-04-29-meaningful-human-review-audit-trails.md]
+In closed-loop adjudication settings, [[Automation Bias]] can appear as `AUTOMATED_CERTAINTY`, `DECORATIVE_HUMAN_REVIEW`, `PROCESS_SAYS_REVIEWED_BUT_NO_MEANINGFUL_REVIEW`, `POLICY_LAUNDERING`, `RATIONALE_OVERFITTING`, and `FAILURE_TO_ESCALATE`. The practical risk is that a case appears to have been reviewed while the automated default already determined the outcome, including whether an ambiguous or high-risk case is escalated at all. ^[2026-04-29-automation-bias-rationales-reviewers.md, 2026-04-29-ao-radar-product-reset.md]
 
-Automation bias can be especially hard to spot in exception-only or batch-review workflows. When most cases are auto-processed, the reviewer may lose the attentional posture needed to detect rare failures; when cases are compressed into summaries, the reviewer may be evaluating narrative coherence rather than decision quality. This is why AO Radar treats review mode as an experimental variable rather than assuming human-in-the-loop oversight is always protective. ^[2026-04-29-automation-bias-rationales-reviewers.md]
+[[Meaningful Human Review]] requires more than a person in the loop. The reviewer must be able to see the underlying evidence, disagree with the system, escalate ambiguity, and record independent reasoning; otherwise the review step becomes decorative rather than controlling. Related concepts include [[human-in-the-loop]], [[decorative human review]], [[exception queues]], [[adjudication]], and [[workflow automation]]. ^[2026-04-29-automation-bias-rationales-reviewers.md, 2026-04-29-analog-domains-exception-queues.md]
 
 ## Related concepts
 
-- [[Human review modes as experimental variables]]
-- [[Meaningful human review, audit trails, and governance standards]]
-- [[Audit trail analysis and whitewashing detection]]
-- [[Appeals as the first meaningful human authority boundary]]
-- [[Closed-loop adjudication pipeline]]
-- [[Failure taxonomy for adjudication systems]]
+- [[human-in-the-loop]]
+- [[decorative human review]]
+- [[exception queues]]
+- [[adjudication]]
+- [[workflow automation]]
+- [[closed-loop adjudication pipeline]]
+- [[cognitive forcing functions]]
 
 ## Sources
 
-- [2026-04-29-automation-bias-rationales-reviewers.md]
-- [2026-04-29-meaningful-human-review-audit-trails.md]
+- `2026-04-29-automation-bias-rationales-reviewers.md`
+- `2026-04-29-ao-radar-product-reset.md`
+- `2026-04-29-analog-domains-exception-queues.md`

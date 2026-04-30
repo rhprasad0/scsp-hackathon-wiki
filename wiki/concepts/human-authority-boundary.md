@@ -1,54 +1,36 @@
 ---
-title: Human authority boundary
-summary: Human-in-the-loop only counts when the human actually controls the consequential action rather than serving as a decorative reviewer.
+title: Human Authority Boundary
+summary: The distinction between meaningful human control over consequential actions and superficial human involvement that does not affect outcomes.
 sources:
   - 2026-04-29-ao-radar-product-reset.md
-  - 2026-04-29-meaningful-human-review-audit-trails.md
-createdAt: "2026-04-29T18:29:46.268Z"
-updatedAt: "2026-04-29T19:54:06.894Z"
+createdAt: "2026-04-30T10:42:59.882Z"
+updatedAt: "2026-04-30T10:42:59.882Z"
 tags:
   - human-in-the-loop
   - governance
-  - adjudication
+  - safety
 aliases:
   - human-authority-boundary
   - HAB
 ---
 
----
-title: Human authority boundary
-summary: The point in an automated adjudication workflow where human review still has real control over the consequential action, rather than functioning as a decorative checkbox.
-sources:
-  - 2026-04-29-ao-radar-product-reset.md
-createdAt: "2026-04-29T18:29:46.268Z"
-updatedAt: "2026-04-29T18:29:46.268Z"
-tags:
-  - human-in-the-loop
-  - governance
-  - accountability
-aliases:
-  - human-authority-boundary
-  - HAB
----
+# Human Authority Boundary
 
-# Human authority boundary
+The **human authority boundary** is the point in a closed-loop adjudication workflow where a human must have real power over the consequential action, not merely a nominal review role. The source material frames this boundary as the difference between meaningful human control and a “decorative checkbox” arrangement in which the machine sets the default, writes the rationale, and cleans up the audit trail after the fact. ^[2026-04-29-ao-radar-product-reset.md]
 
-Human authority boundary is the point in a closed-loop adjudication workflow where a human still controls the consequential action. In AO Radar’s framing, human-in-the-loop does not count as real control unless the human can meaningfully decide the outcome rather than merely confirm a machine-set default. The concept distinguishes substantive human oversight from decorative review in automated adjudication systems. ^[2026-04-29-ao-radar-product-reset.md]
+In this framing, human-in-the-loop is not a control unless the human controls the consequential action. A workflow may include packet intake, evidence extraction, anomaly or policy scoring, decisioning, rationale generation, audit-log generation, and optional human review, but the boundary matters because the decisive question is whether the human can still change the outcome before it hardens. ^[2026-04-29-ao-radar-product-reset.md]
 
-AO Radar treats the boundary as something the evaluation harness should test: whether an automated adjudication pipeline preserves human authority or instead turns the human into a checkbox while the machine sets the default, writes the rationale, and cleans up the audit trail afterward. This makes the human authority boundary part of a broader analysis of accountability failure in synthetic adjudication environments. ^[2026-04-29-ao-radar-product-reset.md]
+The concept is closely tied to [[exception queues]] and [[closed-loop adjudication]]: systems often classify cases as routine or exceptional, then route only selected cases to humans. The boundary is reached when a case is escalated to a reviewer with authority, rather than to a reviewer who merely confirms a machine-made outcome. ^[2026-04-29-ao-radar-product-reset.md, 2026-04-29-analog-domains-exception-queues.md]
 
-Related review modes help locate where authority actually resides in the workflow. These include meaningful reviewer, exception reviewer, decorative reviewer, batch reviewer, appeal-only reviewer, audit-only reviewer, and managerial checkbox. They are used to determine whether review has operational force or only a formal appearance. ^[2026-04-29-ao-radar-product-reset.md]
+Why it matters is that the main failure may be upstream of the final approve/deny step. A system can appear controlled because it produces a rationale, log entry, or review label, while still failing to escalate an ambiguous or high-risk case to the person or process with real authority. ^[2026-04-29-analog-domains-exception-queues.md]
 
-In AO Radar, human authority boundary analysis sits within a larger synthetic evaluation spec centered on packet generation, low-safeguard adjudication agents as specimens, closed-loop decision pipeline execution, evaluator rubrics, failure taxonomy, and audit trail analysis. The goal is to make failures legible without implying production deployment. ^[2026-04-29-ao-radar-product-reset.md]
+The source material describes this boundary through several recurring failure modes, including `FAILURE_TO_ESCALATE`, `DECORATIVE_HUMAN_REVIEW`, `APPEAL_ONLY_REVIEW`, `AUDIT_LOG_WHITEWASH`, `BAD_OVERRIDE`, and `PROCESS_SAYS_REVIEWED_BUT_NO_MEANINGFUL_REVIEW`. These labels point to situations where human involvement exists in form but not in substance. ^[2026-04-29-analog-domains-exception-queues.md, 2026-04-29-ao-radar-product-reset.md]
 
-## Related concepts
+The boundary shows up across domains such as public benefits eligibility, [[Fraud Holds and Payment Authorization Review]], content moderation appeals, and [[Expense Audit Automation]]. In each case, the consequential action may affect access, payment, account status, reimbursement, or other important outcomes, so the critical control issue is whether the case reaches a human who can truly intervene before the decision becomes final. ^[2026-04-29-analog-domains-exception-queues.md]
 
-- [[AO Radar closed-loop adjudication failure lab]]
-- [[Human review modes as experimental variables]]
-- [[Batch review and rubber-stamp denials]]
-- [[Audit trail analysis and whitewashing detection]]
-- [[Failure taxonomy for adjudication systems]]
+Related concepts include [[human-in-the-loop]], [[override control]], [[appeals process]], [[contestability]], [[audit log]], and [[queue prioritization]]. ^[2026-04-29-analog-domains-exception-queues.md]
 
 ## Sources
 
 - `2026-04-29-ao-radar-product-reset.md`
+- `2026-04-29-analog-domains-exception-queues.md`

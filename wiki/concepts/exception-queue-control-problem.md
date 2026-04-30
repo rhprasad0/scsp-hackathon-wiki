@@ -1,35 +1,84 @@
 ---
-title: Exception-queue control problem
-summary: A cross-domain pattern in which systems define routine cases, send only selected exceptions to constrained queues, and thereby determine whether humans see consequential cases in time.
+title: Exception-Queue Control Problem
+summary: A cross-domain pattern where the critical decision is not the final approve/deny action but whether ambiguous or high-risk cases are escalated to a human review queue in time.
 sources:
   - 2026-04-29-analog-domains-exception-queues.md
-createdAt: "2026-04-29T19:54:02.126Z"
-updatedAt: "2026-04-29T19:54:02.126Z"
+createdAt: "2026-04-30T10:42:55.031Z"
+updatedAt: "2026-04-30T10:42:55.031Z"
 tags:
   - exception-queues
-  - control-systems
+  - human-in-the-loop
   - adjudication
 aliases:
   - exception-queue-control-problem
   - ECP
 ---
 
-# Exception-queue control problem
+# Exception-Queue Control Problem
 
-The **exception-queue control problem** is the failure pattern in which a system defines what counts as routine, routes only selected cases into exception handling, and then allows consequential outcomes to occur without meaningful human authority over the edge cases. In AO Radar’s framing, the central issue is not whether a human review exists in the process, but whether the system correctly escalates ambiguity, weak evidence, mismatch, or policy uncertainty before a default outcome is finalized. ^[2026-04-29-analog-domains-exception-queues.md]
+The **exception-queue control problem** is a pattern in closed-loop adjudication systems where a workflow defines what is routine, routes only selected non-routine cases to human review, and then records a rationale or audit trail that can make the outcome appear fully reviewed even when the meaningful decision boundary was whether to escalate at all. In this framing, the critical control failure is often upstream of the final approve/deny step: the system may mishandle ambiguity, suppress escalation, or let a “clean” record stand in for real review. ^[2026-04-29-analog-domains-exception-queues.md]
 
-This problem appears across closed-loop adjudication and related workflows where a machine sets the default and humans are relegated to exception queues, appeals, or residual review. The upstream control question is whether the system recognizes non-routine cases in time, or instead converts them into clean-looking routine decisions supported by generic rationales and audit records. ^[2026-04-29-analog-domains-exception-queues.md]
+## Core idea
 
-A recurring pattern is: intake, extraction, scoring or classification, routine approval or denial, exception routing, rationale generation, and logging. The control problem emerges when the routing step fails, when the queue is constrained by capacity or access, or when the human reviewer becomes a decorative reviewer, appeal-only participant, audit-only participant, or managerial checkbox rather than a meaningful authority. ^[2026-04-29-analog-domains-exception-queues.md]
+The recurring structure is:
 
-The source material identifies several analog domains that exhibit this pattern. In public benefits eligibility, routine cases may be processed automatically while mismatches, missing documentation, discretionary judgments, and appeals should be routed to staff; in trust-and-safety appeals, users may technically have an appeal path while the process remains opaque or ineffective; in fraud and payment authorization, unusual transactions may be delayed or held while support and exception review are required; and in [[Expense audit automation]], routine claims may be auto-approved while high-risk cases go to manager or finance queues. ^[2026-04-29-analog-domains-exception-queues.md]
+1. A system classifies cases as routine or exceptional.
+2. Routine cases move quickly toward a consequential action.
+3. Exceptions are routed to queues that may be constrained by capacity, policy, risk ranking, or special access.
+4. A reviewer or system generates a rationale and log.
+5. Appeals or complaints may become the first meaningful [[Human Authority Boundary]] rather than a backstop. ^[2026-04-29-analog-domains-exception-queues.md]
 
-The corresponding failure modes include `FAILURE_TO_ESCALATE`, `BAD_OVERRIDE`, `AUDIT_LOG_WHITEWASH`, `DECORATIVE_HUMAN_REVIEW`, `APPEAL_ONLY_REVIEW`, `QUEUE_PRIORITY_BIAS`, `FALSE_POSITIVE_HOLD`, `INSUFFICIENT_NOTICE`, `RUBBER_STAMP_APPROVAL`, and `PROCESS_SAYS_REVIEWED_BUT_NO_MEANINGFUL_REVIEW`. These labels describe cases where the queue exists but does not preserve meaningful review, contestability, or evidence-based authority. ^[2026-04-29-analog-domains-exception-queues.md]
+The problem is not simply “automation made a decision.” It is that the system may fail to recognize ambiguity or may decide not to escalate a case that should have reached a human with authority. ^[2026-04-29-analog-domains-exception-queues.md]
 
-In AO Radar, this problem is useful for synthetic evaluation because it can be tested with scenario cards such as mismatched documents, duplicate charges, date or location inconsistencies, ambiguous authorization, stale-memory reconstruction, unsupported fraud framing, incomplete but human-explainable packets, and policy ambiguity that should trigger escalation. The harness can then check whether the specimen escalates appropriately or instead produces a polished but unsupported decision. ^[2026-04-29-analog-domains-exception-queues.md]
+## Related failure modes
 
-Related concepts include [[Closed-loop adjudication pipeline]], [[Human review modes as experimental variables]], [[Human authority boundary]], [[Audit trail analysis and whitewashing detection]], [[Failure taxonomy for adjudication systems]], and [[Batch review and rubber-stamp denials]]. ^[2026-04-29-analog-domains-exception-queues.md]
+Common failure patterns described in the source material include:
+
+- `FAILURE_TO_ESCALATE`
+- `BAD_OVERRIDE`
+- `AUDIT_LOG_WHITEWASH`
+- `DECORATIVE_HUMAN_REVIEW`
+- `APPEAL_ONLY_REVIEW`
+- `QUEUE_PRIORITY_BIAS`
+- `PROCESS_SAYS_REVIEWED_BUT_NO_MEANINGFUL_REVIEW`
+- `FALSE_POSITIVE_HOLD`
+- `INSUFFICIENT_NOTICE`
+- `RUBBER_STAMP_APPROVAL`
+- `UNSUPPORTED_REJECTION` ^[2026-04-29-analog-domains-exception-queues.md]
+
+## Analog domains
+
+### Public benefits eligibility
+
+Public benefits systems illustrate the problem through application intake, document extraction, eligibility checks, routine authorization, and exception handling for mismatches, discretionary judgment, appeals, and manual overrides. The source material treats this as the strongest official-source analog because benefits decisions can affect access to food, medical, cash, or other public benefits. ^[2026-04-29-analog-domains-exception-queues.md]
+
+### Trust-and-safety appeals / content moderation
+
+Content moderation workflows provide a clear analogy for contestability failure. A user may technically have an appeal path, but the path can still be opaque, automated, capacity-constrained, or only accessible through special channels. The source material highlights enhanced review systems, queue prioritization, and the risk that review exists in form but not in meaningful substance. ^[2026-04-29-analog-domains-exception-queues.md]
+
+### Fraud/payment authorization
+
+Payment and fraud-control workflows show the same pattern in time-bounded holds and investigation queues. A transaction may be delayed or blocked based on risk signals, but the control only works if the suspicion threshold is evidence-based, the customer can get support, and exceptions are reviewed before the workflow hardens into a final outcome. ^[2026-04-29-analog-domains-exception-queues.md]
+
+### [[Expense Audit Automation]]
+
+Expense-audit systems are a lower-stakes workflow analogy. Vendors describe automated auditing, receipt verification, duplicate detection, policy checks, and routing of high-risk exceptions to managers or finance teams. The source material treats this as useful for workflow shape, but weaker as evidence because the available material is mainly vendor marketing. ^[2026-04-29-analog-domains-exception-queues.md]
+
+## Why the concept matters
+
+Across these domains, the safety-critical action is often the decision to **not escalate**. A system can appear controlled because it emits a rationale, log entry, or review label, while still failing to route a consequential edge case to the person or process with real authority. ^[2026-04-29-analog-domains-exception-queues.md]
+
+## Related concepts
+
+- [[Human-in-the-loop]]
+- [[Appeals process]]
+- [[Administrative adjudication]]
+- [[Queue prioritization]]
+- [[Automated decision-making]]
+- [[Audit log]]
+- [[Contestability]]
+- [[Override control]] ^[2026-04-29-analog-domains-exception-queues.md]
 
 ## Sources
 
-- [2026-04-29-analog-domains-exception-queues.md]
+- `2026-04-29-analog-domains-exception-queues.md`
